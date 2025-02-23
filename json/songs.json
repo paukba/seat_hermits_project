@@ -2,40 +2,224 @@
     {
         "uuid":"a89a4dbf-9995-45e6-8862-0b6baeb18537",
         "title":"boulevard of broken dreams",
-        "sheet":[],
+        "sheet":{
+            "measures":[
+            {
+                "measure": 1,
+                "lyric": "i walk a",
+                "chord":"fm",
+                "strings":["e","a","d","g","b","em"],
+                "fretts":{
+                    "em":"1",
+                    "b":"1",
+                    "g":"1",
+                    "d":"3",
+                    "a":"3",
+                    "e":"1"
+                }
+            },
+            {
+                "measure": 2,
+                "lyric":"lonely road,",
+                "chord":"dd",
+                "strings":["a","d","g","b","em"],
+                "fretts":{
+                    "em":"4",
+                    "b":"6",
+                    "g":"6",
+                    "d":"6",
+                    "a":"4"
+                }
+            },
+            {
+                "measure": 3,
+                "lyric":"the only one",
+                "chord":"ab",
+                "strings":["e","a","d","g","b","em"],
+                "fretts":{
+                    "em":"4",
+                    "b":"4",
+                    "g":"5",
+                    "d":"6",
+                    "a":"6",
+                    "e":"4"
+                }
+            },
+            {
+                "measure": 4,
+                "lyric":"that i have",
+                "chord":"eb",
+                "strings":["a","d","g","b","em"],
+                "fretts":{
+                    "em":"6",
+                    "b":"8",
+                    "g":"8",
+                    "d":"8",
+                    "a":"6"
+                }
+            },
+            {
+                "measure": 5,
+                "lyric":"ever known,",
+                "chord":"fm",
+                "strings":["e","a","d","g","b","em"],
+                "fretts":{
+                    "em":"1",
+                    "b":"1",
+                    "g":"1",
+                    "d":"3",
+                    "a":"3",
+                    "e":"1"
+                }
+            },
+        "..."
+        ] 
+        },
         "author":"97eadc69-4f01-4dcc-abc9-9132ad528f2d",
         "privacy":true,
-        "genre":"",
-        "lyrics":[],
-        "instruments":[],
-        "measures":""
-    },
-    {
-        "uuid":"7b495afd-4f50-444b-8879-460393bb6a75",
-        "title":"counting stars",
-        "sheet":[],
-        "author":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
-        "privacy":true,
-        "genre":"pop",
-        "lyrics":[],
-        "instruments":[
-            "bass guitar",
-            "acoustic guitar"
-        ],
-        "measures":""
-    },
-    {
-        "uuid":"f16ba466-7e73-49a7-8c2e-b92b27c16540",
-        "title":"bfg division",
-        "sheet":[],
-        "author":"473ffea7-0b71-4411-88ed-ed63f876454c",
-        "privacy":true,
-        "genre":"metal",
-        "lyrics":"n/a",
+        "genre":"rock",
         "instruments":[
             "electric guitar",
             "bass guitar"
         ],
-        "measures":""
+        "tempo": "167",
+        "comments":[
+            "for all my loners, you're not alone :)",
+            "i like lowkey songs like dis"
+        ]
+    },
+    {
+        "uuid":"7b495afd-4f50-444b-8879-460393bb6a75",
+        "title":"counting stars",
+        "sheet":{
+            "measures":[
+            {
+                "measure": 1,
+                "lyric": "lately i've been",
+                "chord":"am",
+                "strings":["a","g","b","em"],
+                "fretts":{
+                    "e":"0",
+                    "b":"1",
+                    "g":"2",
+                    "a":"0"
+                }
+            },
+            {
+                "measure": 2,
+                "lyric":"i've been losing sleep,",
+                "chord":"c",
+                "strings":["a","g","b","em"],
+                "fretts":{
+                    "e":"0",
+                    "b":"1",
+                    "g":"0",
+                    "a":"3"
+                }
+            },
+            {
+                "measure": 3,
+                "lyric":"dreamin about the things that",
+                "chord":"g",
+                "strings":["e","d","g","b"],
+                "fretts":{
+                    "b":"0",
+                    "g":"0",
+                    "d":"0",
+                    "e":"3"
+                }
+            },
+            {
+                "measure": 4,
+                "lyric":"we could be, but",
+                "chord":"f",
+                "strings":["a","d","g","b"],
+                "fretts":{
+                    "b":"1",
+                    "g":"2",
+                    "d":"3",
+                    "a":"3"
+                }
+            },
+        "..."
+        ]
+        },
+        "author":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
+        "privacy":true,
+        "genre":"pop",
+        "instruments":[
+            "bass guitar",
+            "acoustic guitar"
+        ],
+        "tempo": "122",
+        "comments":[
+            "this song makes me wanna count stars",
+            "crazy song peeps"
+        ]
+    },
+    {
+        "uuid":"f16ba466-7e73-49a7-8c2e-b92b27c16540",
+        "title":"bfg division",
+        "sheet":{
+            "measures":[
+            {
+                "measure": 1,
+                "chord":"f#m",
+                "strings":["e"],
+                "fretts":{
+                    "e":"2"
+                }
+            },
+            {
+                "measure": 2,
+                "chord":"f#m",
+                "strings":["e"],
+                "fretts":{
+                    "e":"2-3-2"
+                }
+            },
+            {
+                "measure": 3,
+                "chord":"d5",
+                "strings":["a","d","g"],
+                "fretts":{
+                    "g":"7",
+                    "d":"7",
+                    "a":"5"
+                }
+            },
+            {
+                "measure": 4,
+                "chord":"e5",
+                "strings":["a","d","g"],
+                "fretts":{
+                    "g":"9",
+                    "d":"9",
+                    "a":"7"
+                }
+            },
+            {
+                "measure": 5,
+                "chord":"f#m",
+                "strings":["e"],
+                "fretts":{
+                    "e":"2"
+                }
+            },
+        "..."
+        ] 
+        },
+        "author":"473ffea7-0b71-4411-88ed-ed63f876454c",
+        "privacy":true,
+        "genre":"metal",
+        "instruments":[
+            "electric guitar",
+            "bass guitar"
+        ],
+        "tempo":"116",
+        "comments":[
+            "no lyrics, no issue >:D",
+            "i could go hunt demons rn with this song"
+        ]
     }
 ]
