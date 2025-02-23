@@ -62,50 +62,131 @@
                 "lyric":"ever known,",
                 "chord":"fm",
                 "strings":["e","a","d","g","b","em"],
-                "tabnotes":[
+                "sheet":[
+                    {
+                        "instrument":"electric guitar"
+                    },
+                    {
+                        "notes":[
+                            {
+                                "note":1,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":2,
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":3,
+                                "name":"g",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":4,
+                                "name":"d",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":5,
+                                "name":"a",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":6,
+                                "name":"e",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            }
+                        ]
+                    }
+                ],
+                "tab":[
+                    {
+                        "instrument":"electric guitar"
+                    },
                     {
                         "tabnote":1,
                         "string":"em",
                         "frett":"1",
-                        "duration":1.2
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
                     },
                     {
                         "tabnote":2,
                         "string":"b",
                         "frett":"1",
-                        "duration":1.2
+                        "note":{
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
                     },
                     {
                         "tabnote":3,
                         "string":"g",
                         "frett":"1",
-                        "duration":1.2
+                        "note":{
+                                "name":"g",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
                     },
                     {
                         "tabnote":4,
                         "string":"d",
                         "frett":"3",
-                        "duration":1.2
+                        "note":{
+                                "name":"d",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
                     },
                     {
                         "tabnote":5,
                         "string":"a",
                         "frett":"3",
-                        "duration":1.2
+                        "note":{
+                                "name":"a",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
                     },
                     {
                         "tabnote":6,
                         "string":"e",
                         "frett":"1",
-                        "duration":1.2
+                        "note":{
+                                "name":"e",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
                     }
                 ]
             },
         "..."
         ],
-        "sheet":{
-
-        },
         "author":"97eadc69-4f01-4dcc-abc9-9132ad528f2d",
         "privacy":true,
         "genre":"rock",
