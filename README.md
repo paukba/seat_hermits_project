@@ -2,4 +2,10 @@
 
 Seat Hermits repository for CSCE247 project
 
-Music app that will allow users to play and make music with different insutruments, etc...
+Our team's project is a music app that will allow users to play and create music.
+Our app will allow users to do things such as:
+- Use various instruments
+- Play and create music of various genres
+- Choose either sheet music or tabs
+- Create and login to an account
+- Search for and play songs of their choosing
