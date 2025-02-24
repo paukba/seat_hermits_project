@@ -1,6 +1,6 @@
 # seat_hermits_project
 
-Seat Hermits repository for CSCE247 project
+Seat Hermits group repository for the CSCE247 project.
 
 Our team's project is a music app that will allow users to play and create music.
 Our app will allow users to do things such as:
