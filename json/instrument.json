@@ -1,0 +1,20 @@
+[
+    {
+        "name":"acoustic guitar",
+        "hasstrings":true,
+        "numstrings":6,
+        "strings":["e","a","d","g","b","em"]
+    },
+    {
+        "name":"electric guitar",
+        "hasstrings":true,
+        "numstrings":6,
+        "strings":["e","a","d","g","b","em"]
+    },
+    {
+        "name":"bass guitar",
+        "hasstrings":true,
+        "numstrings":4,
+        "strings":["e","a","d","g"]
+    }
+]
