@@ -616,7 +616,7 @@
             },
         "..."
         ],
-        "author":"97eadc69-4f01-4dcc-abc9-9132ad528f2d",
+        "author-id":"97eadc69-4f01-4dcc-abc9-9132ad528f2d",
         "privacy":true,
         "genre":"rock",
         "instruments":[
@@ -1003,7 +1003,7 @@
             },
         "..."
         ],
-        "author":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
+        "author-id":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
         "privacy":true,
         "genre":"pop",
         "instruments":[
@@ -1279,7 +1279,7 @@
             },
         "..."
         ],
-        "author":"473ffea7-0b71-4411-88ed-ed63f876454c",
+        "author-id":"473ffea7-0b71-4411-88ed-ed63f876454c",
         "privacy":true,
         "genre":"metal",
         "instruments":[
