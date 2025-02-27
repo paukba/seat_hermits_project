@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Code in need of documentation:**
+**Code in Need of Documentation**
 (Code goes here)
 
 **Documentation Reasoning:**
