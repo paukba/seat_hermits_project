@@ -7,4 +7,11 @@ assignees: ''
 
 ---
 
+**New Feature Description:**
+A clear and concise description of the new feature.
 
+**Explain Why This Feature is Needed:**
+Explain the importance of this feature and what problem it solves.
+
+**Additional context**
+Add any other context about the feature here.
