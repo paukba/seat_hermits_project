@@ -7,11 +7,14 @@ assignees: ''
 
 ---
 
-**Code in Need of Refactoring:**
-(Code goes here)
+**Code in Need of Refactoring**
+Put the code that needs to be refactored.
 
-**Reason for Refactoring:**
+**Reason for Refactoring**
 Explain why this code needs to be refactored.
 
-**Refactored Code:**
-(Refactored version of code goes here)
+**Refactored Code**
+Write the refactored version of the aforementioned code.
+
+**Additional Context**
+Add any other context about the refactoring here.

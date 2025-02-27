@@ -8,10 +8,13 @@ assignees: ''
 ---
 
 **Code in Need of Documentation**
-(Code goes here)
+Put the code that needs to be documented.
 
-**Documentation Reasoning:**
+**Documentation Reasoning**
 Explain why this documentation is needed.
 
-**Documentation to be applied:**
-(Documentation goes here)
+**Documentation to be Applied**
+Write the documentation that will be applied to the code.
+
+**Additional Context**
+Add any other context about the documentation here.
