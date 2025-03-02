@@ -13,10 +13,10 @@ public abstract class Instrument {
     }
 
     public Note getNote() {
-        return new Note();
+        return new Note(0, 0);
     }
 
     public Chord getChord() {
-        return new Chord();
+        return new Chord(notes);
     }
 }
