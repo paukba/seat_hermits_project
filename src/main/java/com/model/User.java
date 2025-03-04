@@ -21,11 +21,11 @@ public class User {
     }
 
     public ArrayList<Song> getSongs() {
-        return new ArrayList<Song>;
+        return new ArrayList<Song>();
     }
 
     public ArrayList<Song> getSongs(String keyword) {
-        return new ArrayList<Song>;
+        return new ArrayList<Song>();
     }
 
     public ArrayList<Song> getFavoriteSongs() {

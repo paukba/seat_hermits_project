@@ -18,7 +18,7 @@ public class Song {
     private ArrayList<Tab> tabs;
     private ArrayList<String> comments;
 
-    public Song(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, bool privacy, Instrument instrument) {
+    public Song(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, Boolean privacy, Instrument instrument) {
         
     }
 
