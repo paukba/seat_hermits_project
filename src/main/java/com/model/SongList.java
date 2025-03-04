@@ -11,8 +11,7 @@ public class SongList {
     }
 
     public Song getInstance() {
-        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true,
-               new Instrument(new ArrayList<Note>(), new ArrayList<Chord>()));
+        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
     }
 
     public void addSong(Song song) {
@@ -20,8 +19,7 @@ public class SongList {
     }
 
     public Song editSong(Song song) {
-        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true,
-               new Instrument(new ArrayList<Note>(), new ArrayList<Chord>()));
+        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
     }
 
     public void removeSong(Song song) {
