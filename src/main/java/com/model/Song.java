@@ -23,7 +23,7 @@ public class Song {
     }
 
     public String getTitle() {
-
+        return title;
     }
 
     public ArrayList<Sheet> getSheets(Instrument instrument) {
@@ -35,7 +35,7 @@ public class Song {
     }
 
     public ArrayList<String> getLyrics() {
-        
+        return lyrics;
     }
 
     public Genre getGenre() {
@@ -43,11 +43,11 @@ public class Song {
     }
 
     public ArrayList<Instrument> getInstruments() {
-
+        return instruments;
     }
 
     public boolean isPrivate() {
-
+        return privacy;
     }
 
     public void setTitle(String name) {
