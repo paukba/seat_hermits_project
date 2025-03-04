@@ -23,11 +23,7 @@ public class Song {
     }
 
     public String getTitle() {
-<<<<<<< HEAD
-        return "";
-=======
         return title;
->>>>>>> 72e2139773df94a68cb23fb99ef138afb41b164b
     }
 
     public ArrayList<Sheet> getSheets(Instrument instrument) {
@@ -39,11 +35,7 @@ public class Song {
     }
 
     public ArrayList<String> getLyrics() {
-<<<<<<< HEAD
-        return new ArrayList<String>();
-=======
         return lyrics;
->>>>>>> 72e2139773df94a68cb23fb99ef138afb41b164b
     }
 
     public Genre getGenre() {
@@ -51,19 +43,11 @@ public class Song {
     }
 
     public ArrayList<Instrument> getInstruments() {
-<<<<<<< HEAD
-        return new ArrayList<Instrument>();
-    }
-
-    public boolean isPrivate() {
-        return true;
-=======
         return instruments;
     }
 
     public boolean isPrivate() {
         return privacy;
->>>>>>> 72e2139773df94a68cb23fb99ef138afb41b164b
     }
 
     public void setTitle(String name) {
