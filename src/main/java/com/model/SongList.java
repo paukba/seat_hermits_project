@@ -11,15 +11,17 @@ public class SongList {
     }
 
     public Song getInstance() {
-        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, new Instrument(new ArrayList<Note>(), new ArrayList<Chord>()))
-    };
+        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true,
+               new Instrument(new ArrayList<Note>(), new ArrayList<Chord>()));
+    }
 
     public void addSong(Song song) {
 
     }
 
     public Song editSong(Song song) {
-        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, new Instrument(new ArrayList<Note>(), new ArrayList<Chord>()))
+        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true,
+               new Instrument(new ArrayList<Note>(), new ArrayList<Chord>()));
     }
 
     public void removeSong(Song song) {
