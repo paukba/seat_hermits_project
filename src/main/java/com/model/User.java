@@ -32,7 +32,7 @@ public class User {
     public ArrayList<Song> getFavoriteSongs() {
         return favoriteSongs;
     }
-    public UUID getID() {
+    public UUID getId() {
         return id;
     }
     public String getFirstName() {
