@@ -13,12 +13,18 @@ public class User {
     private ArrayList<Song> favoriteSongs;
     private boolean isAuthor = false;
 
-    public User(String firstName, String lastName, String email, String userName, boolean isAuthor) {
-
+    public User(String firstName, String lastName, String email, String userName, String password, boolean isAuthor) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.userName = userName;
+        this.password = password;
+        this.isAuthor = isAuthor;
+        this.favoriteSongs = new ArrayList<Song>();
     }
     
     public void addSong(Song song) {
-
+        favoriteSongs.add(song);
     }
 
     public ArrayList<Song> getSongs() {

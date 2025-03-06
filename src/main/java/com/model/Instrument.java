@@ -8,15 +8,21 @@ public abstract class Instrument {
     private ArrayList<Chord> chords;
     private boolean hasStrings;
 
-    public Instrument(ArrayList<Note> notes, ArrayList<Chord> chords) {
-
+    public Instrument(String name, ArrayList<Note> notes, ArrayList<Chord> chords) {
+        this.name = name;
+        this.notes = notes;
+        this.chords = chords;
     }
 
-    public Note getNote() {
-        return new Note(0, 0);
+    public ArrayList<Note> getNotes() {
+        return notes;
     }
 
-    public Chord getChord() {
-        return new Chord(notes);
+    public ArrayList<Chord> getChord() {
+        return chords;
+    }
+
+    public String getName() {
+        return name;
     }
 }

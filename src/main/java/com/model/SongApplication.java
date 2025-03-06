@@ -22,11 +22,11 @@ public class SongApplication {
     }
 
     public User createAccount(String firstName, String lastName, String email, String userName) {
-        return new User(firstName, lastName, email, userName, false);
+        return new User(firstName, lastName, email, userName, null, false);
     }
 
     public User login(String userName, String password) {
-        return new User(password, password, password, userName, false);
+        return new User(password, password, password, userName, null, false);
     }
 
     public ArrayList<Song> getFavoriteSongs() {
