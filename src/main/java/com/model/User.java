@@ -32,4 +32,23 @@ public class User {
     public ArrayList<Song> getFavoriteSongs() {
         return favoriteSongs;
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public boolean getIsAuthor() {
+        return isAuthor;
+    }
 }
