@@ -18,7 +18,13 @@ public class Song {
     private ArrayList<Tab> tabs;
     private ArrayList<String> comments;
 
-    public Song(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, Boolean privacy, Instrument instrument) {
+    public Song(String title, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, Boolean privacy, Instrument instrument) {
+        title = new String();
+        music = new ArrayList<>();
+        lyrics = new ArrayList<>();
+        // genre = new Genre();
+        // privacy = 
+        // don't understand what to do for instruments
         
     }
 
@@ -50,8 +56,8 @@ public class Song {
         return privacy;
     }
 
-    public void setTitle(String name) {
-
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setSheets(ArrayList<Sheet> sheets) {
@@ -63,15 +69,15 @@ public class Song {
     }
 
     public void setLyrics(ArrayList<String> lyrics) {
-
+        this.lyrics = lyrics;
     }
 
     public void setGenre(Genre genre) {
-
+        this.genre = genre;
     }
 
     public void setPrivacy(boolean privacy) {
-        
+        this.privacy = privacy;
     }
 
     public void playSong(Song song) {
