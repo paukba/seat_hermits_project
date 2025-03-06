@@ -7,7 +7,8 @@ public class SongList {
     private ArrayList<Song> songs;
 
     private SongList() {
-        
+        // this.songList = ?
+        this.songs = new ArrayList<>();
     }
 
     public Song getInstance() {
@@ -15,7 +16,7 @@ public class SongList {
     }
 
     public void addSong(Song song) {
-
+        songs.add(song);
     }
 
     public Song editSong(Song song) {
@@ -23,7 +24,7 @@ public class SongList {
     }
 
     public void removeSong(Song song) {
-
+        songs.remove(song);
     }
 
     public ArrayList<Song> getSongs(String keyword) {
@@ -31,6 +32,6 @@ public class SongList {
     }
 
     public void saveSongList() {
-
+        
     }
 }
