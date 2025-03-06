@@ -11,8 +11,9 @@ public class User {
     private String userName;
     private String password;
     private ArrayList<Song> favoriteSongs;
+    private boolean isAuthor = false;
 
-    public User(String firstName, String lastName, String email, String userName) {
+    public User(String firstName, String lastName, String email, String userName, boolean isAuthor) {
 
     }
     

@@ -19,7 +19,7 @@ public class UserList {
     }
 
     public User getUser() {
-        return new User(null, null, null, null);
+        return new User(null, null, null, null, false);
     }
 
     public static UserList getInstance() {
