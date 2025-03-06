@@ -17,16 +17,18 @@ public class DataWriter extends DataConstants {
         // Variables
         /*
         Below is dependant on DataLoader so put this back when that's done
+        */
         UserList userList = UserList.getInstance();
         ArrayList<User> users = DataLoader.getUsers();
-        */
-        ArrayList<User> users = new ArrayList<>(); // This is for testing; Delete later
-        users.add(new User("Ashton", "Harris", "ashtonah@email.sc.edu", "ashtonah")); // This is for testing; Delete later
+        
+        // ArrayList<User> users = new ArrayList<User>(); // This is for testing; Delete later
+        // users.add(new User("First2", "Last2", "name2@email.sc.edu", "testName2")); // This is for testing; Delete later
         JSONArray jsonUsers = new JSONArray();
 
         // Copy all the json's pre-existing objects
-        for(int i = 0; i < users.size(); i++)
+        for(int i = 0; i < users.size(); i++){
             jsonUsers.add(getUserJSON(users.get(i)));
+        }
 
         // Write everything + new stuff back to the json
         try(FileWriter file = new FileWriter(USER_FILE_NAME)){
@@ -39,12 +41,12 @@ public class DataWriter extends DataConstants {
     }
 
     // json stuff definition
-    public static JSONObject getUserJson(User user){
+    public static JSONObject getUserJSON(User user){
         JSONObject userDetails = new JSONObject(); // Make new json object
 
         // Populate the object with all info extracted from the json
         userDetails.put(USER_ID, user.getId().toString());
-        userDetails.put(USER_TYPE, user.getType());
+        userDetails.put(USER_TYPE, user.getIsAuthor());
         userDetails.put(USER_FIRST_NAME, user.getFirstName());
         userDetails.put(USER_LAST_NAME, user.getLastName());
         userDetails.put(USER_EMAIL, user.getEmail());
@@ -64,7 +66,9 @@ public class DataWriter extends DataConstants {
     }
 
     // Stuff for testing
+    /*
     public static void main(String[] args){
         DataWriter.saveUsers();
     }
+    */
 }
