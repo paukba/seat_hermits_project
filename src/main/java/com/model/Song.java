@@ -19,12 +19,13 @@ public class Song {
     private ArrayList<String> comments;
 
     public Song(String title, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, Boolean privacy, Instrument instrument) {
-        title = new String();
-        music = new ArrayList<>();
-        lyrics = new ArrayList<>();
-        // genre = new Genre();
-        // privacy = 
-        // don't understand what to do for instruments
+        this.title = title;
+        this.music = new ArrayList<>();
+        this.lyrics = new ArrayList<>();
+        this.genre = genre;
+        this.privacy = privacy;
+        instruments = new ArrayList<>();
+        instruments.add(instrument);
         
     }
 
@@ -61,11 +62,11 @@ public class Song {
     }
 
     public void setSheets(ArrayList<Sheet> sheets) {
-
+        this.sheets = sheets;
     }
 
     public void setTabs(ArrayList<Tab> tabs) {
-
+        this.tabs = tabs;
     }
 
     public void setLyrics(ArrayList<String> lyrics) {
@@ -85,10 +86,11 @@ public class Song {
     }
 
     public void addComment(String comment) {
-
+        comments.add(comment);
     }
 
     public void removeComment(String comment) {
+        comments.remove(comment);
     }
 
 }

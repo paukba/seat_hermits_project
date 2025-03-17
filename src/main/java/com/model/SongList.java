@@ -7,8 +7,8 @@ public class SongList {
     private ArrayList<Song> songs;
 
     private SongList() {
-        // this.songList = ?
-        this.songs = new ArrayList<>();
+        songList = new SongList();
+        songs = new ArrayList<>();
     }
 
     public Song getInstance() {
