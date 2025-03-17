@@ -6,10 +6,13 @@ public class Note {
     private double duration;
     private double startTime;
 
-    public Note(double pitch, double duration) {
-
+    public Note(String name, double pitch, double duration) {
+        this.name = name;
+        this.pitch = pitch;
+        this.duration = duration;
     }
 
+    // figure out how to implement
     public void playNote(double pitch, double duration) {
         
     }

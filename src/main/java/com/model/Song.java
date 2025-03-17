@@ -18,12 +18,19 @@ public class Song {
     private ArrayList<Tab> tabs;
     private ArrayList<String> comments;
 
-    public Song(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, bool privacy, Instrument instrument) {
+    public Song(String title, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, Boolean privacy, Instrument instrument) {
+        this.title = title;
+        this.music = new ArrayList<>();
+        this.lyrics = new ArrayList<>();
+        this.genre = genre;
+        this.privacy = privacy;
+        instruments = new ArrayList<>();
+        instruments.add(instrument);
         
     }
 
     public String getTitle() {
-
+        return title;
     }
 
     public ArrayList<Sheet> getSheets(Instrument instrument) {
@@ -35,7 +42,7 @@ public class Song {
     }
 
     public ArrayList<String> getLyrics() {
-        
+        return lyrics;
     }
 
     public Genre getGenre() {
@@ -43,35 +50,35 @@ public class Song {
     }
 
     public ArrayList<Instrument> getInstruments() {
-
+        return instruments;
     }
 
     public boolean isPrivate() {
-
+        return privacy;
     }
 
-    public void setTitle(String name) {
-
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setSheets(ArrayList<Sheet> sheets) {
-
+        this.sheets = sheets;
     }
 
     public void setTabs(ArrayList<Tab> tabs) {
-
+        this.tabs = tabs;
     }
 
     public void setLyrics(ArrayList<String> lyrics) {
-
+        this.lyrics = lyrics;
     }
 
     public void setGenre(Genre genre) {
-
+        this.genre = genre;
     }
 
     public void setPrivacy(boolean privacy) {
-        
+        this.privacy = privacy;
     }
 
     public void playSong(Song song) {
@@ -79,11 +86,11 @@ public class Song {
     }
 
     public void addComment(String comment) {
-
+        comments.add(comment);
     }
 
     public void removeComment(String comment) {
-
+        comments.remove(comment);
     }
 
 }

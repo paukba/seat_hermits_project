@@ -7,23 +7,24 @@ public class SongList {
     private ArrayList<Song> songs;
 
     private SongList() {
-        
+        songList = new SongList();
+        songs = new ArrayList<>();
     }
 
     public Song getInstance() {
-        return new Song;
+        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
     }
 
     public void addSong(Song song) {
-
+        songs.add(song);
     }
 
     public Song editSong(Song song) {
-        return new Song;
+        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
     }
 
     public void removeSong(Song song) {
-
+        songs.remove(song);
     }
 
     public ArrayList<Song> getSongs(String keyword) {
@@ -31,6 +32,6 @@ public class SongList {
     }
 
     public void saveSongList() {
-
+        
     }
 }
