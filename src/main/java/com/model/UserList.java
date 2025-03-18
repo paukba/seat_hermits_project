@@ -1,6 +1,7 @@
 package com.model;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class UserList {
     private static UserList userList;
@@ -18,8 +19,8 @@ public class UserList {
         return userList;
     }
 
-    public User getUser() {
-        return new User(null, null, null, null, null, false);
+    public User getUser(UUID user) {
+        return new User(null, null, null, null, null, null, false);
     }
 
     public static UserList getInstance() {

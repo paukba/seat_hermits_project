@@ -11,6 +11,7 @@ public class User {
     private String userName;
     private String password;
     private ArrayList<Song> favoriteSongs;
+    private ArrayList<UUID> favoriteSongsUUIDs;
     private boolean isAuthor = false;
 
     public User(String firstName, String lastName, String email, String userName, String password, ArrayList<Song> favoriteSongs, boolean isAuthor) {
@@ -20,7 +21,7 @@ public class User {
         this.userName = userName;
         this.password = password;
         this.isAuthor = isAuthor;
-        this.favoriteSongs = new ArrayList<Song>();
+        this.favoriteSongs = favoriteSongs;
     }
     
     public void addSong(Song song) {

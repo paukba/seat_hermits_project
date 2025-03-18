@@ -10,12 +10,18 @@ public class Author extends User {
         this.mySongs = mySongs;
     }
 
-    public void addSong(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, boolean privacy, ArrayList<Instrument> instruments) {
+    public void addFavSong(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, boolean privacy, Instrument instrument) {
+        Song add = new Song(name, music, lyrics, genre, privacy, instrument);
+        mySongs.add(add);
+    }
 
+    public void addMySong(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, boolean privacy, Instrument instrument) {
+        Song add = new Song(name, music, lyrics, genre, privacy, instrument);
+        mySongs.add(add);
     }
 
     public void editSongTitle(String songID, String name) {
-
+        
     }
 
     public void editSongSheets(String songID, ArrayList<Sheet> sheets) {
