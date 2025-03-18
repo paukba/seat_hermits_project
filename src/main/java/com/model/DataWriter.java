@@ -86,8 +86,8 @@ public class DataWriter extends DataConstants {
     }
 
     // json stuff definition
-    public static JSONObject getSongJSON(User user){
-        JSONObject userDetails = new JSONObject(); // Make new json object
+    public static JSONObject getSongJSON(Song song){
+        JSONObject songDetails = new JSONObject(); // Make new json object
 
         // Populate the object with all info extracted from the json
         songDetails.put(SONG_FILE_NAME, song.getSongFileName().toString());
@@ -119,7 +119,7 @@ public class DataWriter extends DataConstants {
         songDetails.put(SONG_TEMPO, song.getSongTempo().toString());
         songDetails.put(SONG_COMMENTS, song.getSongComments().toString());
         
-        return userDetails; // Give it back
+        return songDetails; // Give it back
 
     }
 
