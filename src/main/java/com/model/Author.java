@@ -20,10 +20,6 @@ public class Author extends User {
         mySongs.add(add);
     }
 
-    public ArrayList<Song> getMySongs() {
-        return mySongs;
-    }
-
     public void editSongTitle(String songID, String name) {
         
     }
@@ -46,5 +42,9 @@ public class Author extends User {
 
     public void deleteSong(String songID) {
         
+    }
+
+    public ArrayList<Song> getMySongs(){
+        return mySongs;
     }
 }
