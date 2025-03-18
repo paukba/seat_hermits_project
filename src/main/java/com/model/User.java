@@ -39,6 +39,7 @@ public class User {
     public ArrayList<Song> getFavoriteSongs() {
         return favoriteSongs;
     }
+
     public UUID getId() {
         return id;
     }

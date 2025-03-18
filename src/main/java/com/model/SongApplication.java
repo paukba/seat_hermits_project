@@ -21,12 +21,15 @@ public class SongApplication {
         return new ArrayList<Song>();
     }
 
-    public User createAccount(String firstName, String lastName, String email, String userName) {
-        return new User(firstName, lastName, email, userName, null, false);
+    public User createAccount(String firstName, String lastName, String email, String userName, String password, boolean isAuthor) {
+        if (isAuthor)
+            return new Author(firstName, lastName, email, userName, password, new ArrayList<Song>(), new ArrayList<Song>());
+        else
+            return new User(firstName, lastName, email, userName, password, new ArrayList<Song>(), false);
     }
 
     public User login(String userName, String password) {
-        return new User(password, password, password, userName, null, false);
+        return UserList.getInstance().login(userName, password);
     }
 
     public ArrayList<Song> getFavoriteSongs() {
