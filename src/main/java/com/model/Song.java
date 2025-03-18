@@ -4,6 +4,7 @@ import java.util.UUID;
 import java.util.ArrayList;
 
 public class Song {
+    private String songFileName;
     public UUID id;
     private ArrayList<Tab> music;
     private String title;
@@ -28,10 +29,24 @@ public class Song {
         instruments.add(instrument);
         
     }
+    
+    public String getSongFileName(){
+        return this.songFileName;
+    }
 
+    public UUID getId(){
+        return this.id;
+    }
+    
     public String getTitle() {
         return title;
     }
+
+    public ArrayList<Measure> getMeasures(){
+        return this.measures;
+    }
+
+    
 
     public ArrayList<Sheet> getSheets(Instrument instrument) {
         return sheets;
