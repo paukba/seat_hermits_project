@@ -27,13 +27,21 @@ public class DataLoader extends DataConstants {
                 String email = (String)userJSON.get(USER_EMAIL);
                 String password = (String)userJSON.get(USER_PASSWORD);
                 JSONArray favSongsJSON = (JSONArray)userJSON.get(USER_FAV_SONGS);
+                ArrayList<UUID> favSongIDs = new ArrayList<UUID>();
+                for (int j = 0; j < favSongsJSON.size(); j++) {
+                    favSongIDs.add(UUID.fromString((String)favSongsJSON.get(j)));
+                }
 
                 if (type == "a") {
-                    JSONArray mySongs = (JSONArray)userJSON.get(USER_MY_SONGS);
-                    Users.add(new Author(id, firstName, lastName, userName, email, password, favSongs, mySongs));
+                    JSONArray mySongsJSON = (JSONArray)userJSON.get(USER_MY_SONGS);
+                    ArrayList<UUID> mySongIDs = new ArrayList<UUID>();
+                    for (int j = 0; j < mySongsJSON.size(); j++) {
+                        favSongIDs.add(UUID.fromString((String)mySongsJSON.get(j)));
+                    }
+                    Users.add(new Author(id, firstName, lastName, userName, email, password, favSongIDs, mySongIDs));
                 }
                 else {
-                    Users.add(new User(id, firstName, lastName, userName, email, password, favSongs));
+                    Users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs));
                 }
             }
             return users;
