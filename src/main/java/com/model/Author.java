@@ -2,11 +2,12 @@ package com.model;
 
 import java.util.ArrayList;
 
-public class Author {
+public class Author extends User {
     private ArrayList<Song> mySongs;
 
-    public Author() {
-
+    public Author(String firstName, String lastName, String email, String userName, String password, ArrayList<Song> favoriteSongs, ArrayList<Song> mySongs) {
+        super(firstName, lastName, email, userName, password, favoriteSongs, true);
+        this.mySongs = mySongs;
     }
 
     public void addSong(String name, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, boolean privacy, ArrayList<Instrument> instruments) {
