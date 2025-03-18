@@ -55,7 +55,7 @@ public class DataWriter extends DataConstants {
         userDetails.put(USER_USER_NAME, user.getUserName());
         userDetails.put(USER_PASSWORD, user.getPassword());
         userDetails.put(USER_FAV_SONGS, user.getFavoriteSongs());
-        userDetails.put(USER_MY_SONGS, user.getMySongs());
+        userDetails.put(USER_MY_SONGS, ((Author)user).getMySongs());
 
         return userDetails; // Give it back
     }
@@ -90,34 +90,34 @@ public class DataWriter extends DataConstants {
         JSONObject songDetails = new JSONObject(); // Make new json object
 
         // Populate the object with all info extracted from the json
-        songDetails.put(SONG_FILE_NAME, song.getSongFileName().toString());
+        songDetails.put(SONG_FILE_NAME, song.getSongFileName());
         songDetails.put(SONG_ID, song.getId().toString());
-        songDetails.put(SONG_TITLE, song.getTitle().toString());
-        songDetails.put(SONG_MEASURES, song.getMeasures().toString());
-        songDetails.put(MEASURE_NUM, song.getMeasureNum().toString());
-        songDetails.put(MEASURE_LYRIC, song.getMeasureLyric().toString());
-        songDetails.put(MEASURE_CHORD, song.getMeasureChord().toString());
-        songDetails.put(MEASURE_STRINGS, song.getMeasureStrings().toString());
-        songDetails.put(MEASURE_SHEET, song.getMeasureSheet().toString());
-        songDetails.put(SHEET_INSTRUMENT, song.getSheetInstrument().toString());
-        songDetails.put(SHEET_NOTES, song.getSheetNotes().toString());
-        songDetails.put(NOTE_NUM, song.getNoteNum().toString());
-        songDetails.put(NOTE_NAME, song.getNoteName().toString());
-        songDetails.put(NOTE_PITCH, song.getNotePitch().toString());
-        songDetails.put(NOTE_DURATION, song.getNoteDuration().toString());
-        songDetails.put(NOTE_START_TIME, song.getNoteStartTime().toString());
-        songDetails.put(MEASURE_TAB, song.getMeasureTab().toString());
-        songDetails.put(TAB_INSTRUMENT, song.getTabInstrument().toString());
-        songDetails.put(TABNOTE_NUM, song.getTabNoteNum().toString());
-        songDetails.put(TABNOTE_STRING, song.getTabnoteString().toString());
-        songDetails.put(TABNOTE_FRET, song.getTabnoteFret().toString());
-        songDetails.put(TABNOTE_NOTE, song.getTabnoteNote().toString());
-        songDetails.put(SONG_AUTHOR_ID, song.getSongAuthorId().toString());
-        songDetails.put(SONG_PRIVACY, song.getSongPrivacy().toString());
-        songDetails.put(SONG_GENRE, song.getSongGenre().toString());
-        songDetails.put(SONG_INSTRUMENTS, song.getSongInstruments().toString());
-        songDetails.put(SONG_TEMPO, song.getSongTempo().toString());
-        songDetails.put(SONG_COMMENTS, song.getSongComments().toString());
+        songDetails.put(SONG_TITLE, song.getTitle());
+        songDetails.put(SONG_MEASURES, song.getMeasures());
+        songDetails.put(MEASURE_NUM, song.getMeasureNum());
+        songDetails.put(MEASURE_LYRIC, song.getMeasureLyric());
+        songDetails.put(MEASURE_CHORD, song.getMeasureChord());
+        songDetails.put(MEASURE_STRINGS, song.getMeasureStrings());
+        songDetails.put(MEASURE_SHEET, song.getMeasureSheet());
+        songDetails.put(SHEET_INSTRUMENT, song.getSheetInstrument());
+        songDetails.put(SHEET_NOTES, song.getSheetNotes());
+        songDetails.put(NOTE_NUM, song.getNoteNum());
+        songDetails.put(NOTE_NAME, song.getNoteName());
+        songDetails.put(NOTE_PITCH, song.getNotePitch());
+        songDetails.put(NOTE_DURATION, song.getNoteDuration());
+        songDetails.put(NOTE_START_TIME, song.getNoteStartTime());
+        songDetails.put(MEASURE_TAB, song.getMeasureTab());
+        songDetails.put(TAB_INSTRUMENT, song.getTabInstrument());
+        songDetails.put(TABNOTE_NUM, song.getTabNoteNum());
+        songDetails.put(TABNOTE_STRING, song.getTabnoteString());
+        songDetails.put(TABNOTE_FRET, song.getTabnoteFret());
+        songDetails.put(TABNOTE_NOTE, song.getTabnoteNote());
+        songDetails.put(SONG_AUTHOR_ID, song.getSongAuthorId());
+        songDetails.put(SONG_PRIVACY, song.getSongPrivacy());
+        songDetails.put(SONG_GENRE, song.getSongGenre());
+        songDetails.put(SONG_INSTRUMENTS, song.getSongInstruments());
+        songDetails.put(SONG_TEMPO, song.getSongTempo());
+        songDetails.put(SONG_COMMENTS, song.getSongComments());
         
         return songDetails; // Give it back
 
