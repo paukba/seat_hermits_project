@@ -13,7 +13,7 @@ public class User {
     private ArrayList<Song> favoriteSongs;
     private boolean isAuthor = false;
 
-    public User(String firstName, String lastName, String email, String userName, String password, boolean isAuthor) {
+    public User(String firstName, String lastName, String email, String userName, String password, ArrayList<Song> favoriteSongs, boolean isAuthor) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
