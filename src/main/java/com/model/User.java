@@ -10,11 +10,22 @@ public class User {
     private String email;
     private String userName;
     private String password;
-    private ArrayList<Song> favoriteSongs;
-    private ArrayList<UUID> favoriteSongsUUIDs;
+    // private ArrayList<Song> favoriteSongs;
+    private ArrayList<UUID> favoriteSongs;
     private boolean isAuthor = false;
 
-    public User(String firstName, String lastName, String email, String userName, String password, ArrayList<Song> favoriteSongs, boolean isAuthor) {
+    // public User(String firstName, String lastName, String email, String userName, String password, ArrayList<Song> favoriteSongs, boolean isAuthor) {
+    //     this.firstName = firstName;
+    //     this.lastName = lastName;
+    //     this.email = email;
+    //     this.userName = userName;
+    //     this.password = password;
+    //     this.isAuthor = isAuthor;
+    //     this.favoriteSongs = favoriteSongs;
+    // }
+
+    public User(UUID id, String firstName, String lastName, String email, String userName, String password, ArrayList<UUID> favoriteSongs, boolean isAuthor) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -24,19 +35,23 @@ public class User {
         this.favoriteSongs = favoriteSongs;
     }
     
-    public void addSong(Song song) {
+    public void addFavSong(UUID song) {
         favoriteSongs.add(song);
     }
 
-    public ArrayList<Song> getSongs() {
-        return new ArrayList<Song>();
-    }
+    // public ArrayList<Song> getSongs() {
+    //     return new ArrayList<Song>();
+    // }
 
-    public ArrayList<Song> getSongs(String keyword) {
-        return new ArrayList<Song>();
-    }
+    // public ArrayList<Song> getSongs(String keyword) {
+    //     return new ArrayList<Song>();
+    // }
 
-    public ArrayList<Song> getFavoriteSongs() {
+    // public ArrayList<Song> getFavoriteSongs() {
+    //     return favoriteSongs;
+    // }
+
+    public ArrayList<UUID> getFavoriteSongs() {
         return favoriteSongs;
     }
 
