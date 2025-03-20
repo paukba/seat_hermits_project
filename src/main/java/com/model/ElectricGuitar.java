@@ -9,7 +9,7 @@ public class ElectricGuitar implements Instrument {
     private static final int NUM_STRINGS = 6;
 
     public ElectricGuitar(String name, ArrayList<Note> notes, ArrayList<Chord> chords) {
-        // may not be correct
+        // may need to be changed
         this.name = name;
         this.notes = notes;
         this.chords = chords;
