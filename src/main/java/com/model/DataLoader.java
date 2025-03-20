@@ -6,6 +6,7 @@ import org.json.simple.JSONArray;
 
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.UUID;
 
 public class DataLoader extends DataConstants {
@@ -145,13 +146,13 @@ public class DataLoader extends DataConstants {
                         tabNotes.add(new TabNote(tabNoteNote, tabNoteString, fretNum));
                     }
                 }
-                UUID authorId = UUID.fromString((String)songJSON.get(SONG_AUTHOR_ID));
+                UUID authorID = UUID.fromString((String)songJSON.get(SONG_AUTHOR_ID));
                 boolean privacy = (boolean)songJSON.get(SONG_PRIVACY);
-                String genre = (String)songJSON.get(SONG_GENRE);
+                Genre genre = (Genre)songJSON.get(SONG_GENRE);
                 JSONArray instrumentsJSON = (JSONArray)songJSON.get(SONG_INSTRUMENTS);
-                ArrayList<String> instruments = new ArrayList<String>();
+                ArrayList<Instrument> instruments = new ArrayList<Instrument>();
                 for (int j = 0; j < instrumentsJSON.size(); j++) {
-                    instruments.add((String)instrumentsJSON.get(j));
+                    instruments.add(getInstrument((String)instrumentsJSON.get(j)));
                 }
                 int tempo = (int)songJSON.get(SONG_TEMPO);
                 JSONArray commentsJSON = (JSONArray)songJSON.get(SONG_COMMENTS);
@@ -159,7 +160,7 @@ public class DataLoader extends DataConstants {
                 for (int j = 0; j < commentsJSON.size(); j++) {
                     comments.add((String)commentsJSON.get(j));
                 }
-                songs.add(new Song(id, title, measures, authorId, privacy, genre, instruments, tempo, comments));
+                songs.add(new Song(id, title, measures, authorID, privacy, genre, instruments, tempo, comments));
             }
             return songs;
         }
@@ -169,5 +170,17 @@ public class DataLoader extends DataConstants {
         }
 
         return songs;
+    }
+
+    public static Instrument getInstrument(String name) {
+        ArrayList<Instrument> instruments = getInstruments();
+        Iterator<Instrument> instrumentIterator = instruments.iterator();
+        while (instrumentIterator.hasNext()) {
+            Instrument current = instrumentIterator.next();
+            if (current.getName().equals(name)) {
+                return current;
+            }
+        }
+        return null;
     }
 }

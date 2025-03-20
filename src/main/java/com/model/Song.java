@@ -13,8 +13,10 @@ public class Song {
     private ArrayList<Tab> music;
     private String title;
     private Author author;
+    private UUID authorID;
     private boolean privacy;
     private Genre genre;
+    private double tempo;
     private ArrayList<String> lyrics;
     private ArrayList<Instrument> instruments;
     private ArrayList<Measure> measures;
@@ -25,21 +27,26 @@ public class Song {
 
     /**
      * Constructs a song
+     * @param id the song's ID
      * @param title the song's title
-     * @param music the song's music
-     * @param lyrics the song's lyrics
-     * @param genre the song's genre
+     * @param measures the song's measures
+     * @param authorID the ID of the song's author
      * @param privacy the song's privacy
-     * @param instrument the chosen instrument
+     * @param genre the song's genre
+     * @param instruments the song's instruments
+     * @param tempo the song's tempo
+     * @param comments the song's comments
      */
-    public Song(String title, ArrayList<Tab> music, ArrayList<String> lyrics, Genre genre, Boolean privacy, Instrument instrument) {
+    public Song(UUID id, String title, ArrayList<Measure> measures, UUID authorID, Boolean privacy, Genre genre, ArrayList<Instrument> instruments, double tempo, ArrayList<String> comments) {
+        this.id = id;
         this.title = title;
-        this.music = new ArrayList<>();
-        this.lyrics = new ArrayList<>();
-        this.genre = genre;
+        this.measures = measures;
+        this.authorID = authorID;
         this.privacy = privacy;
-        instruments = new ArrayList<>();
-        instruments.add(instrument);
+        this.genre = genre;
+        this.instruments = instruments;
+        this.tempo = tempo;
+        this.comments = comments;
         
     }
     
