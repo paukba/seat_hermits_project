@@ -7,7 +7,7 @@ public class Tab implements NotationFormat{
     private Instrument instrument;
 
     public Tab(ArrayList<TabNote> tabNotes) {
-
+        this.tabNotes = tabNotes;
     }
 
     public void displayTab() {

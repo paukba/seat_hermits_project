@@ -3,8 +3,6 @@ package com.model;
 import java.util.ArrayList;
 import java.util.UUID;
 
-import javafx.scene.control.Tab;
-
 public class SongApplication {
     private SongList songList;
     private UserList userLiser;
