@@ -1,18 +1,23 @@
 package com.model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.UUID;
 
 public class SongList {
-    private SongList songList;
+    private static SongList songList;
     private ArrayList<Song> songs;
 
     private SongList() {
-        songList = new SongList();
+        songList = this;
         songs = new ArrayList<>();
     }
 
-    public Song getInstance() {
-        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
+    public static SongList getInstance() {
+        if (songList == null) {
+            songList = new SongList();
+        }
+        return songList;
     }
 
     public void addSong(Song song) {
@@ -27,6 +32,17 @@ public class SongList {
         songs.remove(song);
     }
 
+    public Song getSong(UUID id) {
+        Iterator<Song> songIterator = songs.iterator();
+        while (songIterator.hasNext()) {
+            Song check = songIterator.next();
+            if (check.id.equals(id)) {
+                return check;
+            }
+        }
+        return null;
+    }
+    
     public ArrayList<Song> getSongs(String keyword) {
         return songs;
     }

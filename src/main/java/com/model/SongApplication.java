@@ -1,6 +1,7 @@
 package com.model;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 import javafx.scene.control.Tab;
 
@@ -45,26 +46,44 @@ public class SongApplication {
     }
 
     public void editSongTitle(String songID, String name) {
-
+        UUID id = UUID.fromString(songID);
+        songList = SongList.getInstance();
+        Song operandSong = songList.getSong(id);
+        operandSong.setTitle(name);
     }
 
     public void editSongSheets(String songID, ArrayList<Sheet> sheets) {
-        
+        UUID id = UUID.fromString(songID);
+        songList = SongList.getInstance();
+        Song operandSong = songList.getSong(id);
+        operandSong.setSheets(sheets);
     }
 
     public void editSongTabs(String songID, ArrayList<Tab> tabs) {
-        
+        UUID id = UUID.fromString(songID);
+        songList = SongList.getInstance();
+        Song operandSong = songList.getSong(id);
+        operandSong.setTabs(tabs);
     }
 
     public void editSongLyrics(String songID, ArrayList<String> lyrics) {
-        
+        UUID id = UUID.fromString(songID);
+        songList = SongList.getInstance();
+        Song operandSong = songList.getSong(id);
+        operandSong.setLyrics(lyrics);
     }
 
     public void editSongPrivacy(String songID, boolean privacy) {
-        
+        UUID id = UUID.fromString(songID);
+        songList = SongList.getInstance();
+        Song operandSong = songList.getSong(id);
+        operandSong.setPrivacy(privacy);
     }
 
     public void deleteSong(String songID) {
-        
+        UUID id = UUID.fromString(songID);
+        songList = SongList.getInstance();
+        Song operandSong = songList.getSong(id);
+        songList.removeSong(operandSong);
     }
 }
