@@ -22,11 +22,20 @@ public class SongApplication {
         return new ArrayList<Song>();
     }
 
+    // public User createAccount(String firstName, String lastName, String email, String userName, String password, boolean isAuthor) {
+    //     UUID id = UUID.randomUUID();
+    //     if (isAuthor)
+    //         return new Author(id, firstName, lastName, email, userName, password, new ArrayList<Song>(), new ArrayList<Song>());
+    //     else
+    //         return new User(id, firstName, lastName, email, userName, password, new ArrayList<Song>(), false);
+    // }
+
     public User createAccount(String firstName, String lastName, String email, String userName, String password, boolean isAuthor) {
+        UUID id = UUID.randomUUID();
         if (isAuthor)
-            return new Author(firstName, lastName, email, userName, password, new ArrayList<Song>(), new ArrayList<Song>());
+            return new Author(id, firstName, lastName, email, userName, password, new ArrayList<UUID>(), new ArrayList<UUID>());
         else
-            return new User(firstName, lastName, email, userName, password, new ArrayList<Song>(), false);
+            return new User(id, firstName, lastName, email, userName, password, new ArrayList<UUID>(), false);
     }
 
     public User login(String userName, String password) {
