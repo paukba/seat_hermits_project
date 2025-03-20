@@ -6,7 +6,9 @@ public class TabNote {
     private int fret;
 
     public TabNote(Note note, int string, int fret) {
-
+        this.note = note;
+        this.string = string;
+        this.fret = fret;
     }
 
     public String displayTabNote() {

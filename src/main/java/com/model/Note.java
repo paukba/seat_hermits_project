@@ -4,7 +4,7 @@ public class Note {
     private String name;
     private double pitch;
     private double duration;
-    private double startTime;
+    // private double startTime;
 
     public Note(String name, double pitch, double duration) {
         this.name = name;
