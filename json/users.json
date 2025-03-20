@@ -1,7 +1,7 @@
 [
     {
         "id":"2f6e2085-85d7-45c2-81b6-2829a0da56e9",
-        "type":"a",
+        "isAuthor":false,
         "firstName":"miguel",
         "lastName":"o'hara",
         "userName":"iamSpider99",
@@ -10,12 +10,11 @@
         "favsongs-id":[
             "a89a4dbf-9995-45e6-8862-0b6baeb18537",
             "9c155ce4-6c11-48a2-a623-b2b11be9e4b8"
-        ],
-        "mysongs-id":[]
+        ]
     },
     {
         "id":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
-        "type":"a",
+        "isAuthor":true,
         "firstName":"onerepublic",
         "lastName":"n/a",
         "userName":"unoRepublica",
@@ -29,7 +28,7 @@
     },
     {
         "id":"473ffea7-0b71-4411-88ed-ed63f876454c",
-        "type":"a",
+        "isAuthor":true,
         "firstName":"mick",
         "lastName":"gordon",
         "userName":"mickyG",

@@ -20,7 +20,7 @@ public class DataLoader extends DataConstants {
             for (int i = 0; i < usersJSON.size(); i++) {
                 JSONObject userJSON = (JSONObject)usersJSON.get(i);
                 UUID id = UUID.fromString((String)userJSON.get(USER_ID));
-                String type = (String)userJSON.get(USER_TYPE);
+                boolean isAuthor = (boolean)userJSON.get(USER_IS_AUTHOR);
                 String firstName = (String)userJSON.get(USER_FIRST_NAME);
                 String lastName = (String)userJSON.get(USER_LAST_NAME);
                 String userName = (String)userJSON.get(USER_USER_NAME);
@@ -32,7 +32,7 @@ public class DataLoader extends DataConstants {
                     favSongIDs.add(UUID.fromString((String)favSongsJSON.get(j)));
                 }
 
-                if (type == "a") {
+                if (isAuthor) {
                     JSONArray mySongsJSON = (JSONArray)userJSON.get(USER_MY_SONGS);
                     ArrayList<UUID> mySongIDs = new ArrayList<UUID>();
                     for (int j = 0; j < mySongsJSON.size(); j++) {
