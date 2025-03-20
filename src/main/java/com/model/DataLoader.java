@@ -125,7 +125,7 @@ public class DataLoader extends DataConstants {
                         double pitch = (double)sheetNoteJSON.get(NOTE_PITCH);
                         double duration = (double)sheetNoteJSON.get(NOTE_DURATION);
                         double startTime = (double)sheetNoteJSON.get(NOTE_START_TIME);
-                        sheeNotes.add(new Note(noteNum, noteName, pitch, duration, startTime));
+                        sheeNotes.add(new Note(noteName, pitch, duration, startTime));
                     }
                     JSONArray tabJSON = (JSONArray)measureJSON.get(MEASURE_TAB);
                     String tabInstrument = (String)tabJSON.get(0);
@@ -141,8 +141,8 @@ public class DataLoader extends DataConstants {
                         double pitch = (double)tabNoteNoteJSON.get(NOTE_PITCH);
                         double duration = (double)tabNoteNoteJSON.get(NOTE_DURATION);
                         double startTime = (double)tabNoteNoteJSON.get(NOTE_START_TIME);
-                        Note tabNoteNote = new Note(tabNoteNum, noteName, pitch, duration, startTime);
-                        tabNotes.add(new TabNote(tabNoteNum, tabNoteNote, tabNoteString, fretNum));
+                        Note tabNoteNote = new Note(noteName, pitch, duration, startTime);
+                        tabNotes.add(new TabNote(tabNoteNote, tabNoteString, fretNum));
                     }
                 }
                 UUID authorId = UUID.fromString((String)songJSON.get(SONG_AUTHOR_ID));
