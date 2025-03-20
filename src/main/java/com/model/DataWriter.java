@@ -5,8 +5,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.UUID;
 
-import org.apache.xpath.operations.Variable;
+//import org.apache.xpath.operations.Variable;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -20,11 +21,13 @@ public class DataWriter extends DataConstants {
         /*
         Below is dependant on DataLoader so put this back when that's done
         */
-        UserList userList = UserList.getInstance();
-        ArrayList<User> users = DataLoader.getUsers();
+        //UserList userList = UserList.getInstance();
+        //ArrayList<User> users = DataLoader.getUsers();
         
-        // ArrayList<User> users = new ArrayList<User>(); // This is for testing; Delete later
-        // users.add(new User("First2", "Last2", "name2@email.sc.edu", "testName2")); // This is for testing; Delete later
+        ArrayList<User> users = new ArrayList<User>(); // This is for testing; Delete later
+        ArrayList<UUID> tempFavSongs = new ArrayList<UUID>();
+        users.add(new User(UUID.randomUUID(), "First2", "Last2", "name2@email.sc.edu", "testName2", "verystrongpassword", tempFavSongs, false)); // This is for testing; Delete later
+        //UUID id, String firstName, String lastName, String email, String userName, String password, ArrayList<UUID> favoriteSongs, boolean isAuthor
         JSONArray jsonUsers = new JSONArray();
 
         // Copy all the json's pre-existing objects
@@ -48,21 +51,19 @@ public class DataWriter extends DataConstants {
 
         // Populate the object with all info extracted from the json
         userDetails.put(USER_ID, user.getId().toString());
-        userDetails.put(USER_TYPE, user.getIsAuthor());
         userDetails.put(USER_FIRST_NAME, user.getFirstName());
         userDetails.put(USER_LAST_NAME, user.getLastName());
         userDetails.put(USER_EMAIL, user.getEmail());
         userDetails.put(USER_USER_NAME, user.getUserName());
         userDetails.put(USER_PASSWORD, user.getPassword());
         userDetails.put(USER_FAV_SONGS, user.getFavoriteSongs());
-        userDetails.put(USER_MY_SONGS, ((Author)user).getMySongs());
+        //if(user.getIsAuthor())
+        //    userDetails.put(USER_MY_SONGS, user.getMySongs());
 
         return userDetails; // Give it back
     }
 
     /*
-    To be implemented later
-    */
     public static void saveSongs(){
         
         // Variables
@@ -122,12 +123,12 @@ public class DataWriter extends DataConstants {
         return songDetails; // Give it back
 
     }
+    */
 
     // Stuff for testing
-    /*
     public static void main(String[] args){
         DataWriter.saveUsers();
-        DataWriter.saveSongs();
+        //DataWriter.saveSongs();
     }
-    */
+    
 }
