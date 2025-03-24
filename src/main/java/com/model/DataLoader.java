@@ -39,10 +39,10 @@ public class DataLoader extends DataConstants {
                     for (int j = 0; j < mySongsJSON.size(); j++) {
                         favSongIDs.add(UUID.fromString((String)mySongsJSON.get(j)));
                     }
-                    Users.add(new Author(id, firstName, lastName, userName, email, password, favSongIDs, mySongIDs));
+                    users.add(new Author(id, firstName, lastName, userName, email, password, favSongIDs, mySongIDs));
                 }
                 else {
-                    Users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs));
+                    users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs));
                 }
             }
             return users;
