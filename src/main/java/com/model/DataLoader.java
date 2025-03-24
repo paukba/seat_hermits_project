@@ -71,7 +71,11 @@ public class DataLoader extends DataConstants {
                 if (hasStrings) {  
                     int numStrings = (int)instrumentJSON.get(INSTRUMENT_NUM_STRINGS);
                     JSONArray stringsJSON = (JSONArray)instrumentJSON.get(INSTRUMENT_STRINGS);
-                    instruments.add(new ElectricGuitar(name, numStrings, strings));
+                    ArrayList<String> strings = new ArrayList<String>();
+                    for (int j = 0; j < stringsJSON.size(); j++) {
+                        strings.add((String)stringsJSON.get(j));
+                    }
+                    instruments.add(new ElectricGuitar(name, strings));
                 }
                 else {
                     /*
