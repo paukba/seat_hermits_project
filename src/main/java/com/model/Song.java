@@ -52,7 +52,7 @@ public class Song {
     
     /**
      * Gets the file name for the song
-     * @return the song file name
+     * @return the song's file name
      */
     public String getSongFileName(){
         return this.songFileName;
