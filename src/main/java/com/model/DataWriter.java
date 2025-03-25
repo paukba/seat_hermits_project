@@ -127,7 +127,7 @@ public class DataWriter extends DataConstants {
         int index = 0;
 
         for (Measure i : measures) {
-            measureDetails.put(MEASURE_NUM, i.getMeasureNum(index));
+            measureDetails.put(MEASURE_NUM, index);
             measureDetails.put(MEASURE_LYRIC, i.getMeasureLyric());
             measureDetails.put(MEASURE_CHORD, i.getMeasureChord());
             measureDetails.put(MEASURE_STRINGS, i.getMeasureStrings());

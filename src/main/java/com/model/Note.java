@@ -21,6 +21,7 @@ public class Note {
         this.name = name;
         this.pitch = pitch;
         this.duration = duration;
+        this.startTime = startTime;
     }
 
     /**
@@ -35,18 +36,34 @@ public class Note {
         
     }
 
+    /**
+     * Gets the duration of the note
+     * @return the note's duration
+     */
     public double getDuration() {
         return this.duration;
     }
     
+    /**
+     * Gets the starting time of the note
+     * @return note's startTime
+     */
     public double getStartTime() {
         return this.startTime;
     }
 
+    /**
+     * Gets the name of this note
+     * @return the note's name
+     */
     public String getNoteName() {
         return name;
     }
 
+    /**
+     * Gets the pitch of this note
+     * @return the note's pitch
+     */
     public double getNotePitch() {
         return pitch;
     }
