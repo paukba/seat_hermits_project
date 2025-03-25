@@ -42,7 +42,7 @@ public class DataLoader extends DataConstants {
                     users.add(new Author(id, firstName, lastName, userName, email, password, favSongIDs, mySongIDs));
                 }
                 else {
-                    users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs));
+                    users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs, false));
                 }
             }
             return users;
