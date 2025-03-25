@@ -22,7 +22,11 @@ public class Tab implements NotationFormat{
      * Displays the tab
      */
     public void displayTab() {
-
+        for (int i = 0; i<tabNotes.size(); i++) {
+            tabNotes.get(i).displayTabNote();
+            if ((i+1)!=tabNotes.size())
+                System.out.print(" ");
+        }
     }
 
     /**

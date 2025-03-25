@@ -44,8 +44,11 @@ public class SongList {
      * @param song the chosen song
      * @return the edited version of the song
      */
-    public Song editSong(Song song) {
-        return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
+    // public Song editSong(Song song) {
+    //     return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
+    // }
+    public Song editSong(UUID songID) {
+        return new Song(songID, " ", new ArrayList<Measure>(), songID, true, Genre.ROC, new ArrayList<Instrument>(), 0, new ArrayList<String>());
     }
 
     /**
