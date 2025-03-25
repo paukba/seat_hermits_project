@@ -21,7 +21,7 @@ public class SongList {
     }
 
     /**
-     * Gets the current instance ?
+     * Gets the current instance
      * @return the current instance
      */
     public static SongList getInstance() {
@@ -59,7 +59,7 @@ public class SongList {
     /**
      * Gets the song
      * @param id the song's ID
-     * @return 
+     * @return check (the song) if true, null otherwise
      */
     public Song getSong(UUID id) {
         Iterator<Song> songIterator = songs.iterator();
