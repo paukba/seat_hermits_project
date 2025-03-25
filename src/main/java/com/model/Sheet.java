@@ -15,7 +15,7 @@ public class Sheet implements NotationFormat{
      * @param notes the notes in the song
      */
     public Sheet(ArrayList<Note> notes) {
-
+        this.notes = notes;
     }
 
     /**
@@ -31,5 +31,13 @@ public class Sheet implements NotationFormat{
     @Override
     public void displayFormat() {
 
+    }
+
+    public Instrument getSheetInstrument() {
+        return instrument;
+    }
+
+    public ArrayList<Note> getSheetNotes() {
+        return notes;
     }
 }

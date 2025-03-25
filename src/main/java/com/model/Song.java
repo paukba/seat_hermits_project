@@ -204,4 +204,16 @@ public class Song {
         comments.remove(comment);
     }
 
+    public UUID getAuthorId() {
+        return id;
+    }
+
+    public double getTempo() {
+        return tempo;
+    }
+
+    public ArrayList<String> getComments() {
+        return comments;
+    }
+
 }

@@ -42,4 +42,13 @@ public class Note {
     public double getStartTime() {
         return this.startTime;
     }
+
+    public String getNoteName() {
+        return name;
+    }
+
+    public double getNotePitch() {
+        return pitch;
+    }
+
 }

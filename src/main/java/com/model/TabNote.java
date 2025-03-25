@@ -24,4 +24,16 @@ public class TabNote {
 
         return tabNote;
     }
+
+    public String getTabnoteString() {
+        return string;
+    }
+
+    public int getTabnoteFret() {
+        return fret;
+    }
+
+    public Note getTabnoteNote() {
+        return note;
+    }
 }

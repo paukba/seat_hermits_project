@@ -36,4 +36,12 @@ public class Tab implements NotationFormat{
     public void displayFormat() {
         
     }
+
+    public Instrument getTabInstrument() {
+        return instrument;
+    }
+
+    public ArrayList<TabNote> getTabNotes() {
+        return tabNotes;
+    }
 }

@@ -12,6 +12,9 @@ public class Measure {
     private ArrayList<NotationFormat> notations;
     private ArrayList<Note> notes;
     private ArrayList<Chord> chords;
+    private ArrayList<String> strings;
+    private ArrayList<Sheet> sheets;
+    private ArrayList<Tab> tabs;
 
     /**
      * Constructs a measure
@@ -20,12 +23,14 @@ public class Measure {
      * @param lyric the lyrics in the measure
      * @param tempo the tempo of the measure
      */
-    public Measure(ArrayList<Note> notes, ArrayList<Chord> chords, String lyric, double tempo) {
+    public Measure(ArrayList<Note> notes, ArrayList<Chord> chords, String lyric, double tempo, ArrayList<Sheet> sheets, ArrayList<Tab> tabs) {
         this.tempo = tempo;
         this.lyric = lyric;
         this.chords = chords;
         this.notes = notes;
         this.notations = new ArrayList<NotationFormat>();
+        this.sheets = sheets;
+        this.tabs = tabs;
     }
 
     /**
@@ -54,5 +59,29 @@ public class Measure {
      */
     public double getTempo() {
         return tempo;
+    }
+
+    public int getMeasureNum(int index) {
+        return index;
+    }
+
+    public String getMeasureLyric() {
+        return lyric;
+    }
+
+    public ArrayList<Chord> getMeasureChord() {
+        return chords;
+    }
+
+    public ArrayList<String> getMeasureStrings() {
+        return this.strings;
+    }
+
+    public ArrayList<Sheet> getMeasureSheet() {
+        return sheets;
+    }
+
+    public ArrayList<Tab> getMeasureTab() {
+        return tabs;
     }
 }

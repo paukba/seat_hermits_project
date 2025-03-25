@@ -73,6 +73,7 @@ public class DataWriter extends DataConstants {
         /*
         ArrayList<Measure> testMeasures = new ArrayList<Measure>();
         ArrayList<Note> testNotes = new ArrayList<Note>();
+        testNotes.add(new Note("Sample Note Name", 34.2, 5.6, 7.2));
         ArrayList<Chord> testChords = new ArrayList<Chord>();
         ArrayList<Sheet> testsSheets = new ArrayList<Sheet>();
         testsSheets.add(new Sheet(testNotes));
@@ -123,15 +124,16 @@ public class DataWriter extends DataConstants {
 
     public static JSONObject getMeasureJSON(ArrayList<Measure> measures) {
         JSONObject measureDetails = new JSONObject();
+        int index = 0;
 
         for (Measure i : measures) {
-            measureDetails.put(MEASURE_NUM, i.getMeasureNum());
+            measureDetails.put(MEASURE_NUM, i.getMeasureNum(index));
             measureDetails.put(MEASURE_LYRIC, i.getMeasureLyric());
             measureDetails.put(MEASURE_CHORD, i.getMeasureChord());
             measureDetails.put(MEASURE_STRINGS, i.getMeasureStrings());
             measureDetails.put(MEASURE_SHEET, getSheetJSON(i.getMeasureSheet()));
             measureDetails.put(MEASURE_TAB, getTabJSON(i.getMeasureTab()));
-            
+            index++;
         }
 
         return measureDetails;
@@ -150,13 +152,15 @@ public class DataWriter extends DataConstants {
 
     public static JSONObject getNotesJSON(ArrayList<Note> notes) {
         JSONObject noteDetails = new JSONObject();
+        int noteNum = 1;
 
         for (Note k : notes) {
-            noteDetails.put(NOTE_NUM, k.getNoteNum());
+            noteDetails.put(NOTE_NUM, noteNum);
             noteDetails.put(NOTE_NAME, k.getNoteName());
             noteDetails.put(NOTE_PITCH, k.getNotePitch());
-            noteDetails.put(NOTE_DURATION, k.getNoteDuration());
-            noteDetails.put(NOTE_START_TIME, k.getNoteStartTime());
+            noteDetails.put(NOTE_DURATION, k.getDuration());
+            noteDetails.put(NOTE_START_TIME, k.getStartTime());
+            noteNum++;
         }
 
         return noteDetails;
@@ -175,12 +179,14 @@ public class DataWriter extends DataConstants {
 
     public static JSONObject getTabNoteJSON(ArrayList<TabNote> tabNotes) {
         JSONObject tabNoteDetails = new JSONObject();
+        int tabNoteNum = 1;
 
         for (TabNote k : tabNotes) {
-            tabNoteDetails.put(TABNOTE_NUM, k.getTabNoteNum());
+            tabNoteDetails.put(TABNOTE_NUM, tabNoteNum);
             tabNoteDetails.put(TABNOTE_STRING, k.getTabnoteString());
             tabNoteDetails.put(TABNOTE_FRET, k.getTabnoteFret());
             tabNoteDetails.put(TABNOTE_NOTE, k.getTabnoteNote());
+            tabNoteNum++;
         }
 
         return tabNoteDetails;
