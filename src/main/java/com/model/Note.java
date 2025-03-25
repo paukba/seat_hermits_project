@@ -16,4 +16,12 @@ public class Note {
     public void playNote(double pitch, double duration, double startTime) {
         
     }
+
+    public double getDuration() {
+        return this.duration;
+    }
+    
+    public double getStartTime() {
+        return this.startTime;
+    }
 }

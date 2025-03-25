@@ -24,14 +24,14 @@ public class User {
     //     this.favoriteSongs = favoriteSongs;
     // }
 
-    public User(UUID id, String firstName, String lastName, String userName, String email, String password, ArrayList<UUID> favoriteSongs) {
+    public User(UUID id, String firstName, String lastName, String userName, String email, String password, ArrayList<UUID> favoriteSongs, boolean isAuthor) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.userName = userName;
         this.password = password;
-        this.isAuthor = false;
+        this.isAuthor = isAuthor;
         this.favoriteSongs = favoriteSongs;
     }
     

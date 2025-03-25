@@ -12,6 +12,16 @@ public class TabNote {
     }
 
     public String displayTabNote() {
-        return "";
+        String tabNote = "String " + string + ": ";
+        // change '10' to something else later
+        for (int i=0; i<10; i++) {
+            if (i == (int)note.getStartTime()) {
+                tabNote = tabNote + fret;
+            } else {
+                tabNote = tabNote + "-";
+            }
+        }
+
+        return tabNote;
     }
 }
