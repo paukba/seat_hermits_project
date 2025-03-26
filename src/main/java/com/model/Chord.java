@@ -12,7 +12,7 @@ public class Chord {
 
     /**
      * Constructs a chord
-     * @param name the name of the song    ?
+     * @param name the name of the song
      * @param notes the notes in the chord (and song)
      */
     public Chord(String name, ArrayList<Note> notes) {

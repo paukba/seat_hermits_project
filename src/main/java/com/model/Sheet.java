@@ -3,7 +3,7 @@ package com.model;
 import java.util.ArrayList;
 
 /**
- * Represents music in a sheet notation format
+ * Implements the NotationFormat interface, represents music in a sheet notation format
  */
 
 public class Sheet implements NotationFormat{
@@ -19,14 +19,14 @@ public class Sheet implements NotationFormat{
     }
 
     /**
-     * Displays the sheet
+     * Displays the sheet of music
      */
     public void displaySheet() {
 
     }
 
     /**
-     * 
+     * Displays the format of the music
      */
     @Override
     public void displayFormat() {
