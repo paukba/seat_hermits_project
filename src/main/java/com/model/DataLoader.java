@@ -186,7 +186,7 @@ public class DataLoader extends DataConstants {
                         }
                     }
                     
-                    measures.add(new Measure(chordNotes, chord, measureLyric, sheets, tabs));
+                    measures.add(new Measure(null, chord, measureLyric, sheets, tabs));
                 }
                 UUID authorID = UUID.fromString((String)songJSON.get(SONG_AUTHOR_ID));
                 boolean privacy = (boolean)songJSON.get(SONG_PRIVACY);
