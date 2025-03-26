@@ -7,6 +7,20 @@ import java.util.UUID;
 public class Driver {
     public static void main(String[] args) {
         playSong();
+
+        login();
+
+    }
+
+    public static void playSong() {
+        SongList songList = SongList.getInstance();
+        Song song = songList.getSong(UUID.fromString("df1deded-83af-45f9-979f-e25e52734088"));
+        ArrayList<Measure> measures = song.getMeasures();
+        Iterator<Measure> measureIterator = measures.iterator();
+        System.out.println(measureIterator.next().getMeasureLyric());
+    }
+
+    public static void login() {
         UserList userList = UserList.getInstance();
         
         // login correct
@@ -18,8 +32,6 @@ public class Driver {
             System.out.println("Failed to login");
         }
 
-
-
         // login wrong
         User wrongLogin = userList.login("iamSpider", "spidermanroolz");
 
@@ -28,13 +40,5 @@ public class Driver {
         } else {
             System.out.println("Failed to login");
         }
-    }
-
-    public static void playSong() {
-        SongList songList = SongList.getInstance();
-        Song song = songList.getSong(UUID.fromString("df1deded-83af-45f9-979f-e25e52734088"));
-        ArrayList<Measure> measures = song.getMeasures();
-        Iterator<Measure> measureIterator = measures.iterator();
-        System.out.println(measureIterator.next().getMeasureLyric());
     }
 }
