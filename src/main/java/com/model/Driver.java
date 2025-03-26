@@ -35,6 +35,8 @@ public class Driver {
         Song song = songList.getSong(UUID.fromString("df1deded-83af-45f9-979f-e25e52734088"));
         ArrayList<Measure> measures = song.getMeasures();
         Iterator<Measure> measureIterator = measures.iterator();
-        System.out.println(measureIterator.next().getMeasureLyric());
+        Measure measure = measureIterator.next();
+        System.out.println(measure.getMeasureLyric());
+        measure.playNotes();
     }
 }

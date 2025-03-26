@@ -1,6 +1,10 @@
 package com.model;
 
+import com.musicapp.*;
+import org.jfugue.player.Player;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Class the represents measures
@@ -24,12 +28,25 @@ public class Measure {
      * @param tabs the list of tabs in the measure
      */
     public Measure(ArrayList<Note> notes, Chord chord, String lyric, ArrayList<Sheet> sheets, ArrayList<Tab> tabs) {
+        this.notes = notes;
         this.lyric = lyric;
         this.chord = chord;
         this.notations = new ArrayList<NotationFormat>();
         this.sheets = sheets;
         this.tabs = tabs;
-        if (sheets != null) {}
+        if (sheets != null && notes == null) {
+            Iterator<Sheet> sheeIterator = sheets.iterator();
+            this.notes = sheeIterator.next().getSheetNotes();
+        }
+        else if (tabs != null && notes == null) {
+            Iterator<Tab> tabIterator = tabs.iterator();
+            ArrayList<TabNote> tabNotes = tabIterator.next().getTabNotes();
+            notes = new ArrayList<Note>();
+            Iterator<TabNote> tabNoteIterator = tabNotes.iterator();
+            while (tabNoteIterator.hasNext()) {
+                notes.add(tabNoteIterator.next().getTabnoteNote());
+            }
+        }
     }
 
     /**
@@ -38,18 +55,50 @@ public class Measure {
      */
 
     // figure out how to implement
-    public void playNotes(ArrayList<Note> notes) {
-
+    public void playNotes() {
+        String jFugueArgument = "";
+        int maxTime = 0;
+        int voice = 0;
+        ArrayList<Note> buffer = new ArrayList<Note>();
+        Iterator<Note> notesIterator = notes.iterator();
+        while (notesIterator.hasNext()) {
+            Note note = notesIterator.next();
+            if ((int) note.getStartTime() > maxTime) {
+                maxTime = (int) note.getStartTime();
+            }
+            buffer.add(note);
+        }
+        while (!buffer.isEmpty()) {
+            jFugueArgument += ("V" +voice+ " ");
+            for (int time = 0; time <= maxTime; time++) {
+                Iterator<Note> bufferIterator = buffer.iterator();
+                boolean found = false;
+                while (bufferIterator.hasNext()) {
+                    found = false;
+                    Note note = bufferIterator.next();
+                    if ((int) note.getStartTime() == time) {
+                        jFugueArgument += ("m" +note.getNotePitch()+ " ");
+                        buffer.remove(note);
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    jFugueArgument += "r ";
+                }
+            }
+            voice++;
+        }
+        Player player = new Player();
+        player.play(jFugueArgument);
     }
 
     /**
      * Plays chords in a measure
-     * @param chords the chords in the measure
+     * @param chords the chord in the measure
      */
-
-    // figure out how to implement
     public void playChord(Chord chord) {
-
+        chord.playChord(notes);
     }
 
     /**

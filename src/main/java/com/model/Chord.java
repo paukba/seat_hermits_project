@@ -1,6 +1,10 @@
 package com.model;
 
+import com.musicapp.*;
+import org.jfugue.player.Player;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Class that represents chords
@@ -24,9 +28,15 @@ public class Chord {
      * Plays the intended chord
      * @param notes the notes in the chord (and song)
      */
-
-    // figure out how to implement
     public void playChord(ArrayList<Note> notes) {
-        
+        Iterator<Note> noteIterator = notes.iterator();
+        String jFugueArgument = "";
+        int voice = 0;
+        while (noteIterator.hasNext()) {
+            double pitch = noteIterator.next().getNotePitch();
+            jFugueArgument += ("V" +voice+ " m" +pitch+ " ");
+        }
+        Player player = new Player();
+        player.play(jFugueArgument);
     }
 }
