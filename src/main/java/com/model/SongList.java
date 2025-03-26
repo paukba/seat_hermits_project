@@ -89,6 +89,6 @@ public class SongList {
      * Saves the list of songs
      */
     public void saveSongList() {
-        
+        DataWriter.saveSongs();
     }
 }
