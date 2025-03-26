@@ -13,7 +13,25 @@ public class UserList {
 
     }
 
-    public void addUser(User user) {
+    // public void createAccount(User user) {
+    //     users.add(user);
+    // }
+
+    public void createAccount(String firstName, String lastName, String userName, String email, String password, boolean isAuthor) {
+        for ( int i = 0; i < users.size(); i++ ) {
+            String name = users.get(i).getUserName();
+            String curr_email = users.get(i).getEmail();
+            if( userName.equals(name) || email.equals(curr_email) ) {
+                return;
+            }
+        }
+        
+        User user;
+        if (isAuthor) {
+            user = new Author(UUID.randomUUID(), firstName, lastName, userName, email, password, new ArrayList<UUID>(), new ArrayList<UUID>());
+        } else {
+            user = new User(UUID.randomUUID(), firstName, lastName, userName, email, password, new ArrayList<UUID>(), false);
+        }
         users.add(user);
     }
 
