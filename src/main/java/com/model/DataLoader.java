@@ -72,8 +72,10 @@ public class DataLoader extends DataConstants {
                     int numStrings = (int)instrumentJSON.get(INSTRUMENT_NUM_STRINGS);
                     JSONArray stringsJSON = (JSONArray)instrumentJSON.get(INSTRUMENT_STRINGS);
                     ArrayList<String> strings = new ArrayList<String>();
-                    for (int j = 0; j < stringsJSON.size(); j++) {
-                        strings.add((String)stringsJSON.get(j));
+                    if (stringsJSON != null) {
+                        for (int j = 0; j < stringsJSON.size(); j++) {
+                            strings.add((String)stringsJSON.get(j));
+                        }
                     }
                     instruments.add(new ElectricGuitar(name, strings));
                 }
@@ -110,59 +112,99 @@ public class DataLoader extends DataConstants {
                 ArrayList<Measure> measures = new ArrayList<Measure>();
                 for (int j = 0; j < measuresJSON.size(); j++) {
                     JSONObject measureJSON = (JSONObject)measuresJSON.get(j);
-                    int measureNum = (int)measureJSON.get(MEASURE_NUM);
+                    int measureNum = (int)(long)measureJSON.get(MEASURE_NUM);
                     String measureLyric = (String)measureJSON.get(MEASURE_LYRIC);
-                    String measureChord = (String)measureJSON.get(MEASURE_CHORD);
+                    JSONArray measureChordJSON = (JSONArray)measureJSON.get(MEASURE_CHORD);
+                    ArrayList<Note> chordNotes = new ArrayList<Note>();
+                    if (measureChordJSON != null) {
+                        for (int k = 0; k < measureChordJSON.size(); k++) {
+                            JSONObject sheetNoteJSON = (JSONObject)measureChordJSON.get(k);
+                            int noteNum = (int)(long)sheetNoteJSON.get(NOTE_NUM);
+                            String noteName = (String)sheetNoteJSON.get(NOTE_NAME);
+                            double pitch = (double)sheetNoteJSON.get(NOTE_PITCH);
+                            double duration = (double)sheetNoteJSON.get(NOTE_DURATION);
+                            double startTime = (double)sheetNoteJSON.get(NOTE_START_TIME);
+                            chordNotes.add(new Note(noteName, pitch, duration, startTime));
+                        }
+                    }
+                    Chord chord = new Chord(null, chordNotes);
                     JSONArray measureStringsJSON = (JSONArray)measureJSON.get(MEASURE_STRINGS);
                     ArrayList<String> strings = new ArrayList<String>();
-                    for (int k = 0; k < measureStringsJSON.size(); k++) {
-                        String string = (String)measureStringsJSON.get(k);
-                        strings.add(string);
+                    if (measureStringsJSON != null) {
+                        for (int k = 0; k < measureStringsJSON.size(); k++) {
+                            String string = (String)measureStringsJSON.get(k);
+                            strings.add(string);
+                        }
                     }
-                    JSONObject sheetJSON = (JSONObject)measureJSON.get(MEASURE_SHEET);
-                    String sheetInstrument = (String)sheetJSON.get(SHEET_INSTRUMENT);
-                    JSONArray sheetNotesJSON = (JSONArray)sheetJSON.get(SHEET_NOTES);
-                    ArrayList<Note> sheeNotes = new ArrayList<Note>();
-                    for (int k = 0; k < sheetNotesJSON.size(); k++) {
-                        JSONObject sheetNoteJSON = (JSONObject)sheetNotesJSON.get(k);
-                        int noteNum = (int)sheetNoteJSON.get(NOTE_NUM);
-                        String noteName = (String)sheetNoteJSON.get(NOTE_NAME);
-                        double pitch = (double)sheetNoteJSON.get(NOTE_PITCH);
-                        double duration = (double)sheetNoteJSON.get(NOTE_DURATION);
-                        double startTime = (double)sheetNoteJSON.get(NOTE_START_TIME);
-                        sheeNotes.add(new Note(noteName, pitch, duration, startTime));
+                    JSONArray sheetsJSON = (JSONArray)measureJSON.get(MEASURE_SHEETS);
+                    ArrayList<Sheet> sheets = new ArrayList<Sheet>();
+                    if (sheetsJSON != null) {
+                        for (int k = 0; k < sheetsJSON.size(); k++) {
+                            JSONObject sheetJSON = (JSONObject)sheetsJSON.get(k);
+                            String sheetInstrumentName = (String)sheetJSON.get(SHEET_INSTRUMENT);
+                            Instrument instrument = new ElectricGuitar(sheetInstrumentName, null); //default instrument type for now
+                            JSONArray sheetNotesJSON = (JSONArray)sheetJSON.get(SHEET_NOTES);
+                            ArrayList<Note> sheetNotes = new ArrayList<Note>();
+                            if (sheetNotesJSON != null) {
+                                for (int l = 0; l < sheetNotesJSON.size(); l++) {
+                                    JSONObject sheetNoteJSON = (JSONObject)sheetNotesJSON.get(l);
+                                    int noteNum = (int)(long)sheetNoteJSON.get(NOTE_NUM);
+                                    String noteName = (String)sheetNoteJSON.get(NOTE_NAME);
+                                    double pitch = (double)sheetNoteJSON.get(NOTE_PITCH);
+                                    double duration = (double)sheetNoteJSON.get(NOTE_DURATION);
+                                    double startTime = (double)sheetNoteJSON.get(NOTE_START_TIME);
+                                    sheetNotes.add(new Note(noteName, pitch, duration, startTime));
+                                }
+                            }
+                            sheets.add(new Sheet(sheetNotes, instrument));
+                        }
                     }
-                    JSONArray tabJSON = (JSONArray)measureJSON.get(MEASURE_TAB);
-                    String tabInstrument = (String)tabJSON.get(0);
-                    ArrayList<TabNote> tabNotes = new ArrayList<TabNote>();
-                    for (int k = 0; k < tabJSON.size(); k++) {
-                        JSONObject tabNoteJSON = (JSONObject)tabJSON.get(k+1);
-                        int tabNoteNum = (int)tabNoteJSON.get(TABNOTE_NUM);
-                        String tabNoteString = (String)tabNoteJSON.get(TABNOTE_STRING);
-                        String tabNoteFret = (String)tabNoteJSON.get(TABNOTE_FRET);
-                        int fretNum = Integer.parseInt(tabNoteFret);
-                        JSONObject tabNoteNoteJSON = (JSONObject)tabNoteJSON.get(TABNOTE_NOTE);
-                        String noteName = (String)tabNoteNoteJSON.get(NOTE_NAME);
-                        double pitch = (double)tabNoteNoteJSON.get(NOTE_PITCH);
-                        double duration = (double)tabNoteNoteJSON.get(NOTE_DURATION);
-                        double startTime = (double)tabNoteNoteJSON.get(NOTE_START_TIME);
-                        Note tabNoteNote = new Note(noteName, pitch, duration, startTime);
-                        tabNotes.add(new TabNote(tabNoteNote, tabNoteString, fretNum));
+                    JSONArray tabsJSON = (JSONArray)measureJSON.get(MEASURE_TABS);
+                    ArrayList<Tab> tabs = new ArrayList<Tab>();
+                    if (tabsJSON != null) {
+                        for (int k = 0; k < tabsJSON.size(); k++) {
+                            JSONObject tabJSON = (JSONObject)tabsJSON.get(k);
+                            String tabInstrument = (String)tabJSON.get(0);
+                            ArrayList<TabNote> tabNotes = new ArrayList<TabNote>();
+                            if (tabJSON != null) {
+                                for (int l = 0; l < tabJSON.size(); l++) {
+                                    JSONObject tabNoteJSON = (JSONObject)tabJSON.get(l+1);
+                                    int tabNoteNum = (int)(long)tabNoteJSON.get(TABNOTE_NUM);
+                                    String tabNoteString = (String)tabNoteJSON.get(TABNOTE_STRING);
+                                    String tabNoteFret = (String)tabNoteJSON.get(TABNOTE_FRET);
+                                    int fretNum = Integer.parseInt(tabNoteFret);
+                                    JSONObject tabNoteNoteJSON = (JSONObject)tabNoteJSON.get(TABNOTE_NOTE);
+                                    String noteName = (String)tabNoteNoteJSON.get(NOTE_NAME);
+                                    double pitch = (double)tabNoteNoteJSON.get(NOTE_PITCH);
+                                    double duration = (double)tabNoteNoteJSON.get(NOTE_DURATION);
+                                    double startTime = (double)tabNoteNoteJSON.get(NOTE_START_TIME);
+                                    Note tabNoteNote = new Note(noteName, pitch, duration, startTime);
+                                    tabNotes.add(new TabNote(tabNoteNote, tabNoteString, fretNum));
+                                }
+                            }
+                            tabs.add(new Tab(tabNotes));
+                        }
                     }
+                    
+                    measures.add(new Measure(chordNotes, chord, measureLyric, sheets, tabs));
                 }
                 UUID authorID = UUID.fromString((String)songJSON.get(SONG_AUTHOR_ID));
                 boolean privacy = (boolean)songJSON.get(SONG_PRIVACY);
-                Genre genre = (Genre)songJSON.get(SONG_GENRE);
+                Genre genre = Genre.valueOf((String)songJSON.get(SONG_GENRE));
                 JSONArray instrumentsJSON = (JSONArray)songJSON.get(SONG_INSTRUMENTS);
                 ArrayList<Instrument> instruments = new ArrayList<Instrument>();
-                for (int j = 0; j < instrumentsJSON.size(); j++) {
-                    instruments.add(getInstrument((String)instrumentsJSON.get(j)));
+                if (instrumentsJSON != null) {
+                    for (int j = 0; j < instrumentsJSON.size(); j++) {
+                        instruments.add(getInstrument((String)instrumentsJSON.get(j)));
+                    }
                 }
-                int tempo = (int)songJSON.get(SONG_TEMPO);
+                double tempo = (double)songJSON.get(SONG_TEMPO);
                 JSONArray commentsJSON = (JSONArray)songJSON.get(SONG_COMMENTS);
                 ArrayList<String> comments = new ArrayList<String>();
-                for (int j = 0; j < commentsJSON.size(); j++) {
-                    comments.add((String)commentsJSON.get(j));
+                if (commentsJSON != null) {
+                    for (int j = 0; j < commentsJSON.size(); j++) {
+                        comments.add((String)commentsJSON.get(j));
+                    }
                 }
                 songs.add(new Song(id, title, measures, authorID, privacy, genre, instruments, tempo, comments));
             }

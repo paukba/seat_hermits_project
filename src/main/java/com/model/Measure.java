@@ -7,11 +7,10 @@ import java.util.ArrayList;
  */
 
 public class Measure {
-    private double tempo;
     private String lyric;
     private ArrayList<NotationFormat> notations;
     private ArrayList<Note> notes;
-    private ArrayList<Chord> chords;
+    private Chord chord;
     private ArrayList<String> strings;
     private ArrayList<Sheet> sheets;
     private ArrayList<Tab> tabs;
@@ -19,20 +18,18 @@ public class Measure {
     /**
      * Constructs a measure
      * @param notes the notes in the measure
-     * @param chords the chords in the measure
+     * @param chord the chord in the measure
      * @param lyric the lyrics in the measure
-     * @param tempo the tempo of the measure
      * @param sheets the list of sheets in the measure
      * @param tabs the list of tabs in the measure
      */
-    public Measure(ArrayList<Note> notes, ArrayList<Chord> chords, String lyric, double tempo, ArrayList<Sheet> sheets, ArrayList<Tab> tabs) {
-        this.tempo = tempo;
+    public Measure(ArrayList<Note> notes, Chord chord, String lyric, ArrayList<Sheet> sheets, ArrayList<Tab> tabs) {
         this.lyric = lyric;
-        this.chords = chords;
-        this.notes = notes;
+        this.chord = chord;
         this.notations = new ArrayList<NotationFormat>();
         this.sheets = sheets;
         this.tabs = tabs;
+        if (sheets != null) {}
     }
 
     /**
@@ -51,16 +48,8 @@ public class Measure {
      */
 
     // figure out how to implement
-    public void playChords(ArrayList<Chord> chords) {
+    public void playChord(Chord chord) {
 
-    }
-
-    /**
-     * Gets the tempo of a measure
-     * @return the tempo of the measure
-     */
-    public double getTempo() {
-        return tempo;
     }
 
     /**
@@ -75,8 +64,8 @@ public class Measure {
      * Gets the chord of the measure
      * @return the measure's chord
      */
-    public ArrayList<Chord> getMeasureChord() {
-        return chords;
+    public Chord getMeasureChord() {
+        return chord;
     }
 
     /**

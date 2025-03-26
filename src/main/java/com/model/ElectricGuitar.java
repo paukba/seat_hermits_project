@@ -2,7 +2,7 @@ package com.model;
 
 import java.util.ArrayList;
 
-public class ElectricGuitar implements Instrument {
+public class ElectricGuitar extends Instrument {
     private String name;
     private ArrayList<String> strings;
     private ArrayList<Note> notes;
@@ -13,8 +13,15 @@ public class ElectricGuitar implements Instrument {
         // may need to be changed
         this.name = name;
         this.strings = strings;
-        this.notes = notes;
-        this.chords = chords;
+        if (strings == null) {
+            strings = new ArrayList<String>();
+            strings.add("E");
+            strings.add("A");
+            strings.add("D");
+            strings.add("G");
+            strings.add("B");
+            strings.add("e");
+        }
     }
 
     public ArrayList<Note> getNotes() {

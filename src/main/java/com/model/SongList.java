@@ -16,8 +16,8 @@ public class SongList {
      * Constructs a list of songs
      */
     private SongList() {
+        songs = DataLoader.getSongs();
         songList = this;
-        songs = new ArrayList<>();
     }
 
     /**

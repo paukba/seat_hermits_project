@@ -113,7 +113,7 @@ public class DataWriter extends DataConstants {
         songDetails.put(SONG_MEASURES, getMeasureJSON(song.getMeasures()));
         songDetails.put(SONG_AUTHOR_ID, song.getAuthorId().toString());
         songDetails.put(SONG_PRIVACY, song.isPrivate());
-        songDetails.put(SONG_GENRE, song.getGenre().label);
+        songDetails.put(SONG_GENRE, song.getGenre());
         songDetails.put(SONG_INSTRUMENTS, song.getInstruments());
         songDetails.put(SONG_TEMPO, song.getTempo());
         songDetails.put(SONG_COMMENTS, song.getComments());
@@ -131,8 +131,8 @@ public class DataWriter extends DataConstants {
             measureDetails.put(MEASURE_LYRIC, i.getMeasureLyric());
             measureDetails.put(MEASURE_CHORD, i.getMeasureChord());
             measureDetails.put(MEASURE_STRINGS, i.getMeasureStrings());
-            measureDetails.put(MEASURE_SHEET, getSheetJSON(i.getMeasureSheet()));
-            measureDetails.put(MEASURE_TAB, getTabJSON(i.getMeasureTab()));
+            measureDetails.put(MEASURE_SHEETS, getSheetJSON(i.getMeasureSheet()));
+            measureDetails.put(MEASURE_TABS, getTabJSON(i.getMeasureTab()));
             index++;
         }
 

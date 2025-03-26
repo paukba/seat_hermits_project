@@ -26,7 +26,7 @@ public abstract class DataConstants {
     protected static final String MEASURE_LYRIC = "lyric";
     protected static final String MEASURE_CHORD = "chord";
     protected static final String MEASURE_STRINGS = "strings";
-    protected static final String MEASURE_SHEET = "sheet";
+    protected static final String MEASURE_SHEETS = "sheets";
     protected static final String SHEET_INSTRUMENT = "instrument";
     protected static final String SHEET_NOTES = "notes";
     protected static final String NOTE_NUM = "note";
@@ -34,7 +34,7 @@ public abstract class DataConstants {
     protected static final String NOTE_PITCH = "pitch";
     protected static final String NOTE_DURATION = "duration";
     protected static final String NOTE_START_TIME = "starttime";
-    protected static final String MEASURE_TAB = "tab";
+    protected static final String MEASURE_TABS = "tabs";
     protected static final String TAB_INSTRUMENT = "instrument";
     protected static final String TABNOTE_NUM = "tabnote";
     protected static final String TABNOTE_STRING = "string";

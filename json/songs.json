@@ -1,27 +1,33 @@
 [
     {
-        "measure": {
-            "measure": 0,
-            "strings": null,
-            "tab": {},
-            "lyric": "Sample lyric",
-            "chord": [],
-            "sheet": {
-                "notes": {
-                    "duration": 5.6,
-                    "note": 1,
-                    "name": "Sample Note Name",
-                    "pitch": 34.2,
-                    "starttime": 0.0
-                },
-                "instrument": null
+        "measures": [
+            {
+                "measure": 0,
+                "strings": null,
+                "tab": {},
+                "lyric": "Sample lyric",
+                "chord": [],
+                "sheets": [
+                    {
+                        "notes": [
+                        {
+                            "duration": 5.6,
+                            "note": 1,
+                            "name": "Sample Note Name",
+                            "pitch": 34.2,
+                            "starttime": 0.0
+                        }
+                        ],
+                        "instrument": null
+                    }
+                ]
             }
-        },
+        ],
         "instruments": null,
         "comments": [
             "Sample Comment"
         ],
-        "genre": "Rock",
+        "genre": "ROC",
         "privacy": true,
         "tempo": 0.0,
         "title": "I don't know what to call this",

@@ -12,8 +12,8 @@ public class Chord {
 
     /**
      * Constructs a chord
-     * @param name the name of the song    ?
-     * @param notes the notes in the chord (and song)
+     * @param name the name of the chord
+     * @param notes the notes in the chord
      */
     public Chord(String name, ArrayList<Note> notes) {
         this.name = name;

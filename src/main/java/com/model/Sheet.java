@@ -14,8 +14,9 @@ public class Sheet implements NotationFormat{
      * Constructs a sheet of music
      * @param notes the notes in the song
      */
-    public Sheet(ArrayList<Note> notes) {
+    public Sheet(ArrayList<Note> notes, Instrument instrument) {
         this.notes = notes;
+        this.instrument = instrument;
     }
 
     /**
