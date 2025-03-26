@@ -3,7 +3,7 @@ package com.model;
 import java.util.ArrayList;
 
 /**
- * Represents music in a tab notation format
+ * Implements the NotationFormat interface, represents music in a tab notation format
  */
 
 public class Tab implements NotationFormat{
@@ -19,7 +19,7 @@ public class Tab implements NotationFormat{
     }
 
     /**
-     * Displays the tab
+     * Displays the tab of music
      */
     public void displayTab() {
         for (int i = 0; i<tabNotes.size(); i++) {
@@ -30,7 +30,7 @@ public class Tab implements NotationFormat{
     }
 
     /**
-     * 
+     * Displays the format of the music
      */
     @Override
     public void displayFormat() {

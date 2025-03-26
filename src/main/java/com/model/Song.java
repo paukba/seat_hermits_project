@@ -4,7 +4,7 @@ import java.util.UUID;
 import java.util.ArrayList;
 
 /**
- * Class for a song
+ * Class that represents a song
  */
 
 public class Song {
