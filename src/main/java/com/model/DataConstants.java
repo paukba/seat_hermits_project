@@ -21,7 +21,7 @@ public abstract class DataConstants {
     protected static final String SONG_FILE_NAME = "json/songs.json";
     protected static final String SONG_ID = "uuid";
     protected static final String SONG_TITLE = "title";
-    protected static final String SONG_MEASURES = "measure";
+    protected static final String SONG_MEASURES = "measures";
     protected static final String MEASURE_NUM = "measure";
     protected static final String MEASURE_LYRIC = "lyric";
     protected static final String MEASURE_CHORD = "chord";

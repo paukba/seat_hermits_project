@@ -38,4 +38,28 @@ public class TabNote {
 
         return tabNote;
     }
+
+    /**
+     * Gets the tabnote as a String
+     * @return the tab's tabnote
+     */
+    public String getTabnoteString() {
+        return string;
+    }
+
+    /**
+     * Gets the fret for this tabnote
+     * @return
+     */
+    public int getTabnoteFret() {
+        return fret;
+    }
+
+    /**
+     * Gets the note of this tabnote
+     * @return the tabnote's note
+     */
+    public Note getTabnoteNote() {
+        return note;
+    }
 }

@@ -5,10 +5,12 @@ import java.util.UUID;
 
 public class UserList {
     private static UserList userList;
-    private ArrayList<User> users = new ArrayList<User>();
+    private ArrayList<User> users;
 
     private UserList() {
-        this.users = new ArrayList<User>();
+        this.users = DataLoader.getUsers();
+        userList = this;
+
     }
 
     public void addUser(User user) {
@@ -31,6 +33,9 @@ public class UserList {
     }
 
     public static UserList getInstance() {
+        if (userList == null) {
+            userList = new UserList();
+        }
         return userList;
     }
 
@@ -51,4 +56,6 @@ public class UserList {
         // if no user found
         return null;
     }
+
+    //public void setUserArray() 
 }

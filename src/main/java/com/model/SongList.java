@@ -48,6 +48,7 @@ public class SongList {
     //     return new Song("", new ArrayList<Tab>(), new ArrayList<String>(), Genre.ROC, true, null);
     // }
     public Song editSong(UUID songID) {
+        // new song replaces current song
         return new Song(songID, " ", new ArrayList<Measure>(), songID, true, Genre.ROC, new ArrayList<Instrument>(), 0, new ArrayList<String>());
     }
 

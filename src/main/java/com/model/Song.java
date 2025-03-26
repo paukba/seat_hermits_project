@@ -204,4 +204,28 @@ public class Song {
         comments.remove(comment);
     }
 
+    /**
+     * Gets the author's UUID
+     * @return the authorId
+     */
+    public UUID getAuthorId() {
+        return id;
+    }
+
+    /**
+     * Gets the tempo of the song
+     * @return the song's tempo
+     */
+    public double getTempo() {
+        return tempo;
+    }
+
+    /**
+     * Gets the list of comments for the song
+     * @return the ArrayList of comments as Strings
+     */
+    public ArrayList<String> getComments() {
+        return comments;
+    }
+
 }
