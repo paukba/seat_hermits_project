@@ -6,9 +6,11 @@ import java.util.UUID;
 
 public class Driver {
     public static void main(String[] args) {
-        playSong();
+        //playSong();
 
-        login();
+        //login();
+
+        createAccount();
 
     }
 
@@ -40,5 +42,15 @@ public class Driver {
         } else {
             System.out.println("Failed to login");
         }
+    }
+
+    public static void createAccount() {
+        UserList userList = UserList.getInstance();
+
+        // create account correct
+        userList.createAccount("mark", "fish", "BUMBUM", "markfish@gmail.com", "markizcool", false);
+        userList.saveUserList();
+        User newuser = userList.getUser("BUMBUM");
+        System.out.println(newuser.getId() + ": " + newuser.getFirstName() + " " + newuser.getLastName());
     }
 }

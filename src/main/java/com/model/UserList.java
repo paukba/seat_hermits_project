@@ -22,10 +22,11 @@ public class UserList {
             String name = users.get(i).getUserName();
             String curr_email = users.get(i).getEmail();
             if( userName.equals(name) || email.equals(curr_email) ) {
+                System.out.println("Username or Email is currently in use, please try another.");
                 return;
             }
         }
-        
+
         User user;
         if (isAuthor) {
             user = new Author(UUID.randomUUID(), firstName, lastName, userName, email, password, new ArrayList<UUID>(), new ArrayList<UUID>());
@@ -42,6 +43,18 @@ public class UserList {
     public User getUser(UUID user) {
         for ( int i = 0; i < DataLoader.getUsers().size(); i++ ) {
             if ( user.equals(DataLoader.getUsers().get(i).getId()) ) {
+                return DataLoader.getUsers().get(i);
+            }
+        }
+
+        // if no user found
+        return null;
+    }
+
+    // temp method to return user based on userName
+    public User getUser(String userName) {
+        for ( int i = 0; i < DataLoader.getUsers().size(); i++ ) {
+            if ( userName.equals(DataLoader.getUsers().get(i).getUserName()) ) {
                 return DataLoader.getUsers().get(i);
             }
         }
