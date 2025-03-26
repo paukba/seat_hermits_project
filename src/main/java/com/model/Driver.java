@@ -25,23 +25,29 @@ public class Driver {
         measure.playNotes();
     }
 
-    // public static void login() {
-    //     UserList userList = UserList.getInstance();
+    public static void login() {
+        UserList userList = UserList.getInstance();
         
-    //     // login correct
-        
+        // login correct
+        User correctLogin = userList.login("iamSpider99", "spiderman2099roolz");
 
-    //     System.out.println("--------------------------------------------------------");
+        if (correctLogin != null) {
+            System.out.println(correctLogin.getId() + ": " + correctLogin.getFirstName() + " " + correctLogin.getLastName());
+        } else {
+            System.out.println("Failed to login");
+        }
 
-    //     // login wrong
-    //     User wrongLogin = userList.login("iamSpider", "spidermanroolz");
+        System.out.println("--------------------------------------------------------");
 
-    //     if (wrongLogin != null) {
-    //         System.out.println(wrongLogin.getId() + ": " + wrongLogin.getFirstName() + " " + wrongLogin.getLastName());
-    //     } else {
-    //         System.out.println("Failed to login");
-    //     }
-    // }
+        // login wrong
+        User wrongLogin = userList.login("iamSpider", "spidermanroolz");
+
+        if (wrongLogin != null) {
+            System.out.println(wrongLogin.getId() + ": " + wrongLogin.getFirstName() + " " + wrongLogin.getLastName());
+        } else {
+            System.out.println("Failed to login");
+        }
+    }
 
     // public static void createAccount() {
         
