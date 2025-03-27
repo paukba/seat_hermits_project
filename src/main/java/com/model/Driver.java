@@ -21,8 +21,10 @@ public class Driver {
         Song song = songList.getSong(UUID.fromString("df1deded-83af-45f9-979f-e25e52734088"));
         ArrayList<Measure> measures = song.getMeasures();
         Iterator<Measure> measureIterator = measures.iterator();
-        Measure measure = measureIterator.next();
-        measure.playNotes();
+        while (measureIterator.hasNext()) {
+            Measure measure = measureIterator.next();
+            measure.playNotes();
+        }
     }
 
     public static void login() {
