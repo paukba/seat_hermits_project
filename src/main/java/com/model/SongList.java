@@ -91,4 +91,8 @@ public class SongList {
     public void saveSongList() {
         DataWriter.saveSongs();
     }
+
+    public ArrayList<Song> getSongs() {
+        return songs;
+    }
 }
