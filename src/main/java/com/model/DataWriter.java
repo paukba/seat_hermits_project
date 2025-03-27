@@ -48,12 +48,13 @@ public class DataWriter extends DataConstants {
 
         // Populate the object with all info extracted from the json
         userDetails.put(USER_ID, user.getId().toString());
+        userDetails.put(USER_IS_AUTHOR, user.getIsAuthor());
         userDetails.put(USER_FIRST_NAME, user.getFirstName());
         userDetails.put(USER_LAST_NAME, user.getLastName());
         userDetails.put(USER_EMAIL, user.getEmail());
         userDetails.put(USER_USER_NAME, user.getUserName());
         userDetails.put(USER_PASSWORD, user.getPassword());
-        userDetails.put(USER_FAV_SONGS, user.getFavoriteSongs());
+        userDetails.put(USER_FAV_SONGS, user.getFavoriteSongs().toString());
         //if(user.getIsAuthor())
         //    userDetails.put(USER_MY_SONGS, user.getMySongs());
 
@@ -112,15 +113,21 @@ public class DataWriter extends DataConstants {
         songDetails.put(SONG_TITLE, song.getTitle());
         JSONArray jsonMeasures = new JSONArray();
         for (int i = 0; i < song.getMeasures().size(); i++) {
-            jsonMeasures.add(getMeasureJSON(song.getMeasures().get(i)));
+            //jsonMeasures.add(getMeasureJSON(song.getMeasures().get(i)));
         }
         songDetails.put(SONG_MEASURES, jsonMeasures.toJSONString());
         songDetails.put(SONG_AUTHOR_ID, song.getAuthorId().toString());
         songDetails.put(SONG_PRIVACY, song.isPrivate());
-        songDetails.put(SONG_GENRE, song.getGenre());
-        songDetails.put(SONG_INSTRUMENTS, song.getInstruments());
+        songDetails.put(SONG_GENRE, song.getGenre().label);
+        //songDetails.put(SONG_INSTRUMENTS, song.getInstruments());
         songDetails.put(SONG_TEMPO, song.getTempo());
-        songDetails.put(SONG_COMMENTS, song.getComments());
+        JSONArray jsonComments = new JSONArray();
+        for (int i = 0; i < song.getComments().size(); i++){
+            JSONObject commentDetails = new JSONObject();
+            commentDetails.put("", song.getComments().get(i));
+            jsonComments.add(commentDetails);
+        }
+        //songDetails.put(SONG_COMMENTS,jsonComments);
         
         return songDetails; // Give it back
 
@@ -133,7 +140,9 @@ public class DataWriter extends DataConstants {
         
         measureDetails.put(MEASURE_NUM, index);
         measureDetails.put(MEASURE_LYRIC, measure.getMeasureLyric());
-        measureDetails.put(MEASURE_CHORD, measure.getMeasureChord());
+        JSONArray temp = new JSONArray();
+        temp.add(measure.getMeasureChord().toString());
+        measureDetails.put(MEASURE_CHORD, temp);
         measureDetails.put(MEASURE_STRINGS, measure.getMeasureStrings());
         JSONArray jsonSheets = new JSONArray();
         for (int i = 0; i < measure.getMeasureSheet().size(); i++) {
@@ -204,12 +213,3 @@ public class DataWriter extends DataConstants {
 
         return tabNoteDetails;
     }
-
-    // Stuff for testing
-    
-    public static void main(String[] args){
-        DataWriter.saveUsers();
-        DataWriter.saveSongs();
-    }
-    
-}
