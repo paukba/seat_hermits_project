@@ -132,5 +132,9 @@ public class UserList {
         return null;
     }
 
+    public ArrayList<User> getUsers() {
+        return users;
+    }
+
     //public void setUserArray() 
 }

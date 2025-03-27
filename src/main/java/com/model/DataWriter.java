@@ -19,7 +19,7 @@ public class DataWriter extends DataConstants {
         Below is dependant on DataLoader so put this back when that's done
         */
         UserList userList = UserList.getInstance();
-        ArrayList<User> users = DataLoader.getUsers();
+        ArrayList<User> users = userList.getUsers();
         
         //ArrayList<User> users = new ArrayList<User>(); // This is for testing; Delete later
         //ArrayList<UUID> tempFavSongs = new ArrayList<UUID>();
@@ -66,11 +66,11 @@ public class DataWriter extends DataConstants {
         // Variables
         //Put this back in qhen dataLoader is done
         SongList songList = SongList.getInstance();
-        ArrayList<Song> songs = DataLoader.getSongs();
+        ArrayList<Song> songs = songList.getSongs();
         
-        
-        //ArrayList<Song> songs = new ArrayList<Song>();
         /*
+        ArrayList<Song> songs = new ArrayList<Song>();
+        
         ArrayList<Measure> testMeasures = new ArrayList<Measure>();
         ArrayList<Note> testNotes = new ArrayList<Note>();
         testNotes.add(new Note("Sample Note Name", 34.2, 5.6, 7.2));
@@ -110,7 +110,11 @@ public class DataWriter extends DataConstants {
         songDetails.put(SONG_FILE_NAME, song.getSongFileName());
         songDetails.put(SONG_ID, song.getId().toString());
         songDetails.put(SONG_TITLE, song.getTitle());
-        songDetails.put(SONG_MEASURES, getMeasureJSON(song.getMeasures()));
+        JSONArray jsonMeasures = new JSONArray();
+        for (int i = 0; i < song.getMeasures().size(); i++) {
+            jsonMeasures.add(getMeasureJSON(song.getMeasures().get(i)));
+        }
+        songDetails.put(SONG_MEASURES, jsonMeasures.toJSONString());
         songDetails.put(SONG_AUTHOR_ID, song.getAuthorId().toString());
         songDetails.put(SONG_PRIVACY, song.isPrivate());
         songDetails.put(SONG_GENRE, song.getGenre());
@@ -122,81 +126,90 @@ public class DataWriter extends DataConstants {
 
     }
 
-    public static JSONObject getMeasureJSON(ArrayList<Measure> measures) {
+    public static JSONObject getMeasureJSON(Measure measure) {
         JSONObject measureDetails = new JSONObject();
         int index = 0;
 
-        for (Measure i : measures) {
-            measureDetails.put(MEASURE_NUM, index);
-            measureDetails.put(MEASURE_LYRIC, i.getMeasureLyric());
-            measureDetails.put(MEASURE_CHORD, i.getMeasureChord());
-            measureDetails.put(MEASURE_STRINGS, i.getMeasureStrings());
-            measureDetails.put(MEASURE_SHEETS, getSheetJSON(i.getMeasureSheet()));
-            measureDetails.put(MEASURE_TABS, getTabJSON(i.getMeasureTab()));
-            index++;
+        
+        measureDetails.put(MEASURE_NUM, index);
+        measureDetails.put(MEASURE_LYRIC, measure.getMeasureLyric());
+        measureDetails.put(MEASURE_CHORD, measure.getMeasureChord());
+        measureDetails.put(MEASURE_STRINGS, measure.getMeasureStrings());
+        JSONArray jsonSheets = new JSONArray();
+        for (int i = 0; i < measure.getMeasureSheet().size(); i++) {
+            jsonSheets.add(getSheetJSON(measure.getMeasureSheet().get(i)));
         }
+        measureDetails.put(MEASURE_SHEETS, jsonSheets);
+        JSONArray jsonTabs = new JSONArray();
+        for (int i = 0; i < measure.getMeasureTab().size(); i++) {
+            jsonTabs.add(getTabJSON(measure.getMeasureTab().get(i)));
+        }
+        measureDetails.put(MEASURE_TABS, jsonTabs);
+        index++;
 
         return measureDetails;
     }
 
-    public static JSONObject getSheetJSON(ArrayList<Sheet> sheets) {
+    public static JSONObject getSheetJSON(Sheet sheets) {
         JSONObject sheetDetails = new JSONObject();
 
-        for (Sheet j : sheets) {
-            sheetDetails.put(SHEET_INSTRUMENT, j.getSheetInstrument());
-            sheetDetails.put(SHEET_NOTES, getNotesJSON(j.getSheetNotes()));
+        
+        sheetDetails.put(SHEET_INSTRUMENT, sheets.getSheetInstrument());
+        JSONArray jsonNotes = new JSONArray();
+        for (int i = 0; i < sheets.getSheetNotes().size(); i++) {
+            jsonNotes.add(getNotesJSON(sheets.getSheetNotes().get(i)));
         }
+        sheetDetails.put(SHEET_NOTES, jsonNotes);
 
         return sheetDetails;
     }
 
-    public static JSONObject getNotesJSON(ArrayList<Note> notes) {
+    public static JSONObject getNotesJSON(Note notes) {
         JSONObject noteDetails = new JSONObject();
         int noteNum = 1;
 
-        for (Note k : notes) {
-            noteDetails.put(NOTE_NUM, noteNum);
-            noteDetails.put(NOTE_NAME, k.getNoteName());
-            noteDetails.put(NOTE_PITCH, k.getNotePitch());
-            noteDetails.put(NOTE_DURATION, k.getDuration());
-            noteDetails.put(NOTE_START_TIME, k.getStartTime());
-            noteNum++;
-        }
+        noteDetails.put(NOTE_NUM, noteNum);
+        noteDetails.put(NOTE_NAME, notes.getNoteName());
+        noteDetails.put(NOTE_PITCH, notes.getNotePitch());
+        noteDetails.put(NOTE_DURATION, notes.getDuration());
+        noteDetails.put(NOTE_START_TIME, notes.getStartTime());
+        noteNum++;
 
         return noteDetails;
     }
 
-    public static JSONObject getTabJSON(ArrayList<Tab> tabs) {
+    public static JSONObject getTabJSON(Tab tabs) {
         JSONObject tabDetails = new JSONObject();
 
-        for (Tab j : tabs) {
-            tabDetails.put(TAB_INSTRUMENT, j.getTabInstrument());
-            tabDetails.put("tabnote", getTabNoteJSON(j.getTabNotes()));
+        
+        tabDetails.put(TAB_INSTRUMENT, tabs.getTabInstrument());
+        JSONArray jsonTabNotes = new JSONArray();
+        for (int i = 0; i < tabs.getTabNotes().size(); i++) {
+            jsonTabNotes.add(tabs.getTabNotes().get(i));
         }
+        tabDetails.put("tabnote", jsonTabNotes);
 
         return tabDetails;
     }
 
-    public static JSONObject getTabNoteJSON(ArrayList<TabNote> tabNotes) {
+    public static JSONObject getTabNoteJSON(TabNote tabNotes) {
         JSONObject tabNoteDetails = new JSONObject();
         int tabNoteNum = 1;
 
-        for (TabNote k : tabNotes) {
             tabNoteDetails.put(TABNOTE_NUM, tabNoteNum);
-            tabNoteDetails.put(TABNOTE_STRING, k.getTabnoteString());
-            tabNoteDetails.put(TABNOTE_FRET, k.getTabnoteFret());
-            tabNoteDetails.put(TABNOTE_NOTE, k.getTabnoteNote());
+            tabNoteDetails.put(TABNOTE_STRING, tabNotes.getTabnoteString());
+            tabNoteDetails.put(TABNOTE_FRET, tabNotes.getTabnoteFret());
+            tabNoteDetails.put(TABNOTE_NOTE, tabNotes.getTabnoteNote());
             tabNoteNum++;
-        }
 
         return tabNoteDetails;
     }
 
     // Stuff for testing
-    /*
+    
     public static void main(String[] args){
-        //DataWriter.saveUsers();
+        DataWriter.saveUsers();
         DataWriter.saveSongs();
     }
-    */
+    
 }
