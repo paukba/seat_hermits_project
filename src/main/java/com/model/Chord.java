@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Class that represents chords
+ * Represents a musical chord that consists of multiple notes
  */
 
 public class Chord {
@@ -26,7 +26,7 @@ public class Chord {
 
     /**
      * Plays the intended chord
-     * @param notes the notes in the chord (and song)
+     * @param notes the notes in the chord
      */
     public void playChord(ArrayList<Note> notes) {
         Iterator<Note> noteIterator = notes.iterator();

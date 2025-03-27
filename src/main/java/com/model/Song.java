@@ -4,7 +4,8 @@ import java.util.UUID;
 import java.util.ArrayList;
 
 /**
- * Class that represents a song
+ * Represents a song, which consists of a title, author, genre, tempo, 
+ * measures, and notation formats (can also include sheet music, tabs, and lyrics)
  */
 
 public class Song {
@@ -26,16 +27,16 @@ public class Song {
     private ArrayList<String> comments;
 
     /**
-     * Constructs a song
-     * @param id the song's ID
-     * @param title the song's title
-     * @param measures the song's measures
-     * @param authorID the ID of the song's author
-     * @param privacy the song's privacy
-     * @param genre the song's genre
-     * @param instruments the song's instruments
-     * @param tempo the song's tempo
-     * @param comments the song's comments
+     * Constructs a song with its information
+     * @param id the UUID of the song
+     * @param title the title of the song
+     * @param measures the list of measures for the song
+     * @param authorID the UUID of the song's author
+     * @param privacy the privacy of the song (public or private)
+     * @param genre the genre of the song
+     * @param instruments the list of instruments in the song
+     * @param tempo the tempo of the song
+     * @param comments the list of comments on the song
      */
     public Song(UUID id, String title, ArrayList<Measure> measures, UUID authorID, Boolean privacy, Genre genre, ArrayList<Instrument> instruments, double tempo, ArrayList<String> comments) {
         this.id = id;
@@ -51,7 +52,7 @@ public class Song {
     }
     
     /**
-     * Gets the file name for the song
+     * Gets the file name of a song
      * @return the song's file name
      */
     public String getSongFileName(){
@@ -59,129 +60,129 @@ public class Song {
     }
 
     /**
-     * Gets the ID of the song
-     * @return the song's ID
+     * Gets the unique ID of a song
+     * @return the UUID of the song
      */
     public UUID getId(){
         return this.id;
     }
     
     /**
-     * Gets the title of the song
-     * @return the song's title
+     * Gets the title of a song
+     * @return the title of the song
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Gets the measures for the song
-     * @return the song's measures
+     * Gets the measures for a song
+     * @return the list of measures in the song
      */
     public ArrayList<Measure> getMeasures(){
         return this.measures;
     }
 
     /**
-     * Gets the sheets for the song
+     * Gets the sheet music for an instrument
      * @param instrument the chosen instrument
-     * @return the song's sheets
+     * @return the list of sheets for the chosen instrument
      */
     public ArrayList<Sheet> getSheets(Instrument instrument) {
         return sheets;
     }
 
     /**
-     * Gets the tabs for the song
+     * Gets the tablature for a song
      * @param instrument the chosen instrument
-     * @return the song's tabs
+     * @return the list of tabs for the chosen instrument
      */
     public ArrayList<Tab> getTabs(Instrument instrument) {
         return tabs;
     }
 
     /**
-     * Gets the lyrics for the song
-     * @return the song's lyrics
+     * Gets the lyrics for a song
+     * @return the lyrics of the song
      */
     public ArrayList<String> getLyrics() {
         return lyrics;
     }
 
     /**
-     * Gets the genre of the song
-     * @return the song's genre
+     * Gets the genre of a song
+     * @return the genre of the song
      */
     public Genre getGenre() {
         return genre;
     }
 
     /**
-     * Gets the instruments in the song ?
-     * @return the song's instruments
+     * Gets the instruments in a song
+     * @return the instruments in the song
      */
     public ArrayList<Instrument> getInstruments() {
         return instruments;
     }
 
     /**
-     * Tells if the song is private or not
-     * @return true if song is private, false if not
+     * Checks if a song is private or not
+     * @return true if the song is private, false if not
      */
     public boolean isPrivate() {
         return privacy;
     }
 
     /**
-     * Sets the title of the song
-     * @param title the chosen title
+     * Sets the title of a song
+     * @param title the chosen title of the song
      */
     public void setTitle(String title) {
         this.title = title;
     }
 
     /**
-     * Sets the sheets for the song
-     * @param sheets the chosen sheets
+     * Sets the sheet music for a song
+     * @param sheets the chosen sheet music for the song
      */
     public void setSheets(ArrayList<Sheet> sheets) {
         this.sheets = sheets;
     }
 
     /**
-     * Sets the tabs for the song
-     * @param tabs the chosen tabs
+     * Sets the tablature for a song
+     * @param tabs the chosen tabs for the song
      */
     public void setTabs(ArrayList<Tab> tabs) {
         this.tabs = tabs;
     }
 
     /**
-     * Sets the lyrics for the song
-     * @param lyrics the chosen lyrics
+     * Sets the lyrics for a song
+     * @param lyrics the chosen lyrics for the song
      */
     public void setLyrics(ArrayList<String> lyrics) {
         this.lyrics = lyrics;
     }
 
     /**
-     * Sets the genre of the song
-     * @param genre the chosen genre
+     * Sets the genre of a song
+     * @param genre the chosen genre of the song
      */
     public void setGenre(Genre genre) {
         this.genre = genre;
     }
 
     /**
-     * Sets the privacy of the song
-     * @param privacy the chosen privacy
+     * Sets the privacy of a song
+     * @param privacy the chosen privacy of the song
      */
     public void setPrivacy(boolean privacy) {
         this.privacy = privacy;
     }
 
     /**
-     * Plays the song
+     * Plays a song
      * @param song the chosen song
      */
     public void playSong(Song song) {
@@ -189,7 +190,7 @@ public class Song {
     }
 
     /**
-     * Adds a comment to the song
+     * Adds a comment to a song
      * @param comment the comment being added
      */
     public void addComment(String comment) {
@@ -205,24 +206,24 @@ public class Song {
     }
 
     /**
-     * Gets the author's UUID
-     * @return the authorId
+     * Gets the unique ID of the author of a song
+     * @return the UUID of the author
      */
     public UUID getAuthorId() {
         return id;
     }
 
     /**
-     * Gets the tempo of the song
-     * @return the song's tempo
+     * Gets the tempo of a song
+     * @return the tempo of the song
      */
     public double getTempo() {
         return tempo;
     }
 
     /**
-     * Gets the list of comments for the song
-     * @return the ArrayList of comments as Strings
+     * Gets the list of comments for a song
+     * @return the list of comments
      */
     public ArrayList<String> getComments() {
         return comments;

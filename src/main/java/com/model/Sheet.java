@@ -3,7 +3,8 @@ package com.model;
 import java.util.ArrayList;
 
 /**
- * Implements the NotationFormat interface, represents music in a sheet notation format
+ * Represents a music in a sheet notation format
+ * Implements the NotationFormat interface
  */
 
 public class Sheet implements NotationFormat{
@@ -11,7 +12,7 @@ public class Sheet implements NotationFormat{
     private Instrument instrument;
 
     /**
-     * Constructs a sheet of music
+     * Constructs a sheet of music with notes and chosen instrument
      * @param notes the notes in the song
      */
     public Sheet(ArrayList<Note> notes, Instrument instrument) {
@@ -27,7 +28,7 @@ public class Sheet implements NotationFormat{
     }
 
     /**
-     * Displays the format of the music
+     * Displays the format of a musical notation
      */
     @Override
     public void displayFormat() {
@@ -35,15 +36,15 @@ public class Sheet implements NotationFormat{
     }
 
     /**
-     * Gets the instrument of the sheet
-     * @return the sheet instrument
+     * Gets the instrument for a sheet
+     * @return the sheet's instrument
      */
     public Instrument getSheetInstrument() {
         return instrument;
     }
 
     /**
-     * Gets the notes for this sheet
+     * Gets the notes for a sheet
      * @return the sheet's notes
      */
     public ArrayList<Note> getSheetNotes() {

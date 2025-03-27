@@ -2,6 +2,11 @@ package com.model;
 
 import java.util.ArrayList;
 
+/**
+ * Represents an electric guitar (type of instrument)
+ * Extends the Instrument class
+ */
+
 public class ElectricGuitar extends Instrument {
     private String name;
     private ArrayList<String> strings;
@@ -11,8 +16,8 @@ public class ElectricGuitar extends Instrument {
 
     /**
      * Constructs an electric guitar
-     * @param name 
-     * @param strings 
+     * @param name the name of 
+     * @param strings the list of string tunings, defaults if null
      */
     public ElectricGuitar(String name, ArrayList<String> strings) {
         // may need to be changed
@@ -29,27 +34,33 @@ public class ElectricGuitar extends Instrument {
         }
     }
 
+    /**
+     * Gets the notes to be played
+     * @return the list of notes
+     */
     public ArrayList<Note> getNotes() {
         return notes;
     }
 
     /**
-     * Gets the chords in the song
+     * Gets the chords to be played
+     * @return the list of chords
      */
     public ArrayList<Chord> getChord() {
         return chords;
     }
 
     /**
-     * Gets the name of the song
+     * Gets the name of the electric guitar
+     * @return the name of the electric guitar
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Gets the amount of strings
-     * @return 
+     * Gets the number of strings on the electric guitar
+     * @return the number of strings
      */
     public int getNumStrings() {
         return NUM_STRINGS;

@@ -1,13 +1,13 @@
 package com.model;
 
 /**
- * Implemented by classes that have a certain notation format
+ * Interface used by classes that have a specific musical notation format
  */
 
 public interface NotationFormat {
     
     /**
-     * Displays the notation format of a song
+     * Displays the musical notation format of a song
      */
     public void displayFormat();
 }

@@ -1,5 +1,9 @@
 package com.model;
 
+/**
+ * Defines constant values used for data storage and retrieval
+ */
+
 public abstract class DataConstants {
     protected static final String USER_FILE_NAME = "json/users.json";
     protected static final String USER_ID = "id";

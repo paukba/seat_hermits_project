@@ -1,7 +1,7 @@
 package com.model;
 
 /**
- * Class that represents notes
+ * Represents a musical note, which consists of a name, pitch, duration, and start time
  */
 
 public class Note {
@@ -11,8 +11,8 @@ public class Note {
     private double startTime;
 
     /**
-     * Constructs a note
-     * @param name
+     * Constructs a note with its elements
+     * @param name the name of the note
      * @param pitch the pitch of the note
      * @param duration the duration of the note
      * @param startTime the time the note starts at
@@ -25,7 +25,7 @@ public class Note {
     }
 
     /**
-     * Plays the intended note
+     * Plays an intended note
      * @param pitch the pitch of the note
      * @param duration the duration of the note
      * @param startTime the time the note starts at
@@ -37,7 +37,7 @@ public class Note {
     }
 
     /**
-     * Gets the duration of the note
+     * Gets the duration of a note
      * @return the note's duration
      */
     public double getDuration() {
@@ -45,15 +45,15 @@ public class Note {
     }
     
     /**
-     * Gets the starting time of the note
-     * @return note's startTime
+     * Gets the starting time of a note
+     * @return the note's start time
      */
     public double getStartTime() {
         return this.startTime;
     }
 
     /**
-     * Gets the name of this note
+     * Gets the name of a note
      * @return the note's name
      */
     public String getNoteName() {
@@ -61,7 +61,7 @@ public class Note {
     }
 
     /**
-     * Gets the pitch of this note
+     * Gets the pitch of a note
      * @return the note's pitch
      */
     public double getNotePitch() {

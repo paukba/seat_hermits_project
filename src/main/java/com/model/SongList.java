@@ -62,7 +62,7 @@ public class SongList {
 
     /**
      * Gets the song
-     * @param id the song's ID
+     * @param id the song's unique ID
      * @return check (the song) if true, null otherwise
      */
     public Song getSong(UUID id) {
