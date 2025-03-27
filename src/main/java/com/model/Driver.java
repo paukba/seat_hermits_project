@@ -14,6 +14,10 @@ public class Driver {
 
         //createAccount();
 
+        //scenario65536();
+
+        //scenario128();
+
     }
 
     public static void playSong() {
@@ -85,6 +89,59 @@ public class Driver {
             System.out.println("Failed to login");
         }
 
+
+    }
+
+    public static void scenario128() {
+
+        UserList userList = UserList.getInstance();
+        SongList songList = SongList.getInstance();
+        
+        userList.createAccount("Candace", "Rodriguez", "Bearted64", "CandaceJRodriguez@armyspy.com", "", false);
+        DataWriter.saveUsers();
+
+        //songList.addSong(new Song(UUID.randomUUID(), "Cool Song Name", new ArrayList<Measure>(), UUID.randomUUID(), true, Genre.MET.label, new ArrayList<Instrument>(), 54.3, new ArrayList<String>()));
+        ArrayList<Measure> testMeasures = new ArrayList<Measure>();
+        ArrayList<Note> testNotes = new ArrayList<Note>();
+        testNotes.add(new Note("Sample Note Name", 34.2, 5.6, 7.2));
+        ArrayList<Chord> testChords = new ArrayList<Chord>();
+        ArrayList<Sheet> testsSheets = new ArrayList<Sheet>();
+        testsSheets.add(new Sheet(testNotes, new ElectricGuitar("Sick Guitar", new ArrayList<String>())));
+        ArrayList<Tab> testTabs = new ArrayList<Tab>();
+        testMeasures.add(new Measure(testNotes, new Chord("em", testNotes), "Sample lyric", testsSheets, testTabs));
+
+        ArrayList<String> testComments = new ArrayList<String>();
+        testComments.add("Sample Comment");
+        
+        songList.addSong(new Song(UUID.randomUUID(), "I don't know what to call this", testMeasures, UUID.randomUUID(), true, Genre.ROC, null, 0, testComments));
+        DataWriter.saveSongs();
+
+        scenario65536(); // Import everything from the first time
+
+    }
+
+    public static void scenario65536() {
+        
+        UserList userList = UserList.getInstance();
+        SongList songList = SongList.getInstance();
+
+        userList.createAccount("Candace", "Rodriguez", "Bearted64", "CandaceJRodriguez@armyspy.com", "", false);
+        DataWriter.saveUsers();
+
+        ArrayList<Measure> testMeasures = new ArrayList<Measure>();
+        ArrayList<Note> testNotes = new ArrayList<Note>();
+        testNotes.add(new Note("Another Note", 17.4, 3.5, 6.9));
+        ArrayList<Chord> testChords = new ArrayList<Chord>();
+        ArrayList<Sheet> testsSheets = new ArrayList<Sheet>();
+        testsSheets.add(new Sheet(testNotes, new ElectricGuitar("Less dool but still pretty good Guitar", new ArrayList<String>())));
+        ArrayList<Tab> testTabs = new ArrayList<Tab>();
+        testMeasures.add(new Measure(testNotes, new Chord("A", testNotes), "Another Sample lyric", testsSheets, testTabs));
+
+        ArrayList<String> testComments = new ArrayList<String>();
+        testComments.add("Pretty neat ;)");
+        
+        songList.addSong(new Song(UUID.randomUUID(), "title title title", testMeasures, UUID.randomUUID(), true, Genre.MET, null, 0, testComments));
+        DataWriter.saveSongs();
 
     }
 }
