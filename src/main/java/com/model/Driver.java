@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class Driver {
     public static void main(String[] args) {
-        scenario1();
+        //scenario1();
 
         playSong();
 

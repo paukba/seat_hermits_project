@@ -53,8 +53,6 @@ public class Measure {
      * Plays the notes in a measure
      * @param notes the notes in the measure
      */
-
-    // figure out how to implement
     public void playNotes() {
         String jFugueArgument = "";
         int maxTime = 0;

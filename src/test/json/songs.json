@@ -1,0 +1,38 @@
+[
+    {
+        "measures": [
+            {
+                "measure": 0,
+                "strings": null,
+                "tab": {},
+                "lyric": "Sample lyric",
+                "chord": [],
+                "sheets": [
+                    {
+                        "notes": [
+                        {
+                            "duration": 5.6,
+                            "note": 1,
+                            "name": "Sample Note Name",
+                            "pitch": 403.2,
+                            "starttime": 0.0
+                        }
+                        ],
+                        "instrument": null
+                    }
+                ]
+            }
+        ],
+        "instruments": null,
+        "comments": [
+            "Sample Comment"
+        ],
+        "genre": "ROC",
+        "privacy": true,
+        "tempo": 0.0,
+        "title": "I don't know what to call this",
+        "uuid": "df1deded-83af-45f9-979f-e25e52734088",
+        "json\/songs.json": null,
+        "author-id": "df1deded-83af-45f9-979f-e25e52734088"
+    }
+]
