@@ -6,6 +6,7 @@ package com.model;
 
 public abstract class DataConstants {
     protected static final String USER_FILE_NAME = "json/users.json";
+    protected static final String USER_FILE_NAME_JUNIT = "src/test/json/users.json";
     protected static final String USER_ID = "id";
     protected static final String USER_IS_AUTHOR = "isAuthor";
     protected static final String USER_FIRST_NAME = "firstName";
@@ -17,12 +18,14 @@ public abstract class DataConstants {
     protected static final String USER_MY_SONGS = "mysongs-id";
 
     protected static final String INSTRUMENT_FILE_NAME = "json/instrument.json";
+    protected static final String INSTRUMENT_FILE_NAME_JUNIT = "src/test/json/instrument.json";
     protected static final String INSTRUMENT_NAME = "name";
     protected static final String INSTRUMENT_HAS_STRINGS = "hasstrings";
     protected static final String INSTRUMENT_NUM_STRINGS = "numstrings";
     protected static final String INSTRUMENT_STRINGS = "strings";
 
     protected static final String SONG_FILE_NAME = "json/songs.json";
+    protected static final String SONG_FILE_NAME_JUNIT = "src/test/json/songs.json";
     protected static final String SONG_ID = "uuid";
     protected static final String SONG_TITLE = "title";
     protected static final String SONG_MEASURES = "measures";
@@ -50,4 +53,14 @@ public abstract class DataConstants {
     protected static final String SONG_INSTRUMENTS = "instruments";
     protected static final String SONG_TEMPO = "tempo";
     protected static final String SONG_COMMENTS = "comments";
+
+
+    public static boolean isJUnitTest() {  
+		for (StackTraceElement element : Thread.currentThread().getStackTrace()) {
+		  if (element.getClassName().startsWith("org.junit.")) {
+			return true;
+		  }           
+		}
+		return false;
+	  }
 }

@@ -101,6 +101,9 @@ public class DataLoader extends DataConstants {
 
         try {
             FileReader reader = new FileReader(SONG_FILE_NAME);
+            if (DataConstants.isJUnitTest()) {
+                reader = new FileReader(SONG_FILE_NAME_JUNIT);
+            }
             JSONParser parser = new JSONParser();
             JSONArray songsJSON = (JSONArray)new JSONParser().parse(reader);
 
