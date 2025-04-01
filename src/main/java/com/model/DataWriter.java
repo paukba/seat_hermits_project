@@ -33,12 +33,23 @@ public class DataWriter extends DataConstants {
         }
 
         // Write everything + new stuff back to the json
-        try(FileWriter file = new FileWriter(USER_FILE_NAME)){
-            file.write(jsonUsers.toJSONString());
-            file.flush();
+        if (isJUnitTest()) {
+            try(FileWriter file = new FileWriter(USER_FILE_NAME_JUNIT)){
+                file.write(jsonUsers.toJSONString());
+                file.flush();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
         }
-        catch(IOException e){
-            e.printStackTrace();
+        else {
+            try(FileWriter file = new FileWriter(USER_FILE_NAME)){
+                file.write(jsonUsers.toJSONString());
+                file.flush();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
         }
     }
 
@@ -94,12 +105,23 @@ public class DataWriter extends DataConstants {
             jsonSongs.add(getSongJSON(songs.get(i)));
         }
 
-        try(FileWriter file = new FileWriter(SONG_FILE_NAME)){ // Write everything + new stuff back to the json
-            file.write(jsonSongs.toJSONString());
-            file.flush();
+        if (isJUnitTest()) {
+            try(FileWriter file = new FileWriter(SONG_FILE_NAME_JUNIT)){ // Write everything + new stuff back to the json
+                file.write(jsonSongs.toJSONString());
+                file.flush();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
         }
-        catch(IOException e){
-            e.printStackTrace();
+        else {
+            try(FileWriter file = new FileWriter(SONG_FILE_NAME)){ // Write everything + new stuff back to the json
+                file.write(jsonSongs.toJSONString());
+                file.flush();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
         }
     }
 
