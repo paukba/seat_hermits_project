@@ -6,6 +6,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.UUID;
+
 import org.junit.Assert;
 import com.model.*;
 
@@ -15,14 +17,13 @@ public class UsersTest {
         assertTrue(true);
     }
 
-    // @Test
-    // public void testValidLogin(){
-    //     UserList library = UserList.getInstance();
-    //     library.login("asmith");
-    //     String firstName = library.getCurrentUser().getFirstName().toLowerCase();
-
-    //     assertEquals("amy", firstName);
-    // }
+    @Test
+    public void loadSong() {
+        SongList songs = SongList.getInstance();
+        Song song = songs.getSong(UUID.fromString("df1deded-83af-45f9-979f-e25e52734088"));
+        boolean success = (song != null);
+        assertTrue(success);
+    }
 
     // @Test
     // public void testInValidLogin(){
