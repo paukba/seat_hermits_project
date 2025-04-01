@@ -15,6 +15,9 @@ public class DataLoader extends DataConstants {
 
         try {
             FileReader reader = new FileReader(USER_FILE_NAME);
+            if (DataConstants.isJUnitTest()) {
+                reader = new FileReader(USER_FILE_NAME_JUNIT);
+            }
             JSONParser parser = new JSONParser();
             JSONArray usersJSON = (JSONArray)new JSONParser().parse(reader);
 
@@ -60,6 +63,9 @@ public class DataLoader extends DataConstants {
 
         try {
             FileReader reader = new FileReader(INSTRUMENT_FILE_NAME);
+            if (DataConstants.isJUnitTest()) {
+                reader = new FileReader(INSTRUMENT_FILE_NAME_JUNIT);
+            }
             JSONParser parser = new JSONParser();
             JSONArray instrumentsJSON = (JSONArray)new JSONParser().parse(reader);
 
@@ -101,6 +107,9 @@ public class DataLoader extends DataConstants {
 
         try {
             FileReader reader = new FileReader(SONG_FILE_NAME);
+            if (DataConstants.isJUnitTest()) {
+                reader = new FileReader(SONG_FILE_NAME_JUNIT);
+            }
             JSONParser parser = new JSONParser();
             JSONArray songsJSON = (JSONArray)new JSONParser().parse(reader);
 
