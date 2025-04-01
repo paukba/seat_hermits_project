@@ -9,43 +9,49 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Assert;
 import com.model.*;
 
+
+/**
+ * @author Cooper Murphy
+ */
 public class UsersTest {
+    
     @Test
     public void testTesting(){
         assertTrue(true);
     }
 
-    // @Test
-    // public void testValidLogin(){
-    //     UserList library = UserList.getInstance();
-    //     library.login("asmith");
-    //     String firstName = library.getCurrentUser().getFirstName().toLowerCase();
+    @Test
+    public void testValidLogin(){
+        UserList userList = UserList.getInstance();
+        userList.login("mickyG", "mikeizcool");
+        String firstName = userList.getUser("mickyG").getFirstName().toLowerCase();
 
-    //     assertEquals("amy", firstName);
-    // }
+        assertEquals("mike", firstName);
+    }
 
-    // @Test
-    // public void testInValidLogin(){
-    //     UserList library = UserList.getInstance();
-    //     boolean success = library.login("bross");
-    //     assertFalse(success);
-    // }
+    @Test
+    public void testInValidLogin(){
+        UserList userList = UserList.getInstance();
+        User mike = userList.login("mickyGOAT", "mikeizcool");
+        boolean success = mike.getUserName().equals("mickyG");
+        assertFalse(success);
+    }
 
-    // @Test 
-    // public void testAddValidUser() {
-    //     UserList library = UserList.getInstance();
-    //     library.createAccount("jmath", "John","Math", 15, "803-222-3333");
-    //     library.logout();
-    //     library = UserList.getInstance();
-    //     library.login("jmath");
-    //     String lastName = library.getCurrentUser().getLastName().toLowerCase();
-    //     assertEquals("math", lastName);
-    // }
+    @Test 
+    public void testAddValidUser() {
+        UserList userList = UserList.getInstance();
+        userList.createAccount("robert", "wattson","robWatts", "robbyw@gmail.com", "wattagecottage", true);
+        //userList.logout();
+        userList = UserList.getInstance();
+        userList.login("robWatts", "wattagecottage");
+        String lastName = userList.getUser("robWatts").getLastName().toLowerCase();
+        assertEquals("wattson", lastName);
+    }
 
-    // @Test 
-    // public void testDuplicateValidUser() {
-    //     UserList library = UserList.getInstance();
-    //     boolean success = library.createAccount("jmath", "Jannet","Math", 15, "803-222-3333");
-    //     assertFalse(success);
-    // }
+    @Test 
+    public void testDuplicateValidUser() {
+        UserList userList = UserList.getInstance();
+        boolean success = userList.createAccount("robowski", "wattson","robWatts", "robbyw@gmail.com", "wattagecottage", true);
+        assertFalse(success);
+    }
 }
