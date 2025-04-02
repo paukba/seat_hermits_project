@@ -33,14 +33,21 @@ public class UserList {
      * @param password the password for the user's password
      * @param isAuthor whether or not the user has author privileges
      */
-    public void createAccount(String firstName, String lastName, String userName, String email, String password, boolean isAuthor) {
+    public boolean createAccount(String firstName, String lastName, String userName, String email, String password, boolean isAuthor) {
+        // Username or email cannot already be in use
         for ( int i = 0; i < users.size(); i++ ) {
             String name = users.get(i).getUserName();
             String curr_email = users.get(i).getEmail();
             if( userName.equals(name) || email.equals(curr_email) ) {
                 System.out.println("Username or Email is currently in use, please try another.");
-                return;
+                return false;
             }
+        }
+
+        // Username cannot start with a digit
+        if (Character.isDigit(userName.charAt(0))) {
+            System.out.println("Username starts with a number, please try another.");
+            return false;
         }
 
         User user;
@@ -49,7 +56,7 @@ public class UserList {
         } else {
             user = new User(UUID.randomUUID(), firstName, lastName, userName, email, password, new ArrayList<UUID>(), false);
         }
-        users.add(user);
+        return users.add(user);
     }
 
     /**
