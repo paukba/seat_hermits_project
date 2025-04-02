@@ -22,7 +22,7 @@ public class Driver {
 
     public static void playSong() {
         SongList songList = SongList.getInstance();
-        Song song = songList.getSong(UUID.fromString("df1deded-83af-45f9-979f-e25e52734088"));
+        Song song = songList.getSong(UUID.fromString("a89a4dbf-9995-45e6-8862-0b6baeb18537"));
         ArrayList<Measure> measures = song.getMeasures();
         Iterator<Measure> measureIterator = measures.iterator();
         while (measureIterator.hasNext()) {

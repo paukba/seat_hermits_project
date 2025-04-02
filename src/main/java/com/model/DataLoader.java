@@ -75,7 +75,7 @@ public class DataLoader extends DataConstants {
                 boolean hasStrings = (boolean)instrumentJSON.get(INSTRUMENT_HAS_STRINGS);
 
                 if (hasStrings) {  
-                    int numStrings = (int)instrumentJSON.get(INSTRUMENT_NUM_STRINGS);
+                    int numStrings = (int)(long)instrumentJSON.get(INSTRUMENT_NUM_STRINGS);
                     JSONArray stringsJSON = (JSONArray)instrumentJSON.get(INSTRUMENT_STRINGS);
                     ArrayList<String> strings = new ArrayList<String>();
                     if (stringsJSON != null) {
@@ -171,28 +171,22 @@ public class DataLoader extends DataConstants {
                     JSONArray tabsJSON = (JSONArray)measureJSON.get(MEASURE_TABS);
                     ArrayList<Tab> tabs = new ArrayList<Tab>();
                     if (tabsJSON != null) {
-                        for (int k = 0; k < tabsJSON.size(); k++) {
-                            JSONObject tabJSON = (JSONObject)tabsJSON.get(k);
-                            String tabInstrument = (String)tabJSON.get(0);
-                            ArrayList<TabNote> tabNotes = new ArrayList<TabNote>();
-                            if (tabJSON != null) {
-                                for (int l = 0; l < tabJSON.size(); l++) {
-                                    JSONObject tabNoteJSON = (JSONObject)tabJSON.get(l+1);
-                                    int tabNoteNum = (int)(long)tabNoteJSON.get(TABNOTE_NUM);
-                                    String tabNoteString = (String)tabNoteJSON.get(TABNOTE_STRING);
-                                    String tabNoteFret = (String)tabNoteJSON.get(TABNOTE_FRET);
-                                    int fretNum = Integer.parseInt(tabNoteFret);
-                                    JSONObject tabNoteNoteJSON = (JSONObject)tabNoteJSON.get(TABNOTE_NOTE);
-                                    String noteName = (String)tabNoteNoteJSON.get(NOTE_NAME);
-                                    double pitch = (double)tabNoteNoteJSON.get(NOTE_PITCH);
-                                    double duration = (double)tabNoteNoteJSON.get(NOTE_DURATION);
-                                    double startTime = (double)tabNoteNoteJSON.get(NOTE_START_TIME);
-                                    Note tabNoteNote = new Note(noteName, pitch, duration, startTime);
-                                    tabNotes.add(new TabNote(tabNoteNote, tabNoteString, fretNum));
-                                }
-                            }
-                            tabs.add(new Tab(tabNotes));
+                        ArrayList<TabNote> tabNotes = new ArrayList<TabNote>();
+                        for (int k = 0; k < tabsJSON.size()-1; k++) {
+                            JSONObject tabNoteJSON = (JSONObject)tabsJSON.get(k);
+                            int tabNoteNum = (int)(long)tabNoteJSON.get(TABNOTE_NUM);
+                            String tabNoteString = (String)tabNoteJSON.get(TABNOTE_STRING);
+                            String tabNoteFret = (String)tabNoteJSON.get(TABNOTE_FRET);
+                            int fretNum = Integer.parseInt(tabNoteFret);
+                            JSONObject tabNoteNoteJSON = (JSONObject)tabNoteJSON.get(TABNOTE_NOTE);
+                            String noteName = (String)tabNoteNoteJSON.get(NOTE_NAME);
+                            double pitch = (double)tabNoteNoteJSON.get(NOTE_PITCH);
+                            double duration = (double)tabNoteNoteJSON.get(NOTE_DURATION);
+                            double startTime = (double)tabNoteNoteJSON.get(NOTE_START_TIME);
+                            Note tabNoteNote = new Note(noteName, pitch, duration, startTime);
+                            tabNotes.add(new TabNote(tabNoteNote, tabNoteString, fretNum));
                         }
+                        tabs.add(new Tab(tabNotes));
                     }
                     
                     measures.add(new Measure(null, chord, measureLyric, sheets, tabs));
@@ -224,7 +218,7 @@ public class DataLoader extends DataConstants {
             e.printStackTrace();
         }
 
-        return songs;
+        return songs;  // yay
     }
 
     public static Instrument getInstrument(String name) {

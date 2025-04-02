@@ -14,8 +14,22 @@
                             "duration": 5.6,
                             "note": 1,
                             "name": "Sample Note Name",
-                            "pitch": 403.2,
+                            "pitch": 400.0,
                             "starttime": 0.0
+                        },
+                        {
+                            "duration": 5.6,
+                            "note": 1,
+                            "name": "Sample Note Name",
+                            "pitch": 800.0,
+                            "starttime": 0.0
+                        },
+                        {
+                            "duration": 5.6,
+                            "note": 1,
+                            "name": "Sample Note Name",
+                            "pitch": 500.0,
+                            "starttime": 1.0
                         }
                         ],
                         "instrument": null
