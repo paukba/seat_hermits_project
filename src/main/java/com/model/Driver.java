@@ -8,13 +8,13 @@ public class Driver {
     public static void main(String[] args) {
         //scenario1();
 
-        playSong();
+        //playSong();
 
         //login();
 
         //createAccount();
 
-        //scenario65536();
+        scenario65536();
 
         //scenario128();
 
@@ -133,14 +133,19 @@ public class Driver {
         testNotes.add(new Note("Another Note", 17.4, 3.5, 6.9));
         ArrayList<Chord> testChords = new ArrayList<Chord>();
         ArrayList<Sheet> testsSheets = new ArrayList<Sheet>();
-        testsSheets.add(new Sheet(testNotes, new ElectricGuitar("Less dool but still pretty good Guitar", new ArrayList<String>())));
+        testsSheets.add(new Sheet(testNotes, new ElectricGuitar("Less cool but still pretty good Guitar", new ArrayList<String>())));
         ArrayList<Tab> testTabs = new ArrayList<Tab>();
+        TabNote testTabNote = new TabNote(null, null, 0);
+        
         testMeasures.add(new Measure(testNotes, new Chord("A", testNotes), "Another Sample lyric", testsSheets, testTabs));
 
         ArrayList<String> testComments = new ArrayList<String>();
         testComments.add("Pretty neat ;)");
+
+        ArrayList<Instrument> testInstruments = new ArrayList<Instrument>();
+        testInstruments.add(new ElectricGuitar("guitar name", null));
         
-        songList.addSong(new Song(UUID.randomUUID(), "title title title", testMeasures, UUID.randomUUID(), true, Genre.MET, null, 0, testComments));
+        songList.addSong(new Song(UUID.randomUUID(), "title title title", testMeasures, UUID.randomUUID(), true, Genre.MET, testInstruments, 0, testComments));
         DataWriter.saveSongs();
 
     }

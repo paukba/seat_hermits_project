@@ -20,11 +20,6 @@ public class DataWriter extends DataConstants {
         */
         UserList userList = UserList.getInstance();
         ArrayList<User> users = userList.getUsers();
-        
-        //ArrayList<User> users = new ArrayList<User>(); // This is for testing; Delete later
-        //ArrayList<UUID> tempFavSongs = new ArrayList<UUID>();
-        //users.add(new User(UUID.randomUUID(), "First2", "Last2", "name2@email.sc.edu", "testName2", "verystrongpassword", tempFavSongs, false)); // This is for testing; Delete later
-        //UUID id, String firstName, String lastName, String email, String userName, String password, ArrayList<UUID> favoriteSongs, boolean isAuthor
         JSONArray jsonUsers = new JSONArray();
 
         // Copy all the json's pre-existing objects
@@ -65,7 +60,12 @@ public class DataWriter extends DataConstants {
         userDetails.put(USER_EMAIL, user.getEmail());
         userDetails.put(USER_USER_NAME, user.getUserName());
         userDetails.put(USER_PASSWORD, user.getPassword());
-        userDetails.put(USER_FAV_SONGS, user.getFavoriteSongs().toString());
+        JSONArray favSongsJSON = new JSONArray();
+        for (int i = 0; i < user.getFavoriteSongs().size(); i++) {
+            favSongsJSON.add(user.getFavoriteSongs().get(i));
+        }
+        userDetails.put(USER_FAV_SONGS, favSongsJSON);
+        
         //if(user.getIsAuthor())
         //    userDetails.put(USER_MY_SONGS, user.getMySongs());
 
@@ -79,24 +79,6 @@ public class DataWriter extends DataConstants {
         //Put this back in qhen dataLoader is done
         SongList songList = SongList.getInstance();
         ArrayList<Song> songs = songList.getSongs();
-        
-        /*
-        ArrayList<Song> songs = new ArrayList<Song>();
-        
-        ArrayList<Measure> testMeasures = new ArrayList<Measure>();
-        ArrayList<Note> testNotes = new ArrayList<Note>();
-        testNotes.add(new Note("Sample Note Name", 34.2, 5.6, 7.2));
-        ArrayList<Chord> testChords = new ArrayList<Chord>();
-        ArrayList<Sheet> testsSheets = new ArrayList<Sheet>();
-        testsSheets.add(new Sheet(testNotes));
-        ArrayList<Tab> testTabs = new ArrayList<Tab>();
-        testMeasures.add(new Measure(testNotes, testChords, "Sample lyric", 0.34, testsSheets, testTabs));
-
-        ArrayList<String> testComments = new ArrayList<String>();
-        testComments.add("Sample Comment");
-        
-        songs.add(new Song(UUID.randomUUID(), "I don't know what to call this", testMeasures, UUID.randomUUID(), true, Genre.ROC, null, 0, testComments));
-        */
         JSONArray jsonSongs = new JSONArray();
 
         //Everything should follow the same format as the user one
@@ -135,21 +117,21 @@ public class DataWriter extends DataConstants {
         songDetails.put(SONG_TITLE, song.getTitle());
         JSONArray jsonMeasures = new JSONArray();
         for (int i = 0; i < song.getMeasures().size(); i++) {
-            //jsonMeasures.add(getMeasureJSON(song.getMeasures().get(i)));
+            jsonMeasures.add(getMeasureJSON(song.getMeasures().get(i)));
         }
-        songDetails.put(SONG_MEASURES, jsonMeasures.toJSONString());
+        songDetails.put(SONG_MEASURES, jsonMeasures);
         songDetails.put(SONG_AUTHOR_ID, song.getAuthorId().toString());
         songDetails.put(SONG_PRIVACY, song.isPrivate());
         songDetails.put(SONG_GENRE, song.getGenre().label);
-        //songDetails.put(SONG_INSTRUMENTS, song.getInstruments());
+        songDetails.put(SONG_INSTRUMENTS, song.getInstruments());
         songDetails.put(SONG_TEMPO, song.getTempo());
         JSONArray jsonComments = new JSONArray();
-        for (int i = 0; i < song.getComments().size(); i++){
-            JSONObject commentDetails = new JSONObject();
-            commentDetails.put("", song.getComments().get(i));
-            jsonComments.add(commentDetails);
-        }
-        //songDetails.put(SONG_COMMENTS,jsonComments);
+        // for (int i = 0; i < song.getComments().size(); i++){
+        //     JSONObject commentDetails = new JSONObject();
+        //     commentDetails.put("", song.getComments().get(i));
+        //     jsonComments.add(commentDetails);
+        // }
+        songDetails.put(SONG_COMMENTS,song.getComments());
         
         return songDetails; // Give it back
 
@@ -185,7 +167,7 @@ public class DataWriter extends DataConstants {
         JSONObject sheetDetails = new JSONObject();
 
         
-        sheetDetails.put(SHEET_INSTRUMENT, sheets.getSheetInstrument());
+        sheetDetails.put(SHEET_INSTRUMENT, sheets.getSheetInstrument().toString());
         JSONArray jsonNotes = new JSONArray();
         for (int i = 0; i < sheets.getSheetNotes().size(); i++) {
             jsonNotes.add(getNotesJSON(sheets.getSheetNotes().get(i)));
@@ -213,7 +195,7 @@ public class DataWriter extends DataConstants {
         JSONObject tabDetails = new JSONObject();
 
         
-        tabDetails.put(TAB_INSTRUMENT, tabs.getTabInstrument());
+        tabDetails.put(TAB_INSTRUMENT, tabs.getTabInstrument().toString());
         JSONArray jsonTabNotes = new JSONArray();
         for (int i = 0; i < tabs.getTabNotes().size(); i++) {
             jsonTabNotes.add(tabs.getTabNotes().get(i));
@@ -227,11 +209,11 @@ public class DataWriter extends DataConstants {
         JSONObject tabNoteDetails = new JSONObject();
         int tabNoteNum = 1;
 
-            tabNoteDetails.put(TABNOTE_NUM, tabNoteNum);
-            tabNoteDetails.put(TABNOTE_STRING, tabNotes.getTabnoteString());
-            tabNoteDetails.put(TABNOTE_FRET, tabNotes.getTabnoteFret());
-            tabNoteDetails.put(TABNOTE_NOTE, tabNotes.getTabnoteNote());
-            tabNoteNum++;
+        tabNoteDetails.put(TABNOTE_NUM, tabNoteNum);
+        tabNoteDetails.put(TABNOTE_STRING, tabNotes.getTabnoteString());
+        tabNoteDetails.put(TABNOTE_FRET, tabNotes.getTabnoteFret());
+        tabNoteDetails.put(TABNOTE_NOTE, tabNotes.getTabnoteNote());
+        tabNoteNum++;
 
         return tabNoteDetails;
     }

@@ -35,4 +35,8 @@ public abstract class Instrument {
     public String getName() {
         return name;
     }
+
+    public String toString() {
+        return this.name;
+    }
 }

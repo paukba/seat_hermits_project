@@ -16,6 +16,7 @@ public class Tab implements NotationFormat{
      */
     public Tab(ArrayList<TabNote> tabNotes) {
         this.tabNotes = tabNotes;
+        this.instrument = new ElectricGuitar("guitar name", null);
     }
 
     /**
