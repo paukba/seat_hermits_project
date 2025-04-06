@@ -39,4 +39,12 @@ public class Chord {
         Player player = new Player();
         player.play(jFugueArgument);
     }
+
+    /**
+     * Gets the name of the chord to display it with
+     * @return this.name
+     */
+    public String getChordName() {
+        return this.name;
+    }
 }
