@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="187.0" layoutY="40.0" text="Login Successful!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="157.0" text="Logged in as [Username]">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="336.0" text="Loading Homepage...?" />
+      <ProgressBar layoutX="203.0" layoutY="356.0" prefWidth="200.0" progress="0.82" />
+   </children>
+</AnchorPane>
