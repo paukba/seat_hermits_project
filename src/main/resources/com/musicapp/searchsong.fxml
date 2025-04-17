@@ -24,7 +24,7 @@
                   </Button>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/BFG%20Division.jpg" />
+                        <Image url="@../../images/songs/BFG%20Division.jpg" />
                      </image>
                   </ImageView>
                   <Button layoutX="14.0" layoutY="81.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Counting Stars                               ">
@@ -54,27 +54,27 @@
                   </Button>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/Counting%20Stars.png" />
+                        <Image url="@../../images/songs/Counting%20Stars.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/Green_Day_-_Dookie_cover.jpg" />
+                        <Image url="@../../images/songs/Basket%20Case.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/You%20Can%20Hang.png" />
+                        <Image url="@../../images/songs/You%20Can%20Hang.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/Blur_Blur.jpg" />
+                        <Image url="@../../images/songs/Song%202.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/SystemofaDownToxicityalbumcover.jpg" />
+                        <Image url="@../../images/songs/Toxicity.jpg" />
                      </image>
                   </ImageView>
                   <Button layoutX="14.0" layoutY="416.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Karma Police                                  ">
@@ -84,7 +84,7 @@
                   </Button>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/Radioheadokcomputer.png" />
+                        <Image url="@../../images/songs/Karma%20Police.png" />
                      </image>
                   </ImageView>
                   <Button layoutX="14.0" layoutY="483.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Before I Forget                              ">
@@ -99,12 +99,12 @@
                   </Button>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/Before_I_Forget_(album).jpg" />
+                        <Image url="@../../images/songs/Before%20I%20Forget.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/10000Days.jpg" />
+                        <Image url="@../../images/songs/Vicarious.jpg" />
                      </image>
                   </ImageView>
                </children>
