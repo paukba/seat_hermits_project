@@ -28,7 +28,7 @@
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Label layoutX="27.0" layoutY="238.0" text="Your Favorite Songs">
+      <Label layoutX="75.0" layoutY="243.0" text="Your Favorite Songs">
          <font>
             <Font size="14.0" />
          </font></Label>

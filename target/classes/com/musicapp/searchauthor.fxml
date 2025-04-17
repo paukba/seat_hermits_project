@@ -1,16 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ScrollPane layoutX="178.0" prefHeight="400.0" prefWidth="422.0" />
-      <Button layoutX="56.0" layoutY="343.0" mnemonicParsing="false" text="Home" />
-      <Button layoutX="56.0" layoutY="262.0" mnemonicParsing="false" text="Search" />
-      <TextField layoutX="14.0" layoutY="221.0" />
+      <Rectangle fill="DODGERBLUE" height="400.0" layoutX="-3.0" smooth="false" stroke="DODGERBLUE" strokeType="INSIDE" width="242.0" />
+      <ScrollPane layoutX="230.0" prefHeight="400.0" prefWidth="370.0">
+         <content>
+            <AnchorPane prefHeight="596.0" prefWidth="351.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Mick Gordon                                 ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/mick_gordon.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content></ScrollPane>
+      <Button layoutX="75.0" layoutY="332.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="       Home">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="75.0" layoutY="267.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField layoutX="31.0" layoutY="232.0" prefHeight="26.0" prefWidth="174.0" promptText="Enter Author Name" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="81.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/misc/home_button.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="14.0" prefHeight="40.0" prefWidth="206.0" text="Select a" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="68.0" prefHeight="40.0" prefWidth="206.0" text="Song to" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="122.0" prefHeight="40.0" prefWidth="206.0" text="Play" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="212.0" prefHeight="14.0" prefWidth="206.0" text="Or Search:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
