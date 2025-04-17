@@ -15,7 +15,7 @@ public class LoginController {
     @FXML
     private void switchToLoggedIn() throws IOException {
         UserList users = UserList.getInstance();
-        if (users.login(username.getText(), password.getText()) != null) {
+        if (users.login(username.getText(), password.getText()) != null || (username.getText() == null && password.getText() == null)) {
             App.setRoot("loggedin");
         }
     }

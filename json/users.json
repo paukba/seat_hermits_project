@@ -1,7 +1,7 @@
 [
     {
         "id":"2f6e2085-85d7-45c2-81b6-2829a0da56e9",
-        "type":"a",
+        "isAuthor":true,
         "firstName":"miguel",
         "lastName":"o'hara",
         "userName":"iamSpider99",
@@ -15,7 +15,7 @@
     },
     {
         "id":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
-        "type":"a",
+        "isAuthor":true,
         "firstName":"onerepublic",
         "lastName":"n/a",
         "userName":"unoRepublica",
@@ -29,7 +29,7 @@
     },
     {
         "id":"473ffea7-0b71-4411-88ed-ed63f876454c",
-        "type":"a",
+        "isAuthor":true,
         "firstName":"mick",
         "lastName":"gordon",
         "userName":"mickyG",
