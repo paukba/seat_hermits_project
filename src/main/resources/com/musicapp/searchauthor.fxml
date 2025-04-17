@@ -15,9 +15,9 @@
       <Rectangle fill="DODGERBLUE" height="400.0" layoutX="-3.0" smooth="false" stroke="DODGERBLUE" strokeType="INSIDE" width="242.0" />
       <ScrollPane layoutX="230.0" prefHeight="400.0" prefWidth="370.0">
          <content>
-            <AnchorPane prefHeight="596.0" prefWidth="351.0">
+            <AnchorPane prefHeight="560.0" prefWidth="351.0">
                <children>
-                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Mick Gordon                                 ">
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Mick Gordon                                ">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -25,6 +25,76 @@
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/mick_gordon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="JT Music                                       ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="150.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Green Day                                    ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="218.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="OneRepublic                                ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="286.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Muse                                            ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Cage the Elephant                       ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="422.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Pink Floyd                                   ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="490.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Bruno Mars                                 ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/jt_music.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/greenday.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/onerepublic.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/muse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/cage_the_elephant.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/pinkfloyd.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/authors/brunomars.jpg" />
                      </image>
                   </ImageView>
                </children>
@@ -44,17 +114,17 @@
             <Image url="@../../images/misc/home_button.png" />
          </image>
       </ImageView>
-      <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="14.0" prefHeight="40.0" prefWidth="206.0" text="Select a" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="14.0" prefHeight="40.0" prefWidth="206.0" text="Select an" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="68.0" prefHeight="40.0" prefWidth="206.0" text="Song to" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="68.0" prefHeight="40.0" prefWidth="206.0" text="Author to" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="122.0" prefHeight="40.0" prefWidth="206.0" text="Play" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="122.0" prefHeight="40.0" prefWidth="206.0" text="View" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font>
