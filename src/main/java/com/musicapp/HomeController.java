@@ -15,5 +15,10 @@ public class HomeController {
     private void switchToSearchAuthor() throws IOException {
         App.setRoot("searchauthor");
     }
+
+    @FXML
+    private void switchToFindSong() throws IOException {
+        App.setRoot("findsong");
+    }
     
 }
