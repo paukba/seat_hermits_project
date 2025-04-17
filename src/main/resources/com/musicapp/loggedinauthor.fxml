@@ -26,7 +26,7 @@
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Label layoutX="27.0" layoutY="238.0" text="Your Favorite Songs">
+      <Label layoutX="27.0" layoutY="238.0" prefHeight="26.0" prefWidth="131.0" text="Your Favorite Songs">
          <font>
             <Font size="14.0" />
          </font></Label>
@@ -45,5 +45,15 @@
             </AnchorPane>
         </content>
       </ScrollPane>
+      <Button layoutX="159.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Create Song">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="315.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="My Songs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
