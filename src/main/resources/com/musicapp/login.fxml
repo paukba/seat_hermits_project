@@ -23,7 +23,7 @@
       </Label>
       <Button layoutX="246.0" layoutY="285.0" mnemonicParsing="false" onAction="#switchToLoggedIn" prefHeight="30.0" prefWidth="99.0" text="Login" />
       <Button layoutX="246.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="30.0" prefWidth="99.0" text="Create Account" />
-      <PasswordField layoutX="225.0" layoutY="249.0" promptText="Password" />
+      <PasswordField layoutX="225.0" layoutY="249.0" promptText="Password" fx:id="password" />
    </children>
    <stylesheets>
       <URL value="@styles.css" />
