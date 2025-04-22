@@ -10,33 +10,39 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.HomeController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="69.0" layoutY="240.0" stroke="DODGERBLUE" strokeType="INSIDE" width="135.0" />
-      <Label layoutX="260.0" layoutY="44.0" text="Home">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#567bab" height="25.0" layoutX="69.0" layoutY="240.0" stroke="#567bab" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="260.0" layoutY="44.0" text="Home" textFill="#567bab">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="440.0" layoutY="14.0" text="Logged in as: [Username]" fx:id="signedIn">
+      <Label fx:id="signedIn" layoutX="440.0" layoutY="14.0" text="Logged in as: [Username]">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
       <Button layoutX="159.0" layoutY="114.0" mnemonicParsing="false" onAction="#switchToFindSong" prefHeight="46.0" prefWidth="123.0" stylesheets="@styles.css" text="Find a Song">
          <font>
-            <Font size="14.0" />
+            <Font size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
       <Button layoutX="315.0" layoutY="114.0" mnemonicParsing="false" onAction="#switchToSearchAuthor" prefHeight="46.0" prefWidth="123.0" stylesheets="@styles.css" text="Find an Author" textFill="WHITE">
          <font>
-            <Font size="14.0" />
-         </font></Button>
-      <Label layoutX="75.0" layoutY="243.0" text="Your Favorite Songs">
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="75.0" layoutY="243.0" text="Your Favorite Songs" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToLogIn" text="Log Out" />
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToLogIn" text="Log Out">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <ScrollPane layoutY="265.0" prefHeight="200.0" prefWidth="600.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="582.0">
