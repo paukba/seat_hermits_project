@@ -58,7 +58,7 @@ public class DataWriter extends DataConstants {
         userDetails.put(USER_PASSWORD, user.getPassword());
         JSONArray favSongsJSON = new JSONArray();
         for (int i = 0; i < user.getFavoriteSongs().size(); i++) {
-            favSongsJSON.add(user.getFavoriteSongs().get(i));
+            favSongsJSON.add(user.getFavoriteSongs().get(i).toString());
         }
         userDetails.put(USER_FAV_SONGS, favSongsJSON);
         

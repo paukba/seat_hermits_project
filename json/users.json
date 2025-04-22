@@ -1,44 +1,43 @@
 [
     {
-        "id":"2f6e2085-85d7-45c2-81b6-2829a0da56e9",
-        "isAuthor":true,
-        "firstName":"miguel",
-        "lastName":"o'hara",
-        "userName":"iamSpider99",
-        "email":"spiderman2099@hotmail.com",
-        "password":"spiderman2099roolz",
-        "favsongs-id":[
+        "firstName": "miguel",
+        "lastName": "o'hara",
+        "password": "spiderman2099roolz",
+        "id": "2f6e2085-85d7-45c2-81b6-2829a0da56e9",
+        "favsongs-id": [
             "a89a4dbf-9995-45e6-8862-0b6baeb18537",
             "9c155ce4-6c11-48a2-a623-b2b11be9e4b8"
         ],
-        "mysongs-id":[]
+        "userName": "iamSpider99",
+        "email": "spiderman2099@hotmail.com",
+        "isAuthor": true
     },
     {
-        "id":"c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
-        "isAuthor":true,
-        "firstName":"onerepublic",
-        "lastName":"n/a",
-        "userName":"unoRepublica",
-        "email":"onerepublic@us.real.com",
-        "password":"countrepublic1821",
-        "favsongs-id":[
+        "firstName": "onerepublic",
+        "lastName": "n\/a",
+        "password": "countrepublic1821",
+        "id": "c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
+        "favsongs-id": [
             "fe94f713-63bb-4229-b6ab-baa9e0dcfbb1",
-            "bd6fb3a2-efef-4397-aa93-90fd18172d53"
+            "bd6fb3a2-efef-4397-aa93-90fd18172d53",
+            "7b495afd-4f50-444b-8879-460393bb6a75"
         ],
-        "mysongs-id":["7b495afd-4f50-444b-8879-460393bb6a75"]
+        "userName": "unoRepublica",
+        "email": "onerepublic@us.real.com",
+        "isAuthor": true
     },
     {
-        "id":"473ffea7-0b71-4411-88ed-ed63f876454c",
-        "isAuthor":true,
-        "firstName":"mick",
-        "lastName":"gordon",
-        "userName":"mickyG",
-        "email":"mgordon@bethesda.com",
-        "password":"doommaster1993",
-        "favsongs-id":[
+        "firstName": "mick",
+        "lastName": "gordon",
+        "password": "doommaster1993",
+        "id": "473ffea7-0b71-4411-88ed-ed63f876454c",
+        "favsongs-id": [
             "04e90ec2-7e58-4df8-b174-70d2d2bbbd0a",
-            "fafef9b4-53be-48d6-a49d-69edade4c1b6"
+            "fafef9b4-53be-48d6-a49d-69edade4c1b6",
+            "f16ba466-7e73-49a7-8c2e-b92b27c16540"
         ],
-        "mysongs-id":["f16ba466-7e73-49a7-8c2e-b92b27c16540"]
+        "userName": "mickyG",
+        "email": "mgordon@bethesda.com",
+        "isAuthor": true
     }
 ]
