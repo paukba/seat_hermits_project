@@ -10,6 +10,7 @@ import java.util.UUID;
 public class UserList {
     private static UserList userList;
     private ArrayList<User> users;
+    private User currentUser;
 
     /**
      * Initializes a list of users
@@ -101,6 +102,10 @@ public class UserList {
         return null;
     }
 
+    public User getCurrentUser() {
+        return currentUser;
+    }
+
     /**
      * Gets an instance of UserList, creates the instance if it does not exist
      * @return the instance of UserList
@@ -130,6 +135,7 @@ public class UserList {
             String name = users.get(i).getUserName();
             String pass = users.get(i).getPassword();
             if( userName.equals(name) || password.equals(pass) ) {
+                currentUser = users.get(i);
                 return users.get(i);
             }
 
