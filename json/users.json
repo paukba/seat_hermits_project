@@ -10,7 +10,8 @@
         ],
         "userName": "iamSpider99",
         "email": "spiderman2099@hotmail.com",
-        "isAuthor": true
+        "isAuthor": true,
+        "mysongs-id": []
     },
     {
         "firstName": "onerepublic",
@@ -24,7 +25,8 @@
         ],
         "userName": "unoRepublica",
         "email": "onerepublic@us.real.com",
-        "isAuthor": true
+        "isAuthor": true,
+        "mysongs-id": []
     },
     {
         "firstName": "mick",
@@ -38,6 +40,7 @@
         ],
         "userName": "mickyG",
         "email": "mgordon@bethesda.com",
-        "isAuthor": true
+        "isAuthor": true,
+        "mysongs-id": []
     }
 ]
