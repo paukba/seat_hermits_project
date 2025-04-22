@@ -3,5 +3,6 @@
 }
 
 .button {
-    -fx-text-fill: #FF0000
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #549df9
 }
