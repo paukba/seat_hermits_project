@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="110.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Pause">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Rectangle arcWidth="5.0" fill="#567bab" height="58.0" stroke="DODGERBLUE" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="7.0" layoutY="2.0" text="Now Playing &quot;SONG&quot;" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Return">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="206.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Play">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="302.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" stylesheets="@styles.css" text="       Favorite">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="132.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
+      <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="155.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
+      <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="178.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
+      <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="201.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
+      <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="224.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
+      <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="247.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/misc/star.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="124.0" prefHeight="130.0" prefWidth="125.0" text="Measure 1" />
+      <Label layoutX="294.0" layoutY="124.0" prefHeight="130.0" prefWidth="126.0" text="Measure 3" />
+      <Label layoutX="418.0" layoutY="124.0" prefHeight="130.0" prefWidth="125.0" text="Measure 4" />
+      <Label layoutX="169.0" layoutY="124.0" prefHeight="130.0" prefWidth="125.0" text="Measure 2" />
+   </children>
+</AnchorPane>
