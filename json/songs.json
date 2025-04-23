@@ -1669,7 +1669,7 @@
             "electric guitar",
             "acoustic guitar"
         ],
-        "tempo":116.0,
+        "tempo":120.0,
         "comments":[
             "no lyrics, no issue >:D"
         ]
@@ -1929,6 +1929,348 @@
                         "instrument":"acoustic guitar"
                     }
                 ]
+            },
+            {
+                "measure": 4,
+                "lyric": "oh what fun",
+                "chord":[],
+                "strings":["em", "b"],
+                "sheets":[
+                    {
+                        "notes":[
+                            {
+                                "note":1,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":2,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":3,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            }
+                        ],
+                        "instrument":"acoustic guitar"
+                    }
+                ],
+                "tabs":[
+                    {
+                        "tabnote":1,
+                        "string":"em",
+                        "frett":"1",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":2,
+                        "string":"em",
+                        "frett":"1",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":3,
+                        "string":"em",
+                        "frett":"1",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "instrument":"acoustic guitar"
+                    }
+                ]
+            },
+            {
+                "measure": 5,
+                "lyric": "it is to ride",
+                "chord":[],
+                "strings":["em", "b"],
+                "sheets":[
+                    {
+                        "notes":[
+                            {
+                                "note":1,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":2,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":3,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":4,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            }
+                        ],
+                        "instrument":"acoustic guitar"
+                    }
+                ],
+                "tabs":[
+                    {
+                        "tabnote":1,
+                        "string":"em",
+                        "frett":"1",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":2,
+                        "string":"em",
+                        "frett":"1",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":3,
+                        "string":"em",
+                        "frett":"0",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":4,
+                        "string":"em",
+                        "frett":"0",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "instrument":"acoustic guitar"
+                    }
+                ]
+            },
+            {
+                "measure": 5,
+                "lyric": "in a one-horse",
+                "chord":[],
+                "strings":["em", "b"],
+                "sheets":[
+                    {
+                        "notes":[
+                            {
+                                "note":1,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":2,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":3,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":4,
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            }
+                        ],
+                        "instrument":"acoustic guitar"
+                    }
+                ],
+                "tabs":[
+                    {
+                        "tabnote":1,
+                        "string":"em",
+                        "frett":"0",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":2,
+                        "string":"em",
+                        "frett":"0",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":3,
+                        "string":"em",
+                        "frett":"0",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":4,
+                        "string":"b",
+                        "frett":"3",
+                        "note":{
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "instrument":"acoustic guitar"
+                    }
+                ]
+            },
+            {
+                "measure": 3,
+                "lyric": "open sleigh, hey!",
+                "chord":[],
+                "strings":["em", "b"],
+                "sheets":[
+                    {
+                        "notes":[
+                            {
+                                "note":1,
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":2,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":3,
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            },
+                            {
+                                "note":4,
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                            }
+                        ],
+                        "instrument":"acoustic guitar"
+                    }
+                ],
+                "tabs":[
+                    {
+                        "tabnote":1,
+                        "string":"b",
+                        "frett":"3",
+                        "note":{
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":2,
+                        "string":"em",
+                        "frett":"0",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":3,
+                        "string":"b",
+                        "frett":"3",
+                        "note":{
+                                "name":"b",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "tabnote":4,
+                        "string":"em",
+                        "frett":"3",
+                        "note":{
+                                "name":"em",
+                                "pitch":2.2,
+                                "duration":1.2,
+                                "starttime":3.4
+                        }
+                    },
+                    {
+                        "instrument":"acoustic guitar"
+                    }
+                ]
             }
         ],
         "author-id":".................................................................................",
@@ -1938,7 +2280,7 @@
             "electric guitar",
             "acoustic guitar"
         ],
-        "tempo":116.0,
+        "tempo":104.0,
         "comments":[
             "no lyrics, no issue >:D"
         ]
