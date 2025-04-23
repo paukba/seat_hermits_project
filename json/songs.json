@@ -1934,7 +1934,7 @@
                 "measure": 4,
                 "lyric": "oh what fun",
                 "chord":[],
-                "strings":["em", "b"],
+                "strings":["em"],
                 "sheets":[
                     {
                         "notes":[
@@ -2006,7 +2006,7 @@
                 "measure": 5,
                 "lyric": "it is to ride",
                 "chord":[],
-                "strings":["em", "b"],
+                "strings":["em"],
                 "sheets":[
                     {
                         "notes":[
@@ -2093,7 +2093,7 @@
                 ]
             },
             {
-                "measure": 5,
+                "measure": 6,
                 "lyric": "in a one-horse",
                 "chord":[],
                 "strings":["em", "b"],
@@ -2183,7 +2183,7 @@
                 ]
             },
             {
-                "measure": 3,
+                "measure": 7,
                 "lyric": "open sleigh, hey!",
                 "chord":[],
                 "strings":["em", "b"],
