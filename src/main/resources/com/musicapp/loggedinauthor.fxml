@@ -6,23 +6,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.HomeController">
    <children>
       <Label layoutX="260.0" layoutY="44.0" text="Home">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="440.0" layoutY="14.0" text="Logged in as: [Username]">
+      <Label layoutX="440.0" layoutY="14.0" text="Logged in as: [Username]" fx:id="signedIn">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="159.0" layoutY="114.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Find a Song">
+      <Button layoutX="159.0" layoutY="114.0" mnemonicParsing="false" onAction="#switchToFindSong" prefHeight="46.0" prefWidth="123.0" text="Find a Song">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Button layoutX="315.0" layoutY="114.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Find an Author">
+      <Button layoutX="315.0" layoutY="114.0" mnemonicParsing="false" onAction="#switchToSearchAuthor" prefHeight="46.0" prefWidth="123.0" text="Find an Author">
          <font>
             <Font size="14.0" />
          </font></Button>
@@ -30,7 +30,7 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" text="Log Out" />
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToLogIn" text="Log Out" />
       <ScrollPane layoutY="265.0" prefHeight="200.0" prefWidth="600.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="582.0">
@@ -45,12 +45,12 @@
             </AnchorPane>
         </content>
       </ScrollPane>
-      <Button layoutX="159.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Create Song">
+      <Button layoutX="159.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Create Song" onAction="#switchToCreateSong">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="315.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="My Songs">
+      <Button layoutX="315.0" layoutY="174.0" mnemonicParsing="false" onAction="#switchToMySongs" prefHeight="46.0" prefWidth="123.0" text="My Songs">
          <font>
             <Font size="14.0" />
          </font>

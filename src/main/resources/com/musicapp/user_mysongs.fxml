@@ -8,11 +8,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.MySongsController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbeeff" height="234.0" layoutX="-62.0" layoutY="-63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="672.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2766a1" height="40.0" layoutX="20.0" layoutY="128.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="       Home">
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="       Home" onAction="#switchToHome">
          <font>
             <Font size="14.0" />
          </font>
@@ -22,7 +22,7 @@
             <Image url="@../../images/misc/home_button.png" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="158.0" layoutY="54.0" prefHeight="82.0" prefWidth="282.0" text="User Name" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="158.0" layoutY="54.0" prefHeight="82.0" prefWidth="282.0" text="User Name" textAlignment="CENTER" fx:id="userName">
          <font>
             <Font size="30.0" />
          </font>
