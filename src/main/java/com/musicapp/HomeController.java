@@ -43,5 +43,10 @@ public class HomeController {
     private void switchToCreateSong() throws IOException {
         App.setRoot("createsong");
     }
+
+    @FXML
+    private void switchToPlaySong() throws IOException {
+        App.setRoot("playsong");
+    }
     
 }
