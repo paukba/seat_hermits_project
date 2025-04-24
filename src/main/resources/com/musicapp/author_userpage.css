@@ -1,3 +1,9 @@
+.label {
+    -fx-text-fill: #347caf
+}
+
 .button {
     -fx-background-color: #E7F5FF;
+    -fx-text-fill: #347caf;
+    -fx-font-size: 18
 }

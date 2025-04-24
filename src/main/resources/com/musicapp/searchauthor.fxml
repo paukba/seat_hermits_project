@@ -17,42 +17,42 @@
          <content>
             <AnchorPane prefHeight="560.0" prefWidth="351.0">
                <children>
-                  <Button layoutX="13.0" layoutY="80.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Mick Gordon                                  " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="80.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Mick Gordon                                  ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="148.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="JT Music                                        " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="JT Music                                        ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="216.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Green Day                                      " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="216.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Green Day                                      ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="284.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="OneRepublic                                  " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="284.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="OneRepublic                                  ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="352.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Muse                                              " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="352.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Muse                                              ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="420.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Cage the Elephant                         " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="420.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Cage the Elephant                         ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="488.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Pink Floyd                                      " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="488.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Pink Floyd                                      ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="13.0" layoutY="12.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Hot Cross Buns                               " onAction="#switchToAuthorProfile">
+                  <Button layoutX="13.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToAuthorProfile" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Hot Cross Buns                               ">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -100,11 +100,11 @@
                </children>
             </AnchorPane>
          </content></ScrollPane>
-      <Button layoutX="75.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" text="       Home">
+      <Button layoutX="75.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #ffffff;" text="       Home">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Button layoutX="75.0" layoutY="267.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="Search">
+      <Button layoutX="75.0" layoutY="267.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #ffffff;" text="Search">
          <font>
             <Font size="14.0" />
          </font></Button>
@@ -116,17 +116,17 @@
       </ImageView>
       <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="14.0" prefHeight="40.0" prefWidth="206.0" text="Select an" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font size="36.0" />
+            <Font name="Magneto Bold" size="36.0" />
          </font>
       </Label>
       <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="68.0" prefHeight="40.0" prefWidth="206.0" text="Author to" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font size="36.0" />
+            <Font name="Magneto Bold" size="36.0" />
          </font>
       </Label>
       <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="122.0" prefHeight="40.0" prefWidth="206.0" text="View" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font size="36.0" />
+            <Font name="Magneto Bold" size="36.0" />
          </font>
       </Label>
       <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="212.0" prefHeight="14.0" prefWidth="206.0" text="Or Search:" textAlignment="CENTER" textFill="WHITE">

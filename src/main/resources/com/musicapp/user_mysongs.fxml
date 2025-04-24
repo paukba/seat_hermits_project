@@ -13,19 +13,19 @@
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7f5ff" height="234.0" layoutX="-62.0" layoutY="-63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="672.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#347caf" height="40.0" layoutX="21.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" text="       Home">
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #347caf;" text="       Home" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/misc/home_button.png" />
+            <Image url="@../../images/misc/home_logo.png" />
          </image>
       </ImageView>
-      <Label fx:id="userName" alignment="CENTER" layoutX="158.0" layoutY="54.0" prefHeight="82.0" prefWidth="282.0" text="User Name" textAlignment="CENTER">
+      <Label fx:id="userName" alignment="CENTER" layoutX="158.0" layoutY="54.0" prefHeight="82.0" prefWidth="282.0" text="User Name" textAlignment="CENTER" textFill="#347caf">
          <font>
-            <Font size="30.0" />
+            <Font name="Magneto Bold" size="30.0" />
          </font>
       </Label>
       <Label layoutX="34.0" layoutY="139.0" text="My Songs" textFill="WHITE">
