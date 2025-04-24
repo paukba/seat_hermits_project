@@ -100,7 +100,7 @@
                </children>
             </AnchorPane>
          </content></ScrollPane>
-      <Button layoutX="75.0" layoutY="332.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="       Home" onAction="#switchToHome">
+      <Button layoutX="75.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" text="       Home">
          <font>
             <Font size="14.0" />
          </font></Button>
