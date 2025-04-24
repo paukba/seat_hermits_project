@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.PlaySongController">
    <children>
-      <Button layoutX="110.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Pause" onAction="#pause">
+      <Button layoutX="110.0" layoutY="353.0" mnemonicParsing="false" onAction="#pause" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Pause">
          <font>
             <Font size="14.0" />
          </font>
@@ -22,17 +22,17 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Return" onAction="#switchToHome">
+      <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Return">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="206.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Play" onAction="#play">
+      <Button layoutX="206.0" layoutY="353.0" mnemonicParsing="false" onAction="#play" prefHeight="35.0" prefWidth="86.0" stylesheets="@styles.css" text="Play">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="302.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" stylesheets="@styles.css" text="       Favorite" onAction="#favorite">
+      <Button layoutX="475.0" layoutY="353.0" mnemonicParsing="false" onAction="#favorite" prefHeight="35.0" prefWidth="110.0" stylesheets="@styles.css" text="       Favorite">
          <font>
             <Font size="14.0" />
          </font>
@@ -43,7 +43,7 @@
       <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="201.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
       <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="224.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
       <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="247.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="488.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="481.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/star.png" />
          </image>
