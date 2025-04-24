@@ -40,9 +40,10 @@ public class DataLoader extends DataConstants {
                     JSONArray mySongsJSON = (JSONArray)userJSON.get(USER_MY_SONGS);
                     ArrayList<UUID> mySongIDs = new ArrayList<UUID>();
                     for (int j = 0; j < mySongsJSON.size(); j++) {
-                        favSongIDs.add(UUID.fromString((String)mySongsJSON.get(j)));
+                        mySongIDs.add(UUID.fromString((String)mySongsJSON.get(j)));
                     }
-                    users.add(new Author(id, firstName, lastName, userName, email, password, favSongIDs, mySongIDs));
+                    //users.add(new Author(id, firstName, lastName, userName, email, password, favSongIDs, mySongIDs));
+                    users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs, true, mySongIDs));
                 }
                 else {
                     users.add(new User(id, firstName, lastName, userName, email, password, favSongIDs, false));

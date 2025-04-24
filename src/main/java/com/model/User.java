@@ -16,6 +16,7 @@ public class User {
     private String password;
     // private ArrayList<Song> favoriteSongs;
     private ArrayList<UUID> favoriteSongs;
+    private ArrayList<UUID> mySongs;
     private boolean isAuthor = false;
 
     // public User(String firstName, String lastName, String email, String userName, String password, ArrayList<Song> favoriteSongs, boolean isAuthor) {
@@ -48,6 +49,18 @@ public class User {
         this.password = password;
         this.isAuthor = isAuthor;
         this.favoriteSongs = favoriteSongs;
+    }
+
+    public User(UUID id, String firstName, String lastName, String userName, String email, String password, ArrayList<UUID> favoriteSongs, boolean isAuthor, ArrayList<UUID> mySongs) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.userName = userName;
+        this.password = password;
+        this.isAuthor = isAuthor;
+        this.favoriteSongs = favoriteSongs;
+        this.mySongs = mySongs;
     }
     
     /**
@@ -132,5 +145,9 @@ public class User {
      */
     public boolean getIsAuthor() {
         return isAuthor;
+    }
+
+    public ArrayList<UUID> getMySongs() {
+        return mySongs;
     }
 }
