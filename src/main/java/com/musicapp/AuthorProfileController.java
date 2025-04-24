@@ -7,8 +7,13 @@ import com.model.UserList;
 
 import javafx.fxml.FXML;
 
-public class SearchAuthorController {
+public class AuthorProfileController {
     
+    @FXML
+    private void switchToSearchAuthor() throws IOException {
+        App.setRoot("searchauthor");
+    }
+
     @FXML
     private void switchToHome() throws IOException {
         UserList users = UserList.getInstance();
@@ -21,9 +26,4 @@ public class SearchAuthorController {
         }
     }
 
-    @FXML
-    private void switchToAuthorProfile() throws IOException {
-        App.setRoot("author_profile");
-    }
-    
 }
