@@ -43,7 +43,7 @@
       <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="201.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
       <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="224.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
       <Line endX="481.0" endY="7.62939453125E-6" layoutX="119.0" layoutY="247.0" startX="-118.99998474121094" startY="7.62939453125E-6" stroke="#707070" />
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="309.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="488.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/star.png" />
          </image>
