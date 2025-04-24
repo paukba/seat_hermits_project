@@ -27,11 +27,7 @@ public class CreateAccountController {
             users.createAccount(firstname.getText(), lastname.getText(), username.getText(), email.getText(), password.getText(), isAuthor.isSelected());
             DataWriter.saveUsers();
 
-            App.setRoot("loggedin");
-        }
-        else {
-            // username isn't unique
-
+            App.setRoot("login");
         }
     }
 
