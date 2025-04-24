@@ -45,7 +45,7 @@
             </AnchorPane>
         </content>
       </ScrollPane>
-      <Button layoutX="159.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Create Song">
+      <Button layoutX="159.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" text="Create Song" onAction="#switchToCreateSong">
          <font>
             <Font size="14.0" />
          </font>
