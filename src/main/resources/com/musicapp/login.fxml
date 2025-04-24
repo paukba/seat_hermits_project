@@ -9,8 +9,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E7F5FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.LoginController">
    <children>
-      <TextField fx:id="username" layoutX="220.0" layoutY="174.0" promptText="Username" />
-      <Label layoutX="214.0" layoutY="143.0" prefHeight="30.0" prefWidth="161.0" style="-fx-text-fill: #347caf;" text="Have an Account?">
+      <TextField fx:id="username" layoutX="220.0" layoutY="186.0" promptText="Username" />
+      <Label layoutX="214.0" layoutY="138.0" prefHeight="30.0" prefWidth="161.0" style="-fx-text-fill: #347caf;" text="Have an Account?">
          <font>
             <Font size="20.0" />
          </font>
@@ -20,10 +20,10 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="245.0" layoutY="246.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="30.0" prefWidth="99.0" text="Login" />
-      <Button layoutX="246.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="30.0" prefWidth="99.0" text="Create Account" />
-      <PasswordField fx:id="password" layoutX="220.0" layoutY="210.0" promptText="Password" />
-      <Label layoutX="259.0" layoutY="297.0" prefHeight="30.0" prefWidth="72.0" style="-fx-text-fill: #347caf; -fx-font-weight: bold;" text="New User?">
+      <Button layoutX="245.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="30.0" prefWidth="99.0" text="Login" />
+      <Button layoutX="245.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="30.0" prefWidth="99.0" text="Create Account" />
+      <PasswordField fx:id="password" layoutX="220.0" layoutY="231.0" promptText="Password" />
+      <Label layoutX="258.0" layoutY="309.0" prefHeight="30.0" prefWidth="72.0" style="-fx-text-fill: #347caf; -fx-font-weight: bold;" text="New User?">
          <font>
             <Font size="14.0" />
          </font>
@@ -33,5 +33,7 @@
             <Font name="Magneto Bold" size="40.0" />
          </font>
       </Label>
+      <Label layoutX="220.0" layoutY="212.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
+      <Label layoutX="220.0" layoutY="167.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
    </children>
 </AnchorPane>
