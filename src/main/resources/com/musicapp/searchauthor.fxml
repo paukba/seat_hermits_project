@@ -17,84 +17,84 @@
          <content>
             <AnchorPane prefHeight="560.0" prefWidth="351.0">
                <children>
-                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Mick Gordon                                ">
+                  <Button layoutX="13.0" layoutY="80.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Mick Gordon                                ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/mick_gordon.jpg" />
                      </image>
                   </ImageView>
-                  <Button layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="JT Music                                       ">
+                  <Button layoutX="13.0" layoutY="148.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="JT Music                                       ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="150.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Green Day                                    ">
+                  <Button layoutX="13.0" layoutY="216.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Green Day                                    ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="218.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="OneRepublic                                ">
+                  <Button layoutX="13.0" layoutY="284.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="OneRepublic                                ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="286.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Muse                                            ">
+                  <Button layoutX="13.0" layoutY="352.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Muse                                            ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Cage the Elephant                       ">
+                  <Button layoutX="13.0" layoutY="420.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Cage the Elephant                       ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="422.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Pink Floyd                                   ">
+                  <Button layoutX="13.0" layoutY="488.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Pink Floyd                                   ">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="490.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="Bruno Mars                                 ">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/jt_music.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/greenday.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/onerepublic.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/muse.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/cage_the_elephant.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/authors/pinkfloyd.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+                  <Button layoutX="13.0" layoutY="12.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" text="SimplyTeaching                            ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/authors/brunomars.jpg" />
+                        <Image url="@../../images/authors/simpleteach.jpg" />
                      </image>
                   </ImageView>
                </children>
