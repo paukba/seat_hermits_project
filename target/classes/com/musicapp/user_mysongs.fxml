@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -17,8 +18,11 @@
          <font>
             <Font size="14.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/home_logo.png" />
          </image>
@@ -37,14 +41,38 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="583.0" style="-fx-background-color: #4095E5;">
                <children>
-                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A" />
-                  <Button layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song B" />
-                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song C" />
-                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song D" />
-                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song E" />
-                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song F" />
-                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song G" />
-                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song H" />
+                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song B">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song C">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song D">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song E">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song F">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song G">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song H">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
             </AnchorPane>
          </content>

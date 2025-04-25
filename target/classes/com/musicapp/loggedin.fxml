@@ -44,45 +44,69 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="583.0" style="-fx-background-color: #4095E5;">
                <children>
-                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A" />
-                  <Button layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song B" />
-                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song C" />
-                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song D" />
-                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song E" />
-                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song F" />
-                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song G" />
-                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song H" />
+                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song B">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song C">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song D">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song E">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song F">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song G">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song H">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
             </AnchorPane>
          </content>
       </ScrollPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#347caf" height="40.0" layoutX="24.0" layoutY="223.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
-      <Label layoutX="38.0" layoutY="232.0" text="Your Favorite Songs" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#347caf" height="40.0" layoutX="24.0" layoutY="224.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
+      <Label layoutX="38.0" layoutY="234.0" text="Your Favorite Songs" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <ImageView fitHeight="40.0" fitWidth="59.0" layoutX="91.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="40.0" fitWidth="59.0" layoutX="91.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/magnify.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="226.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="30.0" fitWidth="42.0" layoutX="226.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/music_note.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="46.0" fitWidth="31.0" layoutX="458.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="46.0" fitWidth="31.0" layoutX="458.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/artist.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="240.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="30.0" fitWidth="42.0" layoutX="240.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/music_note.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="40.0" fitWidth="59.0" layoutX="319.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="40.0" fitWidth="59.0" layoutX="319.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/misc/magnify.png" />
          </image>

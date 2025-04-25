@@ -23,8 +23,11 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/BFG%20Division.jpg" />
                      </image>
@@ -33,48 +36,63 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button layoutX="13.0" layoutY="282.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Basket Case                                   ">
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button layoutX="13.0" layoutY="349.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="You Can Hang                               ">
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button layoutX="13.0" layoutY="416.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Song 2                                          ">
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button layoutX="13.0" layoutY="483.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="325.0" stylesheets="@styles.css" text="Toxicity                                          ">
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/Counting%20Stars.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/Basket%20Case.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/You%20Can%20Hang.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/Song%202.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/Toxicity.jpg" />
                      </image>
@@ -83,8 +101,11 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/Karma%20Police.png" />
                      </image>
@@ -93,8 +114,11 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/hotcrossbuns.jpg" />
                      </image>
@@ -103,8 +127,11 @@
                      <font>
                         <Font size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="17.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/songs/jinglebells.jpg" />
                      </image>
@@ -118,7 +145,10 @@
          </font>
          <opaqueInsets>
             <Insets />
-         </opaqueInsets></Button>
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button layoutX="75.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #ffffff;" text="       Home">
          <font>
             <Font size="14.0" />
