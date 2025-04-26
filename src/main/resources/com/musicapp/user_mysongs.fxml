@@ -41,7 +41,7 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="583.0" style="-fx-background-color: #4095E5;">
                <children>
-                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A">
+                  <Button fx:id="songA" layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>

@@ -1,5 +1,15 @@
 [
     {
+        "firstName": "",
+        "lastName": "",
+        "password": "password",
+        "id": "7d335811-1f28-41a2-8adf-8db06e787a8a",
+        "favsongs-id": [],
+        "userName": "Guest",
+        "email": "email",
+        "isAuthor": false
+    },
+    {
         "firstName": "miguel",
         "lastName": "o'hara",
         "password": "spiderman2099roolz",
@@ -68,14 +78,14 @@
         "isAuthor": true
     },
     {
-        "firstName": "Nijika",
-        "lastName": "Ijichi",
+        "firstName": "Hitori",
+        "lastName": "Gotoh",
         "password": "I_luvBTR!22",
         "mysongs-id": [],
         "id": "5b36cf15-a708-4055-a04e-adefcfd178a2",
         "favsongs-id": [],
-        "userName": "Kessoku Band",
-        "email": "dorito@bocchi-the-rock.com",
+        "userName": "guitarhero",
+        "email": "bocchi@dorito.com",
         "isAuthor": true
     }
 ]

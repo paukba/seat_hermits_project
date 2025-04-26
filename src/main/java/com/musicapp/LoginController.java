@@ -38,7 +38,7 @@ public class LoginController {
             err2.setText("Error");
         }
         else if (username.getText().equals("") && password.getText().equals("")) {
-            users.login("iamSpider99", "spiderman2099roolz");
+            users.login("Guest", "password");
             App.setRoot("loggedinauthor");
         }
         else {
