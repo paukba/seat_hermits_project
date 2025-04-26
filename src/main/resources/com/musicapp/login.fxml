@@ -33,7 +33,7 @@
             <Font name="Magneto Bold" size="40.0" />
          </font>
       </Label>
-      <Label layoutX="220.0" layoutY="212.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
-      <Label layoutX="220.0" layoutY="167.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
+      <Label fx:id="err2" layoutX="220.0" layoutY="212.0" prefHeight="18.0" prefWidth="246.0" textFill="RED" />
+      <Label fx:id="err1" layoutX="220.0" layoutY="167.0" prefHeight="18.0" prefWidth="246.0" textFill="RED" />
    </children>
 </AnchorPane>

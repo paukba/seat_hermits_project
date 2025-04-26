@@ -22,9 +22,9 @@
       <TextField fx:id="username" layoutX="123.0" layoutY="153.0" promptText="Username" />
       <TextField fx:id="password" layoutX="123.0" layoutY="218.0" promptText="Password" />
       <TextField fx:id="email" layoutX="123.0" layoutY="275.0" prefHeight="26.0" prefWidth="327.0" promptText="Email" />
-      <Label layoutX="123.0" layoutY="250.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
-      <Label layoutX="123.0" layoutY="191.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
-      <Label layoutX="123.0" layoutY="128.0" prefHeight="18.0" prefWidth="246.0" text="Error" textFill="RED" />
+      <Label fx:id="err2" layoutX="123.0" layoutY="250.0" prefHeight="18.0" prefWidth="246.0" textFill="RED" />
+      <Label layoutX="123.0" layoutY="191.0" prefHeight="18.0" prefWidth="246.0" textFill="RED" />
+      <Label fx:id="err1" layoutX="123.0" layoutY="128.0" prefHeight="18.0" prefWidth="246.0" textFill="RED" />
       <Label layoutX="125.0" layoutY="14.0" text="Create Your Account" textFill="#347caf">
          <font>
             <Font name="Magneto Bold" size="30.0" />
