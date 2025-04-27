@@ -8,13 +8,13 @@ public class Driver {
     public static void main(String[] args) {
         //scenario1();
 
-        //playSong();
+        playSong();
 
         //login();
 
         //createAccount();
 
-        scenario65536();
+        //scenario65536();
 
         //scenario128();
 
@@ -22,7 +22,7 @@ public class Driver {
 
     public static void playSong() {
         SongList songList = SongList.getInstance();
-        Song song = songList.getSong(UUID.fromString("a89a4dbf-9995-45e6-8862-0b6baeb18537"));
+        Song song = songList.getSong(UUID.fromString("47da9c99-abd8-4a92-a43e-df4d28b8495b"));
         ArrayList<Measure> measures = song.getMeasures();
         Iterator<Measure> measureIterator = measures.iterator();
         while (measureIterator.hasNext()) {

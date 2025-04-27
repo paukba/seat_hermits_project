@@ -6,11 +6,18 @@ import com.model.UserList;
 import com.model.User;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HomeController {
 
     @FXML Label signedIn;
+    @FXML Button a;
+    @FXML Button b;
+    @FXML Button c;
+    @FXML Button d;
+    @FXML Button e;
+    @FXML Button f;
 
     @FXML
     private void initialize() throws IOException {
