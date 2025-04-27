@@ -44,35 +44,35 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="583.0" style="-fx-background-color: #4095E5;">
                <children>
-                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A">
+                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button fx:id="songA" layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song B">
+                  <Button fx:id="songA" layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song C">
+                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song D">
+                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song E">
+                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song F">
+                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song G">
+                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song H">
+                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Empty Song Slot">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
