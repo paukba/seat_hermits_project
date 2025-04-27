@@ -38,18 +38,27 @@ public class HomeController {
         ArrayList<Button> buttonList = new ArrayList<Button>();
         for (int i = 0; i < user.getFavoriteSongs().size(); i++) {
 
-            buttonList.add(new Button(songs.getSong(user.getFavoriteSongs().get(i)).getTitle()));
+            Button newButton = new Button(songs.getSong(user.getFavoriteSongs().get(i)).getTitle());
+            buttonList.add(newButton);
 
-            buttonList.get(i).setLayoutX(23 + 293  * (i % 2));
-            buttonList.get(i).setLayoutY(20 + 74 * (i / 2));
-            buttonList.get(i).setPrefSize(244, 64);
-            buttonList.get(i).setStyle("-fx-background-color:hsl(205, 100.00%, 95.30%); ");
-            buttonList.get(i).setStyle("-fx-text-fill:#347caf; ");
-            buttonList.get(i).setStyle("-fx-background-color: MediumSeaGreen");
+            newButton.setLayoutX(23 + 293  * (i % 2));
+            newButton.setLayoutY(20 + 74 * (i / 2));
+            newButton.setPrefSize(244, 64);
+            newButton.setStyle("-fx-background-color:hsl(205, 100.00%, 95.30%); ");
+            newButton.setStyle("-fx-text-fill:#347caf; ");
+            newButton.setStyle("-fx-background-color: MediumSeaGreen");
+            newButton.setStyle("-fx-font-size: 1.5em; ");
 
-            buttonList.get(i).setStyle("-fx-font-size: 1.5em; ");
+            newButton.setOnAction(event -> {try {
+                this.switchToPlaySong();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }});
 
-            songpane.getChildren().add(buttonList.get(i));
+            newButton.setCursor(Cursor.HAND);
+            newButton.setStyle("-fx-background-color: #E7F5FF; -fx-text-fill: #347caf; -fx-font-size: 18");
+
+            songpane.getChildren().add(newButton);
         }
     }
 
