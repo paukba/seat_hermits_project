@@ -1,52 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.AuthorProfileController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#49a7ff" height="40.0" layoutX="20.0" layoutY="128.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="182.0" />
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="       Home" onAction="#switchToHome">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7f5ff" height="234.0" layoutX="-52.0" layoutY="-53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="672.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #347caf;" text="       Home" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/misc/home_button.png" />
+            <Image url="@../../images/misc/home_logo.png" />
          </image>
       </ImageView>
-      <Button layoutX="470.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSearchAuthor" prefHeight="40.0" prefWidth="116.0" text="Find an Author">
+      <Button layoutX="470.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSearchAuthor" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #347caf;" text="Find an Author" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Label alignment="CENTER" layoutX="158.0" layoutY="54.0" prefHeight="82.0" prefWidth="282.0" text="Author Name" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="151.0" layoutY="54.0" prefHeight="82.0" prefWidth="282.0" text="Author Name" textAlignment="CENTER" textFill="#347caf">
          <font>
-            <Font size="30.0" />
+            <Font name="Magneto Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="136.0" text="[Author Name]'s Songs" textFill="WHITE">
+      <ScrollPane layoutX="-1.0" layoutY="181.0" prefHeight="234.0" prefWidth="600.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="583.0" style="-fx-background-color: #4095E5;">
+               <children>
+                  <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song A">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song B">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song C">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="94.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song D">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song E">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="167.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song F">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song G">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="316.0" layoutY="241.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" stylesheets="@author_userpage.css" text="Song H">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#347caf" height="40.0" layoutX="33.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="145.0" />
+      <Label layoutX="46.0" layoutY="152.0" prefHeight="20.0" prefWidth="122.0" text="Songs by this Artist" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="9.0" layoutY="156.0" minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="582.0">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bddfff" height="234.0" layoutX="-48.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="672.0" />
-            <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" text="Song A" />
-            <Button layoutX="316.0" layoutY="20.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" text="Song B" />
-            <Button layoutX="23.0" layoutY="97.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" text="Song C" />
-            <Button layoutX="316.0" layoutY="97.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" text="Song D" />
-            <Button layoutX="23.0" layoutY="179.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" text="Song E" />
-            <Button layoutX="316.0" layoutY="179.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="244.0" text="Song F" />
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>

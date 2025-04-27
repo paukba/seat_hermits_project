@@ -1,7 +1,9 @@
-.button {
-    -fx-background-color: #E7F5FF;
+.label {
+    -fx-text-fill: #347caf
 }
 
-.anchor-pane {
-    -fx-background-color: #000000;
+.button {
+    -fx-background-color: #E7F5FF;
+    -fx-text-fill: #347caf;
+    -fx-font-size: 18
 }

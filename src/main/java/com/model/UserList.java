@@ -102,6 +102,22 @@ public class UserList {
         return null;
     }
 
+    /**
+     * Finds a user in the list with a spcified email
+     * @param email the email to be checked against
+     * @return the user with that email
+     */
+    public User checkUniqueEmail(String email) {
+        for ( int i = 0; i < DataLoader.getUsers().size(); i++ ) {
+            if ( email.equals(DataLoader.getUsers().get(i).getEmail()) ) {
+                return DataLoader.getUsers().get(i);
+            }
+        }
+
+        // if no user found
+        return null;
+    }
+
     public User getCurrentUser() {
         return currentUser;
     }
@@ -145,6 +161,10 @@ public class UserList {
         return null;
     }
 
+    /**
+     * Grant's access to the user list
+     * @return the userlist
+     */
     public ArrayList<User> getUsers() {
         return users;
     }

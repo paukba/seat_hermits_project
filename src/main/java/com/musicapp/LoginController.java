@@ -7,9 +7,14 @@ import com.model.User;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Label; 
+
 
 public class LoginController {
 
+    @FXML Label err1;
+    @FXML Label err2;
+    
     @FXML TextField username;
     @FXML TextField password;
 
@@ -17,7 +22,10 @@ public class LoginController {
     private void switchToHome() throws IOException {
         UserList users = UserList.getInstance();
         User user = users.login(username.getText(), password.getText());
-        if (user != null) {
+        
+        err1.setText("");
+        err2.setText("");
+        if (user != null && users.getUser(username.getText()) != null && users.getUser(username.getText()).getPassword().equals(password.getText())) {
             if (!user.getIsAuthor()) {
                 App.setRoot("loggedin");
             }
@@ -26,9 +34,16 @@ public class LoginController {
             }
             
         }
+        else if (user != null && users.getUser(username.getText()) != null) {
+            err2.setText("Error");
+        }
         else if (username.getText().equals("") && password.getText().equals("")) {
-            users.login("iamSpider99", "spiderman2099roolz");
+            users.login("Guest", "password");
             App.setRoot("loggedinauthor");
+        }
+        else {
+            err1.setText("Error");
+            err2.setText("Error");
         }
     }
 

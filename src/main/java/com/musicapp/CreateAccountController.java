@@ -10,6 +10,9 @@ import com.model.UserList;
 
 public class CreateAccountController {
     
+    @FXML Label err1;
+    @FXML Label err2;
+    
     @FXML TextField firstname;
     @FXML TextField lastname;
     @FXML TextField username;
@@ -22,7 +25,22 @@ public class CreateAccountController {
         UserList users = UserList.getInstance();
 
         // Check to make sure user is unique
-        if (users.getUser(username.getText()) == null) {
+        if (users.getUser(username.getText()) != null && users.checkUniqueEmail(email.getText()) != null) {
+            err1.setText("Error");
+            err2.setText("Error");
+        }
+        else if (users.checkUniqueEmail(email.getText()) != null) {
+            err1.setText("");
+            err2.setText("Error");
+        }
+        else if (users.getUser(username.getText()) != null) {
+            err1.setText("Error");
+            err2.setText("");
+        }
+        else {
+            err1.setText("");
+            err2.setText("");
+            
             // Make it
             users.createAccount(firstname.getText(), lastname.getText(), username.getText(), email.getText(), password.getText(), isAuthor.isSelected());
             DataWriter.saveUsers();

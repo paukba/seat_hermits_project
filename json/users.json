@@ -1,8 +1,19 @@
 [
     {
+        "firstName": "",
+        "lastName": "",
+        "password": "password",
+        "id": "7d335811-1f28-41a2-8adf-8db06e787a8a",
+        "favsongs-id": [],
+        "userName": "Guest",
+        "email": "email",
+        "isAuthor": false
+    },
+    {
         "firstName": "miguel",
         "lastName": "o'hara",
         "password": "spiderman2099roolz",
+        "mysongs-id": [],
         "id": "2f6e2085-85d7-45c2-81b6-2829a0da56e9",
         "favsongs-id": [
             "a89a4dbf-9995-45e6-8862-0b6baeb18537",
@@ -10,13 +21,15 @@
         ],
         "userName": "iamSpider99",
         "email": "spiderman2099@hotmail.com",
-        "isAuthor": true,
-        "mysongs-id":[]
+        "isAuthor": true
     },
     {
         "firstName": "onerepublic",
         "lastName": "n\/a",
         "password": "countrepublic1821",
+        "mysongs-id": [
+            "7b495afd-4f50-444b-8879-460393bb6a75"
+        ],
         "id": "c3a2510a-85b8-47d0-acfd-ffce6a1761f9",
         "favsongs-id": [
             "fe94f713-63bb-4229-b6ab-baa9e0dcfbb1",
@@ -24,13 +37,15 @@
         ],
         "userName": "unoRepublica",
         "email": "onerepublic@us.real.com",
-        "isAuthor": true,
-        "mysongs-id":["7b495afd-4f50-444b-8879-460393bb6a75"]
+        "isAuthor": true
     },
     {
         "firstName": "mick",
         "lastName": "gordon",
         "password": "doommaster1993",
+        "mysongs-id": [
+            "f16ba466-7e73-49a7-8c2e-b92b27c16540"
+        ],
         "id": "473ffea7-0b71-4411-88ed-ed63f876454c",
         "favsongs-id": [
             "04e90ec2-7e58-4df8-b174-70d2d2bbbd0a",
@@ -38,7 +53,39 @@
         ],
         "userName": "mickyG",
         "email": "mgordon@bethesda.com",
-        "isAuthor": true,
-        "mysongs-id":["f16ba466-7e73-49a7-8c2e-b92b27c16540"]
+        "isAuthor": true
+    },
+    {
+        "firstName": "awdaw",
+        "lastName": "awdwad",
+        "password": "awdawd",
+        "mysongs-id": [],
+        "id": "9b69c2f4-f0cd-4a58-a048-52389660756d",
+        "favsongs-id": [],
+        "userName": "awdawd",
+        "email": "awdawd",
+        "isAuthor": true
+    },
+    {
+        "firstName": "a",
+        "lastName": "a",
+        "password": "a",
+        "mysongs-id": [],
+        "id": "396a87ec-6083-43f4-a453-0dd31644bd1b",
+        "favsongs-id": [],
+        "userName": "a",
+        "email": "a",
+        "isAuthor": true
+    },
+    {
+        "firstName": "Hitori",
+        "lastName": "Gotoh",
+        "password": "I_luvBTR!22",
+        "mysongs-id": [],
+        "id": "5b36cf15-a708-4055-a04e-adefcfd178a2",
+        "favsongs-id": [],
+        "userName": "guitarhero",
+        "email": "bocchi@dorito.com",
+        "isAuthor": true
     }
 ]
