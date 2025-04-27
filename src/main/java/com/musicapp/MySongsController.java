@@ -5,17 +5,20 @@ import java.io.IOException;
 import com.model.UserList;
 import com.model.User;
 import com.model.SongList;
-import com.model.Song;
+import java.util.ArrayList;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Button;
 
 public class MySongsController {
-
+    
     @FXML Label userName;
 
     @FXML Button songA;
+
+    @FXML AnchorPane songpane;
     
 
     @FXML
@@ -25,15 +28,24 @@ public class MySongsController {
         SongList songs = SongList.getInstance();
         userName.setText(user.getUserName());
         
-        // This will add the correct song to the first button.
-        // Something like the below is an idea for how it iteratively name the buttons
-        // when you get there but you'll probably have to initialize each button in this class.
-        songA.setText(songs.getSong(user.getMySongs().get(0)).getTitle());
+        //getClass().getResource("stylesheet.css");
+        //songpane.getStyleClass().add("pane");
+        
+        ArrayList<Button> buttonList = new ArrayList<Button>();
+        for (int i = 0; i < user.getMySongs().size(); i++) {
+            
+            buttonList.add(new Button(songs.getSong(user.getMySongs().get(i)).getTitle()));
+            buttonList.get(i).setLayoutX(23 + 293  * (i % 2));
+            buttonList.get(i).setLayoutY(20 + 74 * (i / 2));
+            buttonList.get(i).setPrefSize(244, 64);
+            buttonList.get(i).setStyle("-fx-background-color:hsl(205, 100.00%, 95.30%); ");
+            buttonList.get(i).setStyle("-fx-text-fill: #347caf; ");
+            //buttonList.get(i).setStyle("-fx-background-color: #00ff00");
 
-        /*
-        for (int i = 0; i < user.getMySongs().size(); i++)
-            songA.setText(songs.getSong(user.getMySongs().get(i)).getTitle()); // Actually name the button the song name
-        */
+            buttonList.get(i).setStyle("-fx-font-size: 1.5em; ");
+
+            songpane.getChildren().add(buttonList.get(i));
+        }
         
     }
 
