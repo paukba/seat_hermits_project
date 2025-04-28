@@ -11,6 +11,7 @@ import java.util.UUID;
 public class SongList {
     private static SongList songList;
     private ArrayList<Song> songs;
+    private Song currentSong;
 
     /**
      * Constructs a list of songs
@@ -29,6 +30,14 @@ public class SongList {
             songList = new SongList();
         }
         return songList;
+    }
+
+    public Song getCurrentSong() {
+        return currentSong;
+    }
+
+    public void setCurrentSong(Song song) {
+        currentSong = song;
     }
 
     /**

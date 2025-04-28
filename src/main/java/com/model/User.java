@@ -1,6 +1,7 @@
 package com.model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.UUID;
 
 /**
@@ -68,7 +69,16 @@ public class User {
      * @param song the UUID of the song to be added
      */
     public void addFavSong(UUID song) {
-        favoriteSongs.add(song);
+        boolean duplicate = false;
+        Iterator<UUID> favSongIterator = favoriteSongs.iterator();
+        while (favSongIterator.hasNext()) {
+            if (favSongIterator.next().equals(song)) {
+                duplicate = true;
+            }
+        }
+        if (!duplicate) {
+            favoriteSongs.add(song);
+        }
     }
 
     // public ArrayList<Song> getSongs() {

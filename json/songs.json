@@ -1276,23 +1276,23 @@
                             {
                                 "note":1,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":247.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                             },
                             {
                                 "note":2,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1305,9 +1305,9 @@
                         "frett":"9",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":247.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                         }
                     },
                     {
@@ -1316,9 +1316,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1327,9 +1327,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1348,23 +1348,23 @@
                             {
                                 "note":1,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":247.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":2,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1377,9 +1377,9 @@
                         "frett":"9",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":247.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1388,9 +1388,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1399,9 +1399,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                         }
                     },
                     {
@@ -1420,30 +1420,30 @@
                             {
                                 "note":1,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":2,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1456,9 +1456,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1467,9 +1467,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                         }
                     },
                     {
@@ -1478,9 +1478,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1489,9 +1489,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                         }
                     },
                     {
@@ -1510,30 +1510,30 @@
                             {
                                 "note":1,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                             },
                             {
                                 "note":2,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":1.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1546,9 +1546,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                         }
                     },
                     {
@@ -1557,9 +1557,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":1.0
                         }
                     },
                     {
@@ -1568,9 +1568,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1579,9 +1579,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                         }
                     },
                     {
@@ -1600,23 +1600,23 @@
                             {
                                 "note":1,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":247.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                             },
                             {
                                 "note":2,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":3,
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1629,9 +1629,9 @@
                         "frett":"9",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":247.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                         }
                     },
                     {
@@ -1640,9 +1640,9 @@
                         "frett":"7",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":220.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1651,9 +1651,9 @@
                         "frett":"5",
                         "note":{
                                 "name":"d",
-                                "pitch":2.2,
+                                "pitch":196.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1689,23 +1689,23 @@
                             {
                                 "note":1,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":3,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1718,9 +1718,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":0.0
                         }
                     },
                     {
@@ -1729,9 +1729,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1740,9 +1740,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1761,23 +1761,23 @@
                             {
                                 "note":1,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             },
                             {
                                 "note":3,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1790,9 +1790,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1801,9 +1801,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1812,9 +1812,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                         }
                     },
                     {
@@ -1833,37 +1833,37 @@
                             {
                                 "note":1,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":392.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             },
                             {
                                 "note":3,
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":262.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                             },
                             {
                                 "note":4,
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":8.0
                             },
                             {
                                 "note":5,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":10.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1876,9 +1876,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -1887,9 +1887,9 @@
                         "frett":"3",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":392.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -1898,9 +1898,9 @@
                         "frett":"1",
                         "note":{
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":262.2,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                         }
                     },
                     {
@@ -1909,9 +1909,9 @@
                         "frett":"3",
                         "note":{
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":8.0
                         }
                     },
                     {
@@ -1920,9 +1920,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":10.0
                         }
                     },
                     {
@@ -1941,23 +1941,23 @@
                             {
                                 "note":1,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                             },
                             {
                                 "note":3,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":7.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -1970,9 +1970,9 @@
                         "frett":"1",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                         }
                     },
                     {
@@ -1981,9 +1981,9 @@
                         "frett":"1",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                         }
                     },
                     {
@@ -1992,9 +1992,9 @@
                         "frett":"1",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":7.0
                         }
                     },
                     {
@@ -2013,30 +2013,30 @@
                             {
                                 "note":1,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":1.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                             },
                             {
                                 "note":3,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                             },
                             {
                                 "note":4,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":7.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -2049,9 +2049,9 @@
                         "frett":"1",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":1.0
                         }
                     },
                     {
@@ -2060,9 +2060,9 @@
                         "frett":"1",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":339.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                         }
                     },
                     {
@@ -2071,9 +2071,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                         }
                     },
                     {
@@ -2082,9 +2082,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":7.0
                         }
                     },
                     {
@@ -2103,30 +2103,30 @@
                             {
                                 "note":1,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":1.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":3,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                             },
                             {
                                 "note":4,
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -2139,9 +2139,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":1.0
                         }
                     },
                     {
@@ -2150,9 +2150,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -2161,9 +2161,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":3.0
                         }
                     },
                     {
@@ -2172,9 +2172,9 @@
                         "frett":"3",
                         "note":{
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":5.0
                         }
                     },
                     {
@@ -2193,30 +2193,30 @@
                             {
                                 "note":1,
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                             },
                             {
                                 "note":2,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                             },
                             {
                                 "note":3,
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                             },
                             {
                                 "note":4,
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":392.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":10.0
                             }
                         ],
                         "instrument":"acoustic guitar"
@@ -2229,9 +2229,9 @@
                         "frett":"3",
                         "note":{
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":2.0
                         }
                     },
                     {
@@ -2240,9 +2240,9 @@
                         "frett":"0",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":330.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":4.0
                         }
                     },
                     {
@@ -2251,9 +2251,9 @@
                         "frett":"3",
                         "note":{
                                 "name":"b",
-                                "pitch":2.2,
+                                "pitch":294.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":6.0
                         }
                     },
                     {
@@ -2262,9 +2262,9 @@
                         "frett":"3",
                         "note":{
                                 "name":"em",
-                                "pitch":2.2,
+                                "pitch":392.0,
                                 "duration":1.2,
-                                "starttime":3.4
+                                "starttime":10.0
                         }
                     },
                     {
@@ -2280,7 +2280,7 @@
             "electric guitar",
             "acoustic guitar"
         ],
-        "tempo":104.0,
+        "tempo":208.0,
         "comments":[
             "no lyrics, no issue >:D"
         ]

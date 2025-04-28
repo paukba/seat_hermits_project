@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import com.model.UserList;
 import com.model.SongList;
+import com.model.Song;
 import com.model.User;
 
 import javafx.fxml.FXML;
@@ -38,25 +39,25 @@ public class HomeController {
         ArrayList<Button> buttonList = new ArrayList<Button>();
         for (int i = 0; i < user.getFavoriteSongs().size(); i++) {
 
-            Button newButton = new Button(songs.getSong(user.getFavoriteSongs().get(i)).getTitle());
+            Song buttonSong = songs.getSong(user.getFavoriteSongs().get(i));
+            Button newButton = new Button(buttonSong.getTitle());
             buttonList.add(newButton);
 
             newButton.setLayoutX(23 + 293  * (i % 2));
             newButton.setLayoutY(20 + 74 * (i / 2));
             newButton.setPrefSize(244, 64);
-            newButton.setStyle("-fx-background-color:hsl(205, 100.00%, 95.30%); ");
-            newButton.setStyle("-fx-text-fill:#347caf; ");
-            newButton.setStyle("-fx-background-color: MediumSeaGreen");
-            newButton.setStyle("-fx-font-size: 1.5em; ");
-
-            newButton.setOnAction(event -> {try {
-                this.switchToPlaySong();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }});
-
-            newButton.setCursor(Cursor.HAND);
             newButton.setStyle("-fx-background-color: #E7F5FF; -fx-text-fill: #347caf; -fx-font-size: 18");
+            newButton.setCursor(Cursor.HAND);
+
+            newButton.setOnAction(event -> {
+                try {
+                    songs.setCurrentSong(buttonSong);
+                    this.switchToPlaySong();
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            });
 
             songpane.getChildren().add(newButton);
         }

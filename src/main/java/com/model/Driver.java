@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.UUID;
 
+import org.jfugue.player.Player;
+import org.jfugue.pattern.Pattern;
+
 public class Driver {
     public static void main(String[] args) {
         //scenario1();
 
-        playSong();
+        new Player().play(playSong(UUID.fromString("47da9c99-abd8-4a92-a43e-df4d28b8495b")));;
 
         //login();
 
@@ -20,15 +23,19 @@ public class Driver {
 
     }
 
-    public static void playSong() {
+    public static Pattern playSong(UUID id) {
         SongList songList = SongList.getInstance();
-        Song song = songList.getSong(UUID.fromString("47da9c99-abd8-4a92-a43e-df4d28b8495b"));
+        Song song = songList.getSong(id);
         ArrayList<Measure> measures = song.getMeasures();
         Iterator<Measure> measureIterator = measures.iterator();
+        Pattern music = new Pattern();
         while (measureIterator.hasNext()) {
             Measure measure = measureIterator.next();
-            measure.playNotes();
+            music.add(measure.playNotes());
         }
+        music.add("rw");
+        music.setTempo((int) song.getTempo());
+        return music;
     }
 
     public static void login() {

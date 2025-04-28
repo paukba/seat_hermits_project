@@ -2,6 +2,7 @@ package com.model;
 
 import com.musicapp.*;
 import org.jfugue.player.Player;
+import org.jfugue.pattern.Pattern;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -18,6 +19,7 @@ public class Measure {
     private ArrayList<String> strings;
     private ArrayList<Sheet> sheets;
     private ArrayList<Tab> tabs;
+    private int maxTime;
 
     /**
      * Constructs a measure with its elements
@@ -34,9 +36,17 @@ public class Measure {
         this.notations = new ArrayList<NotationFormat>();
         this.sheets = sheets;
         this.tabs = tabs;
+        this.maxTime = 0;
         if (sheets != null && notes == null) {
             Iterator<Sheet> sheeIterator = sheets.iterator();
             this.notes = sheeIterator.next().getSheetNotes();
+            Iterator<Note> notesIterator = this.notes.iterator();
+            while (notesIterator.hasNext()) {
+                Note note = notesIterator.next();
+                if ((int) note.getStartTime() > maxTime) {
+                    maxTime = (int) note.getStartTime();
+                }
+            }
         }
         else if (tabs != null && notes == null) {
             Iterator<Tab> tabIterator = tabs.iterator();
@@ -46,6 +56,13 @@ public class Measure {
             while (tabNoteIterator.hasNext()) {
                 notes.add(tabNoteIterator.next().getTabnoteNote());
             }
+            Iterator<Note> notesIterator = this.notes.iterator();
+            while (notesIterator.hasNext()) {
+                Note note = notesIterator.next();
+                if ((int) note.getStartTime() > maxTime) {
+                    maxTime = (int) note.getStartTime();
+                }
+            }
         }
     }
 
@@ -53,9 +70,9 @@ public class Measure {
      * Plays the notes in a measure
      * @param notes the notes in the measure
      */
-    public void playNotes() {
-        String jFugueArgument = "";
-        int maxTime = 0;
+    public Pattern playNotes() {
+        String jFugueArgument = "I[GUITAR] ";
+        maxTime = 0;
         int voice = 0;
         ArrayList<Note> buffer = new ArrayList<Note>();
         Iterator<Note> notesIterator = notes.iterator();
@@ -88,7 +105,9 @@ public class Measure {
             voice++;
         }
         Player player = new Player();
-        player.play(jFugueArgument);
+        Pattern music = new Pattern();
+        music.add(jFugueArgument);
+        return music;
     }
 
     /**
@@ -137,5 +156,9 @@ public class Measure {
      */
     public ArrayList<Tab> getMeasureTab() {
         return tabs;
+    }
+
+    public int getMaxTime() {
+        return maxTime;
     }
 }

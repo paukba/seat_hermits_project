@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicapp.PlaySongController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:id="main" fx:controller="com.musicapp.PlaySongController">
    <children>
       <Button layoutX="110.0" layoutY="353.0" mnemonicParsing="false" onAction="#pause" prefHeight="35.0" prefWidth="170.0" stylesheets="@styles.css" text="Pause">
          <font>
@@ -65,7 +65,7 @@
       <Label layoutX="294.0" layoutY="124.0" prefHeight="130.0" prefWidth="126.0" text="Measure 3" />
       <Label layoutX="418.0" layoutY="124.0" prefHeight="130.0" prefWidth="125.0" text="Measure 4" />
       <Label layoutX="169.0" layoutY="124.0" prefHeight="130.0" prefWidth="125.0" text="Measure 2" />
-      <Label layoutX="254.0" layoutY="6.0" text=" &quot;SONG&quot;" textFill="WHITE">
+      <Label layoutX="254.0" layoutY="6.0" text=" &quot;SONG&quot;" textFill="WHITE" fx:id="songTitle">
          <font>
             <Font size="30.0" />
          </font>

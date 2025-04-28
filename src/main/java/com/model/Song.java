@@ -2,6 +2,7 @@ package com.model;
 
 import java.util.UUID;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Represents a song, which consists of a title, author, genre, tempo, 
@@ -25,6 +26,7 @@ public class Song {
     private ArrayList<Sheet> sheets;
     private ArrayList<Tab> tabs;
     private ArrayList<String> comments;
+    private int totalTime;
 
     /**
      * Constructs a song with its information
@@ -48,6 +50,12 @@ public class Song {
         this.instruments = instruments;
         this.tempo = tempo;
         this.comments = comments;
+        this.totalTime = 0;
+
+        Iterator<Measure> measureIterator = measures.iterator();
+        while (measureIterator.hasNext()) {
+            totalTime += measureIterator.next().getMaxTime() + 1;
+        }
         
     }
     
@@ -99,6 +107,29 @@ public class Song {
      */
     public ArrayList<Tab> getTabs(Instrument instrument) {
         return tabs;
+    }
+
+    public ArrayList<TabNote> getTabDisplay() {
+        Iterator<Measure> measureIterator = measures.iterator();
+        int timeOffset = 0;
+        ArrayList<TabNote> ret = new ArrayList<TabNote>();
+        while(measureIterator.hasNext()) {
+            Measure measure = measureIterator.next();
+            //System.out.println(measure);
+            Iterator<Tab> tabIterator = measure.getMeasureTab().iterator();
+            while (tabIterator.hasNext()) {
+                Tab tab = tabIterator.next();
+                Iterator<TabNote> noteIterator = tab.getTabNotes().iterator();
+                while (noteIterator.hasNext()) {
+                    TabNote buffer = noteIterator.next();
+                    buffer.getTabnoteNote().setStartTime(buffer.getTabnoteNote().getStartTime() + timeOffset);
+                    ret.add(buffer);
+                }
+            }
+            timeOffset += measure.getMaxTime() + 1;
+            
+        }
+        return ret;
     }
 
     /**
@@ -227,6 +258,10 @@ public class Song {
      */
     public ArrayList<String> getComments() {
         return comments;
+    }
+
+    public int getTotalTime() {
+        return totalTime;
     }
 
 }

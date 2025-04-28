@@ -52,6 +52,10 @@ public class Note {
         return this.startTime;
     }
 
+    public void setStartTime(double time) {
+        startTime = time;
+    }
+
     /**
      * Gets the name of a note
      * @return the note's name
